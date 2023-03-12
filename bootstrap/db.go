@@ -57,7 +57,6 @@ func initMySqlGorm() *gorm.DB {
 
 func getGormLogger() logger.Interface {
   var logMode logger.LogLevel
-
   switch global.App.Config.Mysql.LogMode {
   case "silent":
     logMode = logger.Silent

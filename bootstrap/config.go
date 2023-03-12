@@ -12,9 +12,7 @@ func InitializeConfig(mode string) *viper.Viper {
   // 依据运行环境，设置配置文件路径
   var config string
   config = "conf/" + mode + ".yaml"
-  fmt.Printf(config)
   // 生产环境可以通过设置环境变量来改变配置文件路径
-  fmt.Printf(os.Getenv("VIPER_CONFIG"))
   if configEnv := os.Getenv("VIPER_CONFIG"); configEnv != "" {
     config = configEnv
   }
