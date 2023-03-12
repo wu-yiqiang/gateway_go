@@ -1,0 +1,3 @@
+
+2023/03/12 20:11:35 /Users/atlas/go/src/gateway_go/bootstrap/db.go:44
+[error] failed to initialize database, got error dial tcp 127.0.0.1:8306: connect: connection refused

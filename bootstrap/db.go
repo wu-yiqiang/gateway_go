@@ -13,37 +13,9 @@ import (
   "strconv"
   "time"
 )
-
-func initMySqlGorm() *gorm.DB {
-  // ...
-  if db, err := gorm.Open(mysql.New(mysqlConfig), &gorm.Config{
-    DisableForeignKeyConstraintWhenMigrating: true, // 禁用自动创建外键约束
-    Logger: getGormLogger(), // 使用自定义 Logger
-  }); err != nil {
-    return nil
-  } else {
-    sqlDB, _ := db.DB()
-    sqlDB.SetMaxIdleConns(dbConfig.MaxIdleConns)
-    sqlDB.SetMaxOpenConns(dbConfig.MaxOpenConns)
-    initMySqlTables(db)
-    return db
-  }
-}
-
-// 数据库表初始化
-func initMySqlTables(db *gorm.DB) {
-  err := db.AutoMigrate(
-    models.User{},
-    )
-  if err != nil {
-    global.App.Log.Error("migrate table failed", zap.Any("err", err))
-    os.Exit(0)
-  }
-}
-
 func InitializeDB() *gorm.DB {
   // 根据驱动配置进行初始化
-  switch global.App.Config.Database.Driver {
+  switch global.App.Config.Mysql.Driver {
   case "mysql":
     return initMySqlGorm()
     default:
@@ -51,9 +23,10 @@ func InitializeDB() *gorm.DB {
   }
 }
 
+
 // 初始化 mysql gorm.DB
 func initMySqlGorm() *gorm.DB {
-  dbConfig := global.App.Config.Database
+  dbConfig := global.App.Config.Mysql
 
   if dbConfig.Database == "" {
     return nil
@@ -85,7 +58,7 @@ func initMySqlGorm() *gorm.DB {
 func getGormLogger() logger.Interface {
   var logMode logger.LogLevel
 
-  switch global.App.Config.Database.LogMode {
+  switch global.App.Config.Mysql.LogMode {
   case "silent":
     logMode = logger.Silent
     case "error":
@@ -102,7 +75,7 @@ func getGormLogger() logger.Interface {
     SlowThreshold:             200 * time.Millisecond, // 慢 SQL 阈值
     LogLevel:                  logMode, // 日志级别
     IgnoreRecordNotFoundError: false, // 忽略ErrRecordNotFound（记录未找到）错误
-    Colorful:                  !global.App.Config.Database.EnableFileLogWriter, // 禁用彩色打印
+    Colorful:                  !global.App.Config.Mysql.EnableFileLogWriter, // 禁用彩色打印
   })
 }
 
@@ -111,10 +84,10 @@ func getGormLogWriter() logger.Writer {
   var writer io.Writer
 
   // 是否启用日志文件
-  if global.App.Config.Database.EnableFileLogWriter {
+  if global.App.Config.Mysql.EnableFileLogWriter {
     // 自定义 Writer
     writer = &lumberjack.Logger{
-      Filename:   global.App.Config.Log.RootDir + "/" + global.App.Config.Database.LogFilename,
+      Filename:   global.App.Config.Log.RootDir + "/" + global.App.Config.Mysql.LogFilename,
       MaxSize:    global.App.Config.Log.MaxSize,
       MaxBackups: global.App.Config.Log.MaxBackups,
       MaxAge:     global.App.Config.Log.MaxAge,

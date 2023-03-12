@@ -1,15 +1,20 @@
 package main
 
 import (
-  "github.com/gin-gonic/gin"
+ _ "github.com/gin-gonic/gin"
   "gateway_go/bootstrap"
   "gateway_go/global"
-  "net/http"
+  _"net/http"
+ "flag"
 )
 
 func main() {
+  // 获取运行环境
+  mode := flag.String("env", "dev", "asda")
+  flag.Parse()
+  modeName := *mode
   // 初始化配置
-  bootstrap.InitializeConfig()
+  bootstrap.InitializeConfig(modeName)
 
   // 初始化日志
   global.App.Log = bootstrap.InitializeLog()
@@ -25,13 +30,6 @@ func main() {
     }
   }()
 
-  r := gin.Default()
-
-  // 测试路由
-  r.GET("/ping", func(c *gin.Context) {
-    c.String(http.StatusOK, "pong")
-  })
-
   // 启动服务器
-  r.Run(":" + global.App.Config.App.Port)
+  bootstrap.RunServer()
 }
