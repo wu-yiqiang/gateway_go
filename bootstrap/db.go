@@ -12,6 +12,7 @@ import (
   "os"
   "strconv"
   "time"
+  "fmt"
 )
 func InitializeDB() *gorm.DB {
   // 根据驱动配置进行初始化
@@ -31,6 +32,7 @@ func initMySqlGorm() *gorm.DB {
   if dbConfig.Database == "" {
     return nil
   }
+
   dsn := dbConfig.UserName + ":" + dbConfig.Password + "@tcp(" + dbConfig.Host + ":" + strconv.Itoa(dbConfig.Port) + ")/" +
     dbConfig.Database + "?charset=" + dbConfig.Charset +"&parseTime=True&loc=Local"
   mysqlConfig := mysql.Config{
@@ -45,6 +47,7 @@ func initMySqlGorm() *gorm.DB {
     DisableForeignKeyConstraintWhenMigrating: true, // 禁用自动创建外键约束
     Logger: getGormLogger(), // 使用自定义 Logger
   }); err != nil {
+    fmt.Printf("哈哈哈哈 %s", err)
     global.App.Log.Error("mysql connect failed, err:", zap.Any("err", err))
     return nil
   } else {
@@ -53,6 +56,7 @@ func initMySqlGorm() *gorm.DB {
     sqlDB.SetMaxOpenConns(dbConfig.MaxOpenConns)
     return db
   }
+
 }
 
 func getGormLogger() logger.Interface {
