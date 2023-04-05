@@ -27,7 +27,7 @@ func InitializeConfig(mode string) *viper.Viper {
   // 监听配置文件
   v.WatchConfig()
   v.OnConfigChange(func(in fsnotify.Event) {
-    fmt.Println("config file changed:", in.Name)
+
     // 重载配置
     if err := v.Unmarshal(&global.App.Config); err != nil {
       fmt.Println(err)

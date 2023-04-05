@@ -1,0 +1,1 @@
+app/common/response/response.go:5:2: package jassue-gin/global is not in GOROOT (/usr/local/go/src/jassue-gin/global)

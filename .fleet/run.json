@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "go",
+      "name": "Go configuration",
+      "goExecPath": "$USER_HOME$/go/bin/fresh",
+      "buildParams": [],
+    },
+
+  ]
+}

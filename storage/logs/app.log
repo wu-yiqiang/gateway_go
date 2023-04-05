@@ -1,2 +1,183 @@
 [2023-03-19 16:57:29.426]	dev.info	gateway_go/main.go:21	log init success!
 [2023-03-19 16:58:09.570]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:45:50.239]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:48:44.678]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:49:19.248]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:49:48.381]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:52:51.877]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:56:04.619]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:56:04.957]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:59:29.165]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 18:59:53.663]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:00:04.472]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:00:04.856]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:05:52.187]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:05:52.460]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:15:55.606]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:16:30.098]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:22:23.711]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:22:47.767]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:26:05.269]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:47:46.329]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:48:18.923]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:48:22.027]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 19:48:36.704]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:01:39.161]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:02:07.515]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:03:59.842]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:05:34.637]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:06:07.528]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:06:16.166]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:06:16.476]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:08:34.977]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:08:35.368]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:08:37.992]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:08:38.503]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:09:11.729]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:09:12.235]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:09:14.862]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:09:15.400]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:11:18.420]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:11:23.407]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:11:26.706]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:11:29.843]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:11:33.761]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:11:45.378]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:12:16.266]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:13:24.392]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:13:24.732]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:13:27.170]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:13:28.263]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:13:28.668]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:13:45.895]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:14:01.799]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:14:02.348]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:14:07.114]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:14:08.375]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:14:11.991]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:14:47.112]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:14:47.206]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:16:58.845]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:28:45.290]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:28:45.624]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:28:54.565]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:35:13.483]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:51:35.425]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:52:13.637]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:52:32.493]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:53:03.270]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 20:57:07.644]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 21:00:02.575]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 21:00:03.426]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 21:00:04.812]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 21:00:07.643]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 21:00:11.726]	dev.info	gateway_go/main.go:21	log init success!
+[2023-03-19 21:00:37.593]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-04 00:33:12.007]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-04 00:33:12.037]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 13:38:11.756]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 13:38:11.796]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 13:38:43.827]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 13:38:43.867]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 13:39:34.186]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 13:39:34.230]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:12:57.804]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:12:57.844]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:14:45.645]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:14:45.688]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:15:02.790]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:15:02.832]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:15:03.348]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:15:03.388]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:15:05.483]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:15:05.521]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:15:11.485]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:15:11.531]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:15:12.832]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:15:12.875]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:15:57.988]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:15:58.030]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:48:37.353]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:48:37.392]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:48:37.628]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:48:37.672]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:51:12.942]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:51:12.986]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:51:15.043]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:51:15.088]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:51:17.282]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:51:17.327]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:51:19.724]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:51:19.768]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:52:22.514]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:52:22.558]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:52:24.791]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:52:24.835]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:52:25.842]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:52:25.886]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:52:26.582]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:52:26.626]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:52:31.018]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:52:31.062]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:52:33.431]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:52:33.476]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:52:40.715]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:52:40.759]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:52:42.625]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:52:42.667]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:53:32.924]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:53:32.967]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:53:47.554]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:53:47.597]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:54:02.941]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:54:02.986]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:54:56.846]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:54:56.889]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:54:58.971]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:54:59.015]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:55:02.903]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:55:02.946]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:55:05.194]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:55:05.238]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:57:18.710]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:57:18.752]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:57:19.007]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:57:19.051]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:57:21.882]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:57:21.924]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:57:22.282]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:57:22.326]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:57:28.537]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:57:28.578]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:57:28.822]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:57:28.864]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:59:14.791]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:59:14.833]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:59:15.170]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:59:15.215]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:59:17.329]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:59:17.372]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:59:45.423]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:59:45.465]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 14:59:48.893]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 14:59:48.936]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:00:02.926]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:00:02.970]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:01:13.296]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:01:13.339]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:01:15.559]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:01:15.602]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:01:15.827]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:01:15.870]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:01:17.911]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:01:17.954]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:01:18.444]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:01:18.489]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:01:26.573]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:01:26.616]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:01:33.132]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:01:33.174]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:01:35.594]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:01:35.639]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-05 15:02:02.973]	dev.info	gateway_go/main.go:21	log init success!
+[2023-04-05 15:02:03.017]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}

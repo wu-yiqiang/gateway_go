@@ -1,0 +1,162 @@
+
+2023/04/04 00:33:12 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 13:38:11 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 13:38:43 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 13:39:34 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:12:57 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:14:45 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:15:02 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:15:03 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:15:05 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:15:11 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:15:12 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:15:58 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:48:37 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:48:37 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:51:12 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:51:15 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:51:17 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:51:19 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:52:22 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:52:24 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:52:25 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:52:26 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:52:31 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:52:33 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:52:40 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:52:42 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:53:32 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:53:47 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:54:02 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:54:56 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:54:59 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:55:02 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:55:05 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:57:18 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:57:19 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:57:21 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:57:22 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:57:28 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:57:28 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:59:14 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:59:15 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:59:17 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:59:45 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 14:59:48 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:00:02 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:01:13 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:01:15 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:01:15 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:01:17 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:01:18 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:01:26 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:01:33 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:01:35 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/05 15:02:03 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused

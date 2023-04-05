@@ -65,9 +65,12 @@ func setupRouter() *gin.Engine {
   router.Static("/public", "./static")
   router.Static("/storage", "./storage/app/public")
 
-  // 注册 api 分组路由
+  // 注册 api 分组路由 /api
   apiGroup := router.Group("/api")
   routes.SetApiGroupRoutes(apiGroup)
 
+  // 注册 user 分组路由 /user
+  userGroup := router.Group("/user")
+  routes.SetUserGroupRoutes(userGroup)
   return router
 }

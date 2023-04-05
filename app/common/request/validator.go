@@ -13,6 +13,7 @@ type ValidatorMessages map[string]string
 // GetErrorMsg 获取错误信息
 func GetErrorMsg(request interface{}, err error) string {
   if _, isValidatorErrors := err.(validator.ValidationErrors); isValidatorErrors {
+    
     _, isValidator := request.(Validator)
 
     for _, v := range err.(validator.ValidationErrors) {
@@ -25,6 +26,5 @@ func GetErrorMsg(request interface{}, err error) string {
       return v.Error()
     }
   }
-
   return "Parameter error"
 }
