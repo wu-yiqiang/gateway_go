@@ -160,3 +160,132 @@
 
 2023/04/05 15:02:03 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
 [error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/07 19:26:37 /Users/atlas/go/src/gateway_go/app/services/user.go:18 Error 1054 (42S22): Unknown column 'name' in 'where clause'
+[42.360ms] [rows:0] SELECT `id` FROM `users` WHERE name = '张三' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 19:26:37 /Users/atlas/go/src/gateway_go/app/services/user.go:24 Error 1054 (42S22): Unknown column 'name' in 'field list'
+[118.990ms] [rows:0] INSERT INTO `users` (`name`,`email`,`password`) VALUES ('张三','','$2a$04$ONjHlGJwCoXl/cjwPjhwoOpTu8IYMBtydQ1dZR.WqxmMjtvIifgfS')
+
+2023/04/07 19:55:08 /Users/atlas/go/src/gateway_go/app/services/user.go:18 Error 1054 (42S22): Unknown column 'name' in 'where clause'
+[42.576ms] [rows:0] SELECT `id` FROM `users` WHERE name = '张三' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 19:55:08 /Users/atlas/go/src/gateway_go/app/services/user.go:24 Error 1054 (42S22): Unknown column 'name' in 'field list'
+[120.364ms] [rows:0] INSERT INTO `users` (`name`,`email`,`password`) VALUES ('张三','','$2a$04$DpqZcjLTX5.Rak1B76ofhePvIriR2/s63jXyyXjFsbaAGwoMMBGFi')
+
+2023/04/07 20:02:01 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[85.607ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张三' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:02:01 /Users/atlas/go/src/gateway_go/app/services/user.go:24 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[120.765ms] [rows:0] INSERT INTO `users` (`user_name`,`email`,`password`) VALUES ('张三','','$2a$04$2n0L/.ZAAFsMsW/hV0yHiuDVFn5KTL9NUDVgkxP.erVSVNNU5mKNC')
+
+2023/04/07 20:02:09 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[78.839ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张三' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:02:09 /Users/atlas/go/src/gateway_go/app/services/user.go:24 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[113.886ms] [rows:0] INSERT INTO `users` (`user_name`,`email`,`password`) VALUES ('张三','','$2a$04$8sajWgfJKAWkac..5QO.u.SSMKr54CQmE.gJ.eqmzmTD5KLAtnknC')
+
+2023/04/07 20:02:33 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[80.497ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张三' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:02:33 /Users/atlas/go/src/gateway_go/app/services/user.go:24 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[116.900ms] [rows:0] INSERT INTO `users` (`user_name`,`email`,`password`) VALUES ('张三','','$2a$04$vhLwRe6znpdkxKgcJJl68eRyDWwxdfu7Il5SvsumzFKFUImQ/LRKa')
+
+2023/04/07 20:03:32 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[87.611ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张三' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:03:32 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[174.871ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张三','','$2a$04$wCZkUY64UA2z8hYvNL8bvOh.8ypA7djRP23eZSIZZNqaVYCO1nQlG')
+
+2023/04/07 20:12:12 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[82.380ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张三' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:12:13 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[83.304ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张三' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:12:20 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[82.544ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张si' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:12:20 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[164.013ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张si','','$2a$04$zXZYXIwkMahZosvD.RIY7OkOM03x1ioPKyO03ATjJ6pKMift1s36K')
+
+2023/04/07 20:13:33 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[84.011ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张si' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:13:41 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[83.882ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张si' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:14:03 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[83.536ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张si' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:14:10 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[80.632ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张asdsa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:14:10 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[159.510ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张asdsa','','$2a$04$gjNmiYrHy8yA1dbF3TQYQuL3gWHr1WAPUShMxuvGJCSUZZKSEPnPu')
+
+2023/04/07 20:18:53 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[87.613ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张asdsa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:18:57 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[95.221ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张asdsadddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:18:57 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[182.300ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张asdsadddd','','$2a$04$crsjR1i1mAevcewMl5V.Du6MsPSCJRuXfqNMCzwPHrVOnMAC.tfRq')
+
+2023/04/07 20:19:05 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[110.176ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张asdsadddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:19:07 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[118.934ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张asdsasdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:19:07 /Users/atlas/go/src/gateway_go/app/services/user.go:24 SLOW SQL >= 200ms
+[234.422ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张asdsasdddd','','$2a$04$XbnwORB0wsA2VluYBHjfS.bFYzV2VnUtN377ao7fYrCU12jz9mMxe')
+
+2023/04/07 20:19:20 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[98.737ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张asdsaeesdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:19:20 /Users/atlas/go/src/gateway_go/app/services/user.go:24 SLOW SQL >= 200ms
+[204.552ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张asdsaeesdddd','','$2a$04$HWclrhypXy4x/iKuauB08OlOJAv8Fe0tBQ6fPXWimkjx1Wzl91FMC')
+
+2023/04/07 20:19:47 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[124.787ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张asdsaeesdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:19:52 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[117.683ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张dsaeesdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:19:52 /Users/atlas/go/src/gateway_go/app/services/user.go:24 SLOW SQL >= 200ms
+[228.118ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张dsaeesdddd','','$2a$04$ob53k8G0Tww54e8RYEgve.4xiEEFt/BOMlYCKsS9EQAEFE7VtMCgu')
+
+2023/04/07 20:23:19 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[90.394ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张dsesdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:23:19 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[166.018ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张dsesdddd','','$2a$04$8VN/VuaFC0RAm6NBzaFzV.znNPtJ8BRj1uWM67ncF4Yuf7ACbIBgS')
+
+2023/04/07 20:23:40 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[92.479ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张dsesdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 20:23:52 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[90.166ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张dsesdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 23:58:52 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[27.193ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张dsesdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 23:58:58 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[45.143ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张desdddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/07 23:58:59 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[116.408ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张desdddd','','$2a$04$HE/GfWqgjVmNmNpkGFOBm.rgoVUHxNo6JSYIgnrGtTjIE66gfvKg2')
+
+2023/04/08 00:05:42 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[47.998ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张desdsddddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 00:05:42 /Users/atlas/go/src/gateway_go/app/services/user.go:26
+[109.485ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张desdsddddd','','$2a$04$r2Dew4Ze.2BRtbwSyDDUF.WZV2KyiKX/a4C6JbdT5I6QrD67.rqii')
+
+2023/04/08 00:13:11 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[36.547ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张dessdzdsddddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 00:13:11 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[87.577ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张dessdzdsddddd','','$2a$04$SQyBhzEENknCyFXCGdPIS.CGUQQ0qabIVqIFtlxz7laMrx79TZuBG')

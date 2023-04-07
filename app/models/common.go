@@ -17,6 +17,6 @@ type Timestamps struct {
 }
 
 // 软删除
-type SoftDeletes struct {
+type isDeleted struct {
   DeletedAt gorm.DeletedAt `json:"deleted_at" gorm:"index"`
 }

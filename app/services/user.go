@@ -15,12 +15,12 @@ var UserService = new(userService)
 
 // Register 注册
 func (userService *userService) Register(params request.Register) (err error, user models.User) {
-	var result = global.App.DB.Where("name = ?", params.Name).Select("id").First(&models.User{})
+	var result = global.App.DB.Where("username = ?", params.Username).Select("id").First(&models.User{})
 	if result.RowsAffected != 0 {
 		err = errors.New("账号已存在")
 		return
 	}
-	user = models.User{Name: params.Name, Password: utils.BcryptMake([]byte(params.Password))}
+	user = models.User{Username: params.Username, Password: utils.BcryptMake([]byte(params.Password))}
 	err = global.App.DB.Create(&user).Error
 	return
 }
