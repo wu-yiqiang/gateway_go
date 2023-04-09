@@ -289,3 +289,408 @@
 
 2023/04/08 00:13:11 /Users/atlas/go/src/gateway_go/app/services/user.go:24
 [87.577ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张dessdzdsddddd','','$2a$04$SQyBhzEENknCyFXCGdPIS.CGUQQ0qabIVqIFtlxz7laMrx79TZuBG')
+
+2023/04/08 15:48:56 /Users/atlas/go/src/gateway_go/app/services/user.go:18
+[40.547ms] [rows:1] SELECT `id` FROM `users` WHERE username = '张dessdzdsddddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:49:02 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[34.201ms] [rows:0] SELECT `id` FROM `users` WHERE username = '张deszdsddddd' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:49:02 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[112.969ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdsddddd','','$2a$04$vKwAt0jj7AfIyrPojlDL9.pcA1DDzpHV7M1HQGdLiXJwFWxlLUb36')
+
+2023/04/08 15:49:50 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[36.338ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:49:50 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[99.798ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdsddddd','','$2a$04$6F2/2bkA0msY6m4sRs4syOCbwkATValZRBD4NByguU/tFNukVJVwi')
+
+2023/04/08 15:49:51 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[37.798ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:49:51 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[104.246ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdsddddd','','$2a$04$tK20Z1Ieyrau3y.GUgR.A.J2od.TpbIVGsB.9jc.1C/fYw92mRA1S')
+
+2023/04/08 15:49:57 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[35.686ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:49:57 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[106.276ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddd','','$2a$04$uzVIVGZkMCruxiBaclIFlOzx7BysLvi0Sd5L5kSKqBy0wWVK0dbza')
+
+2023/04/08 15:49:58 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[47.822ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:49:58 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[124.656ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddd','','$2a$04$gsyYRG6SyaRJIDrVRYHQyuzSHum5mH4d9Gzr.8psclGeI/c8eEDJG')
+
+2023/04/08 15:50:03 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[38.355ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:50:03 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[104.173ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','','$2a$04$pOkUi2/2EMSx4FZ9qVlV2uCaoXwapRBrodAcOj1YkaTCKfHZEyxZO')
+
+2023/04/08 15:50:14 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[43.940ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:50:15 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[150.411ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','','$2a$04$Ze8wNwU6lIYdB7MZUsjUnerdLWvPlC1CEpdZApABT9C527y.1/mQi')
+
+2023/04/08 15:50:15 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[37.804ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:50:16 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[105.477ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','','$2a$04$QTE0Jn1V0OPidRQgJURQAeiol0vyFq1p6KIryuhLFyy7LLWTNA9qi')
+
+2023/04/08 15:51:09 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[65.546ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:51:10 /Users/atlas/go/src/gateway_go/app/services/user.go:24 SLOW SQL >= 200ms
+[228.856ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','','$2a$04$WZvuRY8tAwJ/fbtZpIvAH.QyQp23wE.nRv0HZh8JKiVqoiAgYxNFK')
+
+2023/04/08 15:51:10 /Users/atlas/go/src/gateway_go/app/services/user.go:18 record not found
+[39.513ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:51:10 /Users/atlas/go/src/gateway_go/app/services/user.go:24
+[112.668ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','','$2a$04$j/2QOGZCosRoJOxKcLvVy.vFrDmhC.4TgTdFbciEZc9XL05hPLPoC')
+
+2023/04/08 15:51:44 /Users/atlas/go/src/gateway_go/app/services/user.go:20 record not found
+[33.029ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:51:44 /Users/atlas/go/src/gateway_go/app/services/user.go:26
+[115.421ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','','$2a$04$1ItGnO6majPlr1T4FX3liu2wp3bzB1rY9PUomOe.EjclD8rvOj7iq')
+
+2023/04/08 15:52:14 /Users/atlas/go/src/gateway_go/app/services/user.go:20 record not found
+[35.256ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:52:14 /Users/atlas/go/src/gateway_go/app/services/user.go:27
+[86.353ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','','$2a$04$M.ltyo5IrP7SVqxUBEeD4OeKAQTYdp4YXlrns4P04lRh0y4UWL.Wi')
+
+2023/04/08 15:53:43 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[35.988ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:53:43 /Users/atlas/go/src/gateway_go/app/services/user.go:26
+[112.870ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asda','$2a$04$xeiOUoyA2D8/2JEb4j4btuE3sCmVp.cd9RBpQf2JUIfDzjk1XXN9u')
+
+2023/04/08 15:54:10 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[56.304ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 15:54:10 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[43.792ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 16:09:54 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[62.812ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 16:09:55 /Users/atlas/go/src/gateway_go/app/services/user.go:26
+[127.957ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asda','$2a$04$lpKt6LFxEnXI4HUPgspX.uLSVrLfXEIW531WR./c1oADhYtadcJ1.')
+
+2023/04/08 16:33:06 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[171.323ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 16:33:24 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[36.307ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 16:48:09 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[31.524ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'assda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 16:48:10 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[95.817ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','assda','$2a$04$9f3Dm4nxiWe84h1i/c44W.CEgE0Xk3IBwecBQy9fEbgNyQyokZ1oW')
+
+2023/04/08 16:48:13 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[40.624ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 16:48:14 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[49.267ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 16:49:40 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[46.369ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'assssda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 16:49:41 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[150.884ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','assssda','$2a$04$OIg6m1ZhU9zWkQGRM8xaj.UTFySkZES.RlvEA1EwHXewujrpJm8ly')
+
+2023/04/08 16:49:42 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[54.420ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assssda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:51:50 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[58.620ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assssda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:51:53 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[28.584ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assssda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:51:55 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[45.618ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assssda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:52:00 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[49.032ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:52:18 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[29.082ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:52:20 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[29.461ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'assssda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:52:33 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[30.108ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asssssssda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:52:33 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[98.259ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asssssssda','$2a$04$Il52B2MFJctlyWFMUlqW2ekfqxBuk4l7sgP6Ybn4iq22FJd8qm1g6')
+
+2023/04/08 17:55:07 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[34.493ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asssssssda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:55:10 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[125.320ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asssssssdddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:55:10 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[106.563ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asssssssdddda','$2a$04$mfVUf6U1MFujEHEM3Tf.M.Pf4J3CBXwaKV2ppbmQ01q84mOWH/d1G')
+
+2023/04/08 17:57:32 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[27.294ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asssssss搜索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:57:32 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[83.753ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asssssss搜索dddda','$2a$04$Faxv2kl0GUrvLvlpfrcYtejeliFMWLC0yw9pJl1ySVjtysecrBxoO')
+
+2023/04/08 17:58:00 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[29.017ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asssss搜索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:58:00 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[76.558ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asssss搜索dddda','$2a$04$RmZKZJ5wm3oPpoe2mq596eaz8Mt4QjsEQU1Q6LRGpIYEfwBAzSg1O')
+
+2023/04/08 17:58:40 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[34.889ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asssss搜索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:58:41 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[45.428ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asssss搜索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:58:45 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[37.327ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss搜索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 17:58:45 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[103.616ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss搜索dddda','$2a$04$OcXsZ/V4NolI.rm0AxBPV.GCvcCA/sh2voE9aYGVFYKtet91pB1NO')
+
+2023/04/08 18:07:10 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[28.742ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss搜索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 18:07:15 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[30.212ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss  索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 18:07:15 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[110.557ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss  索dddda','$2a$04$nRDhTamMMuxZJPTstaM0HuXfEsG9hBTSoZ4ZmS4XOhdyaOrW2CtSq')
+
+2023/04/08 18:12:02 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[29.971ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss 索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 18:12:02 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[93.693ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss 索dddda','$2a$04$e6neZRaqVCV.mRrnWPUPxu//9yr4wC1ExgdyfSxWv8e4T5GuWnihK')
+
+2023/04/08 18:38:52 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[3600.598ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 18:38:52 /Users/atlas/go/src/gateway_go/app/services/user.go:25 SLOW SQL >= 200ms
+[504.834ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dddda','$2a$04$jPI2jJyrdoNatylgCpAN9e3Z7zHjclxNNN.3OL2yHzG2xXuxS.zUG')
+
+2023/04/08 18:38:55 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[28.051ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 18:38:57 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[33.883ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dddddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 18:38:58 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[105.249ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dddddda','$2a$04$Z/V8NTGqOX6B0A3GJvj8Cu7rmNjaaG4zXtVpNa0MhaLV7ZuHQArRO')
+
+2023/04/08 20:29:44 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[45.094ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dddddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:29:50 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[30.425ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索ddssdddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:29:50 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[106.585ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索ddssdddda','$2a$04$S27F6gje2475.Uxtb5tpOOmEgrhq3vE5kmKd60ca.HuFezeGviMOO')
+
+2023/04/08 20:31:41 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[39.190ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索ddssdddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:31:46 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[49.041ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索ddddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:31:46 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[132.034ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索ddddda','$2a$04$C4wvJTHFHdz3AVnEm6SYV.47qmeCysl.GDk7kM3GG9oO2eq37QYXy')
+
+2023/04/08 20:33:14 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[31.875ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dasdadddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:33:14 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[75.617ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dasdadddda','$2a$04$y3XkKKAEFm7vNBRDoqvK9Ojy9A2uzkjL3Dcaz1j0RZEz/ksmb.DsO')
+
+2023/04/08 20:52:59 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[38.936ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dasdadddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:53:14 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[33.120ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dasdadddda' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:54:39 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[37.730ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dasdaddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:54:40 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[137.241ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dasdaddddssa','$2a$04$ccibJ79fGeg6H4Sd1o.UfOJS1CFoqwOZB6B965uOcfZrhp1oZFPTe')
+
+2023/04/08 20:54:59 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[36.186ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dassdsddaddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:54:59 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[143.580ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dassdsddaddddssa','$2a$04$sTAK1uY.JuyoBvFDmjakB.yxnKYREFtm32AuOjnk3h7qS0844IgTK')
+
+2023/04/08 20:55:10 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[31.931ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dassdsddaddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:55:15 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[30.905ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dasssdsddaddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:55:15 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[162.595ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dasssdsddaddddssa','$2a$04$ULBfEfyU4dgt7t93fSFLDuBb/Edo/vhHnh51wM0oQu.I.CT.WbRFe')
+
+2023/04/08 20:55:55 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[51.270ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dasssdsddaddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:55:58 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[38.603ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dasssdsdsdsddaddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:55:58 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[124.157ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dasssdsdsdsddaddddssa','$2a$04$X6taouPI6EAsa3ZhowIOK.DeZybXYDGA7cnKw2bNs4s6LNmo30PWy')
+
+2023/04/08 20:56:19 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[29.117ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dasssdsdsdsddaddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:56:22 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[27.421ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dasssssdsdsdsddaddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 20:56:22 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[88.973ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dasssssdsdsdsddaddddssa','$2a$04$jgbrgBFd6QMi9Pebc93FWui1.woKxgj8GeXcnR2j0dk0VI6ehd0.e')
+
+2023/04/08 21:58:05 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[67.783ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dasssssdsdsdsssddasssddddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 21:58:06 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[187.059ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dasssssdsdsdsssddasssddddssa','$2a$04$z2EsJF3G5zz0adAFruJD0ukE1eqUaLbe4BbWwA2KDY0o1zCDfulAq')
+
+2023/04/08 22:01:12 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[40.604ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dass事实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 22:01:12 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[115.528ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dass事实上sssdsdsdsssssssddasssddssddssa','$2a$04$LYx/IEl4ntmV36XSofyV5eo1OChW4r8Bk5Nn0dUSJ93cY66tNgqIi')
+
+2023/04/08 22:29:53 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[34.681ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dass事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 22:29:53 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[170.372ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dass事是谁实上sssdsdsdsssssssddasssddssddssa','$2a$04$VvbjW22ntgo4sTkafVmLKeqC5OcRPgKHoUWM6gnXJhq0RRvrouEpG')
+
+2023/04/08 23:54:18 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[108.149ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dass事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 23:55:22 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[35.884ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dass事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 23:55:37 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[34.049ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dass事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 23:59:47 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[41.795ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dass事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/08 23:59:50 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[71.775ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dass事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:00:02 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[30.581ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dass事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:00:08 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[34.441ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dassss事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:00:09 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[170.923ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dassss事是谁实上sssdsdsdsssssssddasssddssddssa','$2a$04$sD2A2Zpp3Ev9QvvnPMaZhOjzF6lSovHc7jcuBZbrpj8p9KTdm6Xxe')
+
+2023/04/09 00:00:16 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[28.663ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dsss事是谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:00:16 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[136.716ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dsss事是谁实上sssdsdsdsssssssddasssddssddssa','$2a$04$SLUONPOjrPkREmfdk3bHhOST1kMUL6IUfpb8vlDDrnUkzO7IHFOfi')
+
+2023/04/09 00:00:21 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[32.130ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dsss事是ss谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:00:21 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[101.007ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dsss事是ss谁实上sssdsdsdsssssssddasssddssddssa','$2a$04$bbkVfC3UFWMc6u9PhVErae8.5Hyx/NCGLKJ31SbmjXHV9e8tHC7XS')
+
+2023/04/09 00:01:21 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[32.789ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dsss事是ss谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:01:22 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[34.297ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dsss事是ss谁实上sssdsdsdsssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:02:12 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[34.148ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dsss事是ss谁实上sssdsdsdsssssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:02:12 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[119.249ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dsss事是ss谁实上sssdsdsdsssssssssddasssddssddssa','$2a$04$.8gsgt3qVmgHNheFVga9c.EIp7HwhLblkVKeH0SNev/6uASaOFfK2')
+
+2023/04/09 00:09:39 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[97.101ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dsss事是ss谁实上sssdsdsdssssssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:09:39 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[124.879ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dsss事是ss谁实上sssdsdsdssssssssssddasssddssddssa','$2a$04$kWkOAE5geQGkNPgR.XRnvO2OV0AuJ558twZt5w8ZsbhYxctcpxX7W')
+
+2023/04/09 00:10:05 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[43.633ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dsssssssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:10:05 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[102.062ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dsssssssssssddasssddssddssa','$2a$04$DAroK/qHJAj7sLT6eArtYeHrW.yeNogUQSqvif0QyEXuSuv0HnRWa')
+
+2023/04/09 00:13:33 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[52.701ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dsssssssssssddasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:13:35 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[128.539ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dsssssssssssddsssasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 00:13:35 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[178.417ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dsssssssssssddsssasssddssddssa','$2a$04$vUq4ODor/sEcU/0CIUBl2uuJcqzVSJ0RmtY.kNcSy.zCFkoRsWMp6')
+
+2023/04/09 00:17:51 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[42.130ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dsssssssssssddsssasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 12:32:37 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[79.592ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'asss索dsssssssssssddsssasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 12:32:43 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[84.063ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'asss索dsssssssddsssasssddssddssa' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 12:32:44 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[168.004ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','asss索dsssssssddsssasssddssddssa','$2a$04$aT/GibCVrRdhYLhWJYSsZubE4nknjouWQHL73OOW.qhbxol1uNXDS')
+
+2023/04/09 12:43:41 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[84.929ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_yiqiang@aliyun.com' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 12:43:41 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[169.850ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','wu_yiqiang@aliyun.com','$2a$04$MpJgHtmt1IHxnoBODyLVEOzbzibsIrUKAwrFrrDLPyVGUHdj047wO')
+
+2023/04/09 12:43:52 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[84.281ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_yiqiang@aliyun.cm' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 12:43:53 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[171.913ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','wu_yiqiang@aliyun.cm','$2a$04$FmHcGiy6guzZh2dqw.7Pluh55engYNR6We7TFWMwTCyGxcZFKafpO')
+
+2023/04/09 12:44:10 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[80.861ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_yiqianga@liyun.cm' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 12:44:10 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[169.425ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('张deszdddddddddd','wu_yiqianga@liyun.cm','$2a$04$cQXpYXvj7w3V88O3tpvnDekrvGuLvhU0B4tQCuoi.Cd6hIoU/8/Zm')
+
+2023/04/09 12:45:54 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[84.252ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 12:45:54 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[169.212ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('atlas','wu_qiang@aliyun.com','$2a$04$JNQxLjE2eUo1gbTTH7d6uekdBfcr0r6EgHdmq9qmscxlUA8x4.zVe')
+
+2023/04/09 12:52:45 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[78.714ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiag@aliyun.com' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 12:52:45 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[161.659ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('atlas','wu_qiag@aliyun.com','$2a$04$zorTujVSxguCiDnvB72/..YOdHK4jozojCXn1XLVJZmgYf6iGK7tO')

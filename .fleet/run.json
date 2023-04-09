@@ -3,7 +3,8 @@
     {
       "type": "go",
       "name": "Go configuration",
-      "goExecPath": "$USER_HOME$/go/bin/fresh",
+//      "goExecPath": "$USER_HOME$/go/bin/fresh",
+      "goExecPath": "go",
       "buildParams": [],
     },
 

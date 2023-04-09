@@ -16,9 +16,9 @@ type Response struct {
 // Success 响应成功 ErrorCode 为 0 表示成功
 func Success(c *gin.Context, data interface{}) {
 	c.JSON(http.StatusOK, Response{
-		0,
+		200,
 		data,
-		"ok",
+		"success",
 	})
 }
 

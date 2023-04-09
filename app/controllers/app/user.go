@@ -14,10 +14,9 @@ func Register(c *gin.Context) {
 		response.ValidateFail(c, request.GetErrorMsg(form, err))
 		return
 	}
-
-	if err, user := services.UserService.Register(form); err != nil {
+	if err, _ := services.UserService.Register(form); err != nil {
 		response.BusinessFail(c, err.Error())
 	} else {
-		response.Success(c, user)
+		response.Success(c, "注册成功")
 	}
 }

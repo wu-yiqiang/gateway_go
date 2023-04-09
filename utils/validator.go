@@ -1,8 +1,6 @@
 package utils
 
 import (
-	"fmt"
-	_"fmt"
   "github.com/go-playground/validator/v10"
 	"regexp"
 )
@@ -20,8 +18,7 @@ func ValidateMobile(fl validator.FieldLevel) bool {
 // ValidateEmail 校验邮箱
 func ValidateEmail(fl validator.FieldLevel) bool {
 	email := fl.Field().String()
-	ok, _ := regexp.MatchString(`^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$`, email)
-	fmt.Println("叫阿啊啥的",ok)
+	ok, _ := regexp.MatchString(`^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$`, email)
 	if !ok {
 		return false
 	}

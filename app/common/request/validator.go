@@ -1,7 +1,7 @@
 package request
 
 import (
-  "github.com/go-playground/validator/v10"
+	"github.com/go-playground/validator/v10"
 )
 
 type Validator interface {
@@ -22,6 +22,7 @@ func GetErrorMsg(request interface{}, err error) string {
         if message, exist := request.(Validator).GetMessages()[v.Field() + "." + v.Tag()]; exist {
           return message
         }
+
       }
       return v.Error()
     }
