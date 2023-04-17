@@ -7,7 +7,7 @@ import (
 	"gateway_go/app/services"
 )
 
-// Register 用户注册
+// 用户注册
 func Register(c *gin.Context) {
 	var form request.Register
 	if err := c.ShouldBindJSON(&form); err != nil {

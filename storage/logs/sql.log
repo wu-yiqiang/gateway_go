@@ -694,3 +694,90 @@
 
 2023/04/09 12:52:45 /Users/atlas/go/src/gateway_go/app/services/user.go:25
 [161.659ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`) VALUES ('atlas','wu_qiag@aliyun.com','$2a$04$zorTujVSxguCiDnvB72/..YOdHK4jozojCXn1XLVJZmgYf6iGK7tO')
+
+2023/04/09 14:50:49 /Users/atlas/go/src/gateway_go/app/services/user.go:31 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[43.046ms] [rows:0] SELECT * FROM `users` WHERE email = 'wu_qiag@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 14:51:21 /Users/atlas/go/src/gateway_go/app/services/user.go:31 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[41.207ms] [rows:0] SELECT * FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:18:14 /Users/atlas/go/src/gateway_go/app/services/user.go:31 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[40.729ms] [rows:0] SELECT * FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:18:14 /Users/atlas/go/src/gateway_go/app/services/user.go:31 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[40.533ms] [rows:0] SELECT * FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:18:16 /Users/atlas/go/src/gateway_go/app/services/user.go:31 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[41.054ms] [rows:0] SELECT * FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:45:46 /Users/atlas/go/src/gateway_go/app/services/user.go:31 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[42.504ms] [rows:0] SELECT * FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:46:58 /Users/atlas/go/src/gateway_go/app/services/user.go:19 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[48.283ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:46:58 /Users/atlas/go/src/gateway_go/app/services/user.go:25 Error 1054 (42S22): Unknown column 'created_at' in 'field list'
+[127.508ms] [rows:0] INSERT INTO `users` (`username`,`email`,`password`,`created_at`,`updated_at`,`deleted_at`) VALUES ('lllll','wu_qiang@aliyun.com','$2a$04$2/5WKRjWEwHnn.sysGwRn.MOl7n5JU8c6JuT2a5gG7OCrdxQoyWq.','2023-04-09 15:46:58.256','2023-04-09 15:46:58.256',NULL)
+
+2023/04/09 15:50:05 /Users/atlas/go/src/gateway_go/app/services/user.go:19 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[46.105ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:50:05 /Users/atlas/go/src/gateway_go/app/services/user.go:25 Error 1054 (42S22): Unknown column 'deleted_at' in 'field list'
+[128.456ms] [rows:0] INSERT INTO `users` (`username`,`email`,`password`,`created_time`,`updated_time`,`deleted_at`) VALUES ('lllll','wu_qiang@aliyun.com','$2a$04$lIjNcpA4KcAtEDPm2uDB1.v/KC3x0vw/Z3xHvtUF6uEMuYvyc6JMe','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL)
+
+2023/04/09 15:50:07 /Users/atlas/go/src/gateway_go/app/services/user.go:19 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[45.372ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:50:07 /Users/atlas/go/src/gateway_go/app/services/user.go:25 Error 1054 (42S22): Unknown column 'deleted_at' in 'field list'
+[127.894ms] [rows:0] INSERT INTO `users` (`username`,`email`,`password`,`created_time`,`updated_time`,`deleted_at`) VALUES ('lllll','wu_qiang@aliyun.com','$2a$04$q85pEmcKg.5MX/F83.PcK.h/6IJaubriVs1ACTuayopy6DBT.RJ3e','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL)
+
+2023/04/09 15:52:41 /Users/atlas/go/src/gateway_go/app/services/user.go:19 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[46.647ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:52:41 /Users/atlas/go/src/gateway_go/app/services/user.go:25 Error 1054 (42S22): Unknown column 'deleted_at' in 'field list'
+[129.701ms] [rows:0] INSERT INTO `users` (`username`,`email`,`password`,`created_time`,`updated_time`,`deleted_at`) VALUES ('lllll','wu_qiang@aliyun.com','$2a$04$NaczhAsIk09LQQhyMxh.ueh0vmtCii0nqgzAKf8NjRHfT0Znaoc4e','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL)
+
+2023/04/09 15:52:42 /Users/atlas/go/src/gateway_go/app/services/user.go:19 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[45.924ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:52:42 /Users/atlas/go/src/gateway_go/app/services/user.go:25 Error 1054 (42S22): Unknown column 'deleted_at' in 'field list'
+[130.120ms] [rows:0] INSERT INTO `users` (`username`,`email`,`password`,`created_time`,`updated_time`,`deleted_at`) VALUES ('lllll','wu_qiang@aliyun.com','$2a$04$Ok//lM5PTSxeYyKBvZMDB.JNysH8xvB3L1zggvzTVSDsoWsXV1hRS','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL)
+
+2023/04/09 15:52:42 /Users/atlas/go/src/gateway_go/app/services/user.go:19 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[46.025ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:52:43 /Users/atlas/go/src/gateway_go/app/services/user.go:25 Error 1054 (42S22): Unknown column 'deleted_at' in 'field list'
+[137.290ms] [rows:0] INSERT INTO `users` (`username`,`email`,`password`,`created_time`,`updated_time`,`deleted_at`) VALUES ('lllll','wu_qiang@aliyun.com','$2a$04$jHvnpevGoxxvDLaCaJLH3Oy26UZfqEVB8/QabxYafLM2GtRK4xcGi','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL)
+
+2023/04/09 15:52:52 /Users/atlas/go/src/gateway_go/app/services/user.go:19 Error 1054 (42S22): Unknown column 'users.deleted_at' in 'where clause'
+[46.323ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:52:52 /Users/atlas/go/src/gateway_go/app/services/user.go:25 Error 1054 (42S22): Unknown column 'deleted_at' in 'field list'
+[128.929ms] [rows:0] INSERT INTO `users` (`username`,`email`,`password`,`created_time`,`updated_time`,`deleted_at`) VALUES ('lllll','wu_qiang@aliyun.com','$2a$04$fzZxiJOX6Y2OVsWXPokIW.GUo2kJnLMy8qODSCr3IqN9PXuYX8GX6','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL)
+
+2023/04/09 15:54:30 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[259.156ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' AND `users`.`is_deleted` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 15:54:31 /Users/atlas/go/src/gateway_go/app/services/user.go:25 Error 1048 (23000): Column 'is_deleted' cannot be null
+[334.520ms] [rows:0] INSERT INTO `users` (`username`,`email`,`password`,`created_time`,`updated_time`,`is_deleted`) VALUES ('lllll','wu_qiang@aliyun.com','$2a$04$iEBHSiXvdKvwUnZfY8ffjOYADVsZO.OO02WdzWROX9Mutq5IMHK/6','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL)
+
+2023/04/09 16:00:04 /Users/atlas/go/src/gateway_go/app/services/user.go:19
+[85.434ms] [rows:1] SELECT `id` FROM `users` WHERE email = 'wu_qiang@aliyun.com' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 16:00:09 /Users/atlas/go/src/gateway_go/app/services/user.go:19 record not found
+[93.902ms] [rows:0] SELECT `id` FROM `users` WHERE email = 'wu_qang@aliyun.com' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 16:00:09 /Users/atlas/go/src/gateway_go/app/services/user.go:25
+[168.205ms] [rows:1] INSERT INTO `users` (`username`,`email`,`password`,`created_time`,`updated_time`,`is_deleted`) VALUES ('lllll','wu_qang@aliyun.com','$2a$04$Y1QjlIKquK8.WBSfnGe6qeHNDTuNeNUQFyEq1fa6GBU0H0yTA2ZJK','0000-00-00 00:00:00','0000-00-00 00:00:00',false)
+
+2023/04/09 16:00:24 /Users/atlas/go/src/gateway_go/app/services/user.go:31
+[88.153ms] [rows:1] SELECT * FROM `users` WHERE email = 'wu_qang@aliyun.com' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 17:22:14 /Users/atlas/go/src/gateway_go/app/services/user.go:32
+[84.556ms] [rows:1] SELECT * FROM `users` WHERE email = 'wu_qang@aliyun.com' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 17:30:05 /Users/atlas/go/src/gateway_go/app/services/user.go:32
+[87.458ms] [rows:1] SELECT * FROM `users` WHERE email = 'wu_qang@aliyun.com' ORDER BY `users`.`id` LIMIT 1
+
+2023/04/09 17:35:07 /Users/atlas/go/src/gateway_go/app/services/user.go:42
+[87.005ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 61 ORDER BY `users`.`id` LIMIT 1

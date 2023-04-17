@@ -11,6 +11,9 @@ import (
   "os/signal"
   "syscall"
   "time"
+  _"gateway_go/docs"
+  "github.com/swaggo/files"
+  "github.com/swaggo/gin-swagger"
 )
 
 //func setupRouter() *gin.Engine {
@@ -56,7 +59,8 @@ func RunServer() {
 
 func setupRouter() *gin.Engine {
   router := gin.Default()
-
+  // swagger
+  router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
   // 前端项目静态资源
   router.StaticFile("/", "./static/dist/index.html")
   router.Static("/assets", "./static/dist/assets")

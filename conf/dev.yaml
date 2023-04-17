@@ -32,6 +32,9 @@ mysql:
 jwt:
   secret: 3Bde3BGEbYqtqyEUzW3ry8jKFcaPH17fRmTmqE7MDr05Lwj95uruRKrrkb44TJ4s
   jwt_ttl: 43200
+
+swagger:
+  url: 'http://localhost:8181/swagger/doc.json'
 #redis:
 #  driver: mysql # 数据库驱动
 #  host: 127.0.0.1 # 域名

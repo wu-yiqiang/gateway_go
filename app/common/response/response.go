@@ -13,7 +13,7 @@ type Response struct {
 	Message string      `json:"message"` // 信息
 }
 
-// Success 响应成功 ErrorCode 为 0 表示成功
+// Success 响应成功  Code为200表示成功
 func Success(c *gin.Context, data interface{}) {
 	c.JSON(http.StatusOK, Response{
 		200,
@@ -22,7 +22,7 @@ func Success(c *gin.Context, data interface{}) {
 	})
 }
 
-// Fail 响应失败 ErrorCode 不为 0 表示失败
+// Fail 响应失败 Code不为200表示失败
 func Fail(c *gin.Context, errorCode int, msg string) {
 	c.JSON(http.StatusOK, Response{
 		errorCode,
@@ -44,4 +44,9 @@ func ValidateFail(c *gin.Context, msg string) {
 // BusinessFail 业务逻辑失败
 func BusinessFail(c *gin.Context, msg string) {
 	Fail(c, global.Errors.BusinessError.ErrorCode, msg)
+}
+
+// 鉴权失败
+func TokenFail(c *gin.Context) {
+	FailByError(c, global.Errors.TokenError)
 }

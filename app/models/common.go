@@ -1,7 +1,7 @@
 package models
 
 import (
-  "gorm.io/gorm"
+  _"gorm.io/gorm"
   "time"
 )
 
@@ -12,11 +12,11 @@ type ID struct {
 
 // 创建、更新时间
 type Timestamps struct {
-  CreatedAt time.Time `json:"created_at"`
-  UpdatedAt time.Time `json:"updated_at"`
+  CreatedTime time.Time `json:"created_time"`
+  UpdatedTime time.Time `json:"updated_time"`
 }
 
 // 软删除
-type isDeleted struct {
-  DeletedAt gorm.DeletedAt `json:"deleted_at" gorm:"index"`
+type IsDeleted struct {
+  IsDeleted bool `json:"is_deleted" gorm:"index"`
 }
