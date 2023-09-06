@@ -10,6 +10,7 @@ const (
 	TokenType = "Bearer"
 	AppGuardName = "app"
 )
+
 type jwtService struct {
 }
 
@@ -24,8 +25,6 @@ type JwtUser interface {
 type CustomClaims struct {
 	jwt.StandardClaims
 }
-
-
 
 type TokenOutPut struct {
 	AccessToken string `json:"access_token"`

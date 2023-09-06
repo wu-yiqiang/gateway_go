@@ -16,16 +16,6 @@ import (
   "github.com/swaggo/gin-swagger"
 )
 
-//func setupRouter() *gin.Engine {
-//  router := gin.Default()
-//
-//  // 注册 api 分组路由
-//  apiGroup := router.Group("/api")
-//  routes.SetApiGroupRoutes(apiGroup)
-//
-//  return router
-//}
-
 // RunServer 启动服务器
 func RunServer() {
   r := setupRouter()
@@ -69,11 +59,11 @@ func setupRouter() *gin.Engine {
   router.Static("/public", "./static")
   router.Static("/storage", "./storage/app/public")
 
-  // 注册 api 分组路由 /api
+  // api 分组路由 /api
   apiGroup := router.Group("/api")
   routes.SetApiGroupRoutes(apiGroup)
 
-  // 注册 user 分组路由 /user
+  // user 分组路由 /user
   userGroup := router.Group("/user")
   routes.SetUserGroupRoutes(userGroup)
   return router

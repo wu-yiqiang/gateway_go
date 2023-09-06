@@ -341,3 +341,28 @@
 [2023-04-09 17:35:05.370]	dev.info	gateway_go/main.go:23	log init success!
 [2023-04-15 22:56:09.377]	dev.info	gateway_go/main.go:23	log init success!
 [2023-04-18 00:02:19.836]	dev.info	gateway_go/main.go:39	log init success!
+[2023-04-24 22:30:09.862]	dev.info	gateway_go/main.go:39	log init success!
+[2023-04-24 22:30:09.891]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-24 22:37:53.333]	dev.info	gateway_go/main.go:39	log init success!
+[2023-04-24 22:37:53.372]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-24 22:53:07.429]	dev.info	gateway_go/main.go:37	log init success!
+[2023-04-24 22:53:07.459]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-24 22:55:18.022]	dev.info	gateway_go/main.go:24	log init success!
+[2023-04-24 22:55:18.049]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-04-24 23:04:01.469]	dev.info	gateway_go/main.go:30	log init success!
+[2023-04-24 23:04:01.496]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: connection refused"}
+[2023-09-05 23:31:42.088]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-05 23:32:17.891]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-05 23:32:28.871]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-05 23:33:26.849]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-05 23:33:35.305]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-06 08:47:14.831]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-06 08:48:29.836]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: operation timed out"}
+[2023-09-06 08:48:38.730]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-06 08:48:53.603]	test.info	gateway_go/main.go:26	log init success!
+[2023-09-06 08:51:59.250]	test.info	gateway_go/main.go:26	log init success!
+[2023-09-06 08:53:05.919]	test.info	gateway_go/main.go:26	log init success!
+[2023-09-06 08:53:11.387]	test.info	gateway_go/main.go:26	log init success!
+[2023-09-06 10:42:46.569]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-06 10:43:01.636]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-06 10:44:16.639]	dev.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 43.154.121.146:3306: connect: operation timed out"}

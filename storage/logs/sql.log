@@ -781,3 +781,24 @@
 
 2023/04/09 17:35:07 /Users/atlas/go/src/gateway_go/app/services/user.go:42
 [87.005ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 61 ORDER BY `users`.`id` LIMIT 1
+
+2023/04/24 22:30:09 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/24 22:37:53 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/24 22:53:07 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/24 22:55:18 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/04/24 23:04:01 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: connection refused
+
+2023/09/06 08:48:29 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: operation timed out
+
+2023/09/06 10:44:16 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 43.154.121.146:3306: connect: operation timed out

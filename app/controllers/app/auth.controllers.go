@@ -27,6 +27,8 @@ func Login(c *gin.Context) {
 	}
 }
 
+
+
 func Info(c *gin.Context) {
 	err, user := services.UserService.GetUserInfo(c.Keys["id"].(string))
 	if err != nil {
