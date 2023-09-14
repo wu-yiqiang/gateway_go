@@ -1,13 +1,13 @@
 package services
 
 import (
-	"github.com/dgrijalva/jwt-go"
 	"gateway_go/global"
+	"github.com/dgrijalva/jwt-go"
 	"time"
 )
 
 const (
-	TokenType = "Bearer"
+	TokenType    = "Bearer"
 	AppGuardName = "app"
 )
 
@@ -27,9 +27,9 @@ type CustomClaims struct {
 }
 
 type TokenOutPut struct {
-	AccessToken string `json:"access_token"`
-	ExpiresIn int `json:"expires_in"`
-	TokenType string `json:"token_type"`
+	Token   string `json:"token"`
+	Expires int    `json:"expires"`
+	Type    string `json:"type"`
 }
 
 // CreateToken 生成 Token
@@ -42,11 +42,9 @@ func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (token
 				Id:        user.GetUid(),
 				Issuer:    GuardName, // 用于在中间件中区分不同客户端颁发的 token，避免 token 跨端使用
 				NotBefore: time.Now().Unix() - 1000,
-				},
-				},
-				)
-	
-	
+			},
+		},
+	)
 
 	tokenStr, err := token.SignedString([]byte(global.App.Config.Jwt.Secret))
 
@@ -54,6 +52,6 @@ func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (token
 		tokenStr,
 		int(global.App.Config.Jwt.JwtTtl),
 		TokenType,
-		}
-		return
+	}
+	return
 }
