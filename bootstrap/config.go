@@ -4,10 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"gateway_go/global"
-	"os"
-
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
+	"os"
 )
 
 func InitializeConfig() *viper.Viper {

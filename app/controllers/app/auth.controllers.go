@@ -1,21 +1,16 @@
 package app
 
 import (
+	"fmt"
 	"gateway_go/app/common/request"
 	"gateway_go/app/common/response"
 	"gateway_go/app/models"
 	"gateway_go/app/services"
+	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"strconv"
 	"strings"
 )
-
-//type responseUser struct {
-//	User    models.User          `json:"user"`
-//	Menus   []models.Menus       `json:"menus"`
-//	Routers []models.Routers     `json:"routers"`
-//	Token   services.TokenOutPut `json:"token"`
-//}
 
 type responseUser struct {
 	models.User
@@ -87,6 +82,16 @@ func Login(c *gin.Context) {
 		resonseUserInfo := responseUser{User: user, TokenOutPut: token, Menus: menuArr, Routers: routerArr}
 		response.Success(c, resonseUserInfo)
 	}
+}
+
+func Logout(c *gin.Context) {
+	fmt.Println("for")
+	err := services.JwtService.JoinBlackList(c.Keys["token"].(*jwt.Token))
+	if err != nil {
+		response.BusinessFail(c, "登出失败")
+		return
+	}
+	response.Success(c, nil)
 }
 
 func Info(c *gin.Context) {

@@ -122,3 +122,28 @@
 [2023-09-14 07:30:38.598]	dev.info	gateway_go/main.go:26	log init success!
 [2023-09-14 08:32:43.847]	dev.info	gateway_go/main.go:26	log init success!
 [2023-09-14 08:35:06.656]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 10:12:38.165]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 14:11:58.577]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 15:41:41.223]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 15:41:41.294]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 15:42:09.893]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 15:42:09.963]	dev.error	bootstrap/redis.go:19	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 16:49:58.726]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 16:49:58.795]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 17:17:29.788]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 17:17:29.857]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 23:22:50.401]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 23:22:50.471]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 23:23:40.395]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 23:23:40.464]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 23:24:16.353]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 23:24:16.423]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 23:26:11.124]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 23:26:11.194]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 23:27:36.003]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 23:27:36.074]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 23:28:29.065]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 23:28:29.134]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 23:41:38.986]	dev.info	gateway_go/main.go:26	log init success!
+[2023-09-14 23:41:39.057]	dev.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: address 127.0.0.1: missing port in address"}
+[2023-09-14 23:44:49.969]	dev.info	gateway_go/main.go:26	log init success!

@@ -1,11 +1,11 @@
 package middleware
 
 import (
-	"github.com/dgrijalva/jwt-go"
-	"github.com/gin-gonic/gin"
 	"gateway_go/app/common/response"
 	"gateway_go/app/services"
 	"gateway_go/global"
+	"github.com/dgrijalva/jwt-go"
+	"github.com/gin-gonic/gin"
 )
 
 func JWTAuth(GuardName string) gin.HandlerFunc {
@@ -35,7 +35,6 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			c.Abort()
 			return
 		}
-
 		c.Set("token", token)
 		c.Set("id", claims.Id)
 	}

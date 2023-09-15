@@ -3031,3 +3031,138 @@
 
 2023/09/14 08:35:08 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
 [0.321ms] [rows:1] SELECT * FROM `menus` WHERE id = '3' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[3.064ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutters' ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.936ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[1.282ms] [rows:1] SELECT * FROM `roles` WHERE name = 'admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[0.328ms] [rows:1] SELECT * FROM `roles` WHERE name = 'sys_admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[0.523ms] [rows:1] SELECT * FROM `routers` WHERE id = '1' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[0.257ms] [rows:1] SELECT * FROM `routers` WHERE id = '2' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.431ms] [rows:1] SELECT * FROM `menus` WHERE id = '1' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.300ms] [rows:1] SELECT * FROM `menus` WHERE id = '2' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 10:12:45 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.506ms] [rows:1] SELECT * FROM `menus` WHERE id = '3' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[1.785ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutters' ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.618ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[2.013ms] [rows:1] SELECT * FROM `roles` WHERE name = 'admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[0.590ms] [rows:1] SELECT * FROM `roles` WHERE name = 'sys_admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[0.778ms] [rows:1] SELECT * FROM `routers` WHERE id = '1' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[0.219ms] [rows:1] SELECT * FROM `routers` WHERE id = '2' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.338ms] [rows:1] SELECT * FROM `menus` WHERE id = '1' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.208ms] [rows:1] SELECT * FROM `menus` WHERE id = '2' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 14:12:07 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.220ms] [rows:1] SELECT * FROM `menus` WHERE id = '3' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[3.047ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutters' ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.406ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[4.829ms] [rows:1] SELECT * FROM `roles` WHERE name = 'admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[0.395ms] [rows:1] SELECT * FROM `roles` WHERE name = 'sys_admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[0.716ms] [rows:1] SELECT * FROM `routers` WHERE id = '1' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[0.296ms] [rows:1] SELECT * FROM `routers` WHERE id = '2' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.443ms] [rows:1] SELECT * FROM `menus` WHERE id = '1' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.268ms] [rows:1] SELECT * FROM `menus` WHERE id = '2' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 15:42:24 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.259ms] [rows:1] SELECT * FROM `menus` WHERE id = '3' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[0.856ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutters' ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.595ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[0.577ms] [rows:1] SELECT * FROM `roles` WHERE name = 'admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[0.371ms] [rows:1] SELECT * FROM `roles` WHERE name = 'sys_admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[0.362ms] [rows:1] SELECT * FROM `routers` WHERE id = '1' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[0.305ms] [rows:1] SELECT * FROM `routers` WHERE id = '2' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.316ms] [rows:1] SELECT * FROM `menus` WHERE id = '1' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.293ms] [rows:1] SELECT * FROM `menus` WHERE id = '2' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 16:48:58 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.303ms] [rows:1] SELECT * FROM `menus` WHERE id = '3' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[1.450ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutters' ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.689ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[1.042ms] [rows:1] SELECT * FROM `roles` WHERE name = 'admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51
+[0.683ms] [rows:1] SELECT * FROM `roles` WHERE name = 'sys_admin' ORDER BY `roles`.`name` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[5.035ms] [rows:1] SELECT * FROM `routers` WHERE id = '1' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61
+[1.626ms] [rows:1] SELECT * FROM `routers` WHERE id = '2' ORDER BY `routers`.`name` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.478ms] [rows:1] SELECT * FROM `menus` WHERE id = '1' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.253ms] [rows:1] SELECT * FROM `menus` WHERE id = '2' ORDER BY `menus`.`name` LIMIT 1
+
+2023/09/14 23:26:13 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71
+[0.249ms] [rows:1] SELECT * FROM `menus` WHERE id = '3' ORDER BY `menus`.`name` LIMIT 1
