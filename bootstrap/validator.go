@@ -1,9 +1,9 @@
 package bootstrap
 
 import (
-  "github.com/gin-gonic/gin/binding"
-	"github.com/go-playground/validator/v10"
 	"gateway_go/utils"
+	"github.com/gin-gonic/gin/binding"
+	"github.com/go-playground/validator/v10"
 	"reflect"
 	"strings"
 )

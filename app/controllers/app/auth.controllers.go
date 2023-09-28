@@ -1,7 +1,6 @@
 package app
 
 import (
-	"fmt"
 	"gateway_go/app/common/request"
 	"gateway_go/app/common/response"
 	"gateway_go/app/models"
@@ -85,7 +84,6 @@ func Login(c *gin.Context) {
 }
 
 func Logout(c *gin.Context) {
-	fmt.Println("for")
 	err := services.JwtService.JoinBlackList(c.Keys["token"].(*jwt.Token))
 	if err != nil {
 		response.BusinessFail(c, "登出失败")

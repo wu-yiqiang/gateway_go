@@ -29,6 +29,10 @@ func main() {
 	global.App.DB = bootstrap.InitializeDB()
 	// 初始化Redis
 	global.App.Redis = bootstrap.InitializeRedis()
+	// 初始化定时任务
+	bootstrap.InitCron()
+	// 初始化文件系统
+	// bootstrap.InitializeStorage()
 
 	// 程序关闭前，释放数据库连接
 	defer func() {

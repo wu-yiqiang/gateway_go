@@ -65,5 +65,9 @@ func setupRouter() *gin.Engine {
 	userGroup := router.Group("/user")
 	routes.SetUserGroupRoutes(userGroup)
 
+	// demo 分组路由 /demo
+	DemoGroup := router.Group("/demo")
+	routes.SetDemoGroupRoutes(DemoGroup)
+
 	return router
 }

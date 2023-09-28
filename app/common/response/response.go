@@ -1,8 +1,8 @@
 package response
 
 import (
-	"github.com/gin-gonic/gin"
 	"gateway_go/global"
+	"github.com/gin-gonic/gin"
 	"net/http"
 )
 

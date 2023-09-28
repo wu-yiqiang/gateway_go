@@ -17,5 +17,5 @@ type Timestamps struct {
 
 // 软删除
 type IsDelete struct {
-	IsDelete int `json:"is_deleted" gorm:"index"`
+	IsDelete int `json:"is_delete" gorm:"index"`
 }
