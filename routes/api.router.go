@@ -2,7 +2,7 @@ package routes
 
 import (
 	_ "fmt"
-	_ "gateway_go/app/common/request"
+	_ "gateway_go/common/request"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"

@@ -2,7 +2,7 @@ package app
 
 import (
 	"fmt"
-	"gateway_go/app/common/response"
+	"gateway_go/common/response"
 	"gateway_go/global"
 	"gateway_go/utils"
 	"github.com/gin-gonic/gin"

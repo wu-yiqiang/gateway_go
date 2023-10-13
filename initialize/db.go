@@ -1,4 +1,4 @@
-package bootstrap
+package initialize
 
 import (
 	"gateway_go/global"

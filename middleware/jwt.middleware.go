@@ -1,9 +1,9 @@
 package middleware
 
 import (
-	"gateway_go/app/common/response"
-	"gateway_go/app/services"
+	"gateway_go/common/response"
 	"gateway_go/global"
+	"gateway_go/services"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 )

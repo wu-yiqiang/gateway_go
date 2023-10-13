@@ -1,17 +1,17 @@
 package app
 
 import (
-	"gateway_go/app/common/request"
-	"gateway_go/app/common/response"
-	"gateway_go/app/services"
+	request2 "gateway_go/common/request"
+	"gateway_go/common/response"
+	"gateway_go/services"
 	"github.com/gin-gonic/gin"
 )
 
 // 用户注册
 func Register(c *gin.Context) {
-	var form request.Register
+	var form request2.Register
 	if err := c.ShouldBindJSON(&form); err != nil {
-		response.ValidateFail(c, request.GetErrorMsg(form, err))
+		response.ValidateFail(c, request2.GetErrorMsg(form, err))
 		return
 	}
 	if err, _ := services.UserService.Register(form); err != nil {

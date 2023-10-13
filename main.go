@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gateway_go/bootstrap"
 	"gateway_go/global"
+	"gateway_go/initialize"
 	_ "github.com/gin-gonic/gin"
 	_ "net/http"
 )
@@ -16,23 +16,23 @@ import (
 // @host 127.0.0.1:9527
 func main() {
 	// 初始化配置
-	bootstrap.InitializeConfig()
+	initialize.InitializeConfig()
 
 	// 初始化校验器
-	bootstrap.InitializeValidator()
+	initialize.InitializeValidator()
 
 	// 初始化日志
-	global.App.Log = bootstrap.InitializeLog()
+	global.App.Log = initialize.InitializeLog()
 	global.App.Log.Info("log init success!")
 
 	// 初始化数据库
-	global.App.DB = bootstrap.InitializeDB()
+	global.App.DB = initialize.InitializeDB()
 	// 初始化Redis
-	global.App.Redis = bootstrap.InitializeRedis()
+	global.App.Redis = initialize.InitializeRedis()
 	// 初始化定时任务
-	bootstrap.InitCron()
+	initialize.InitCron()
 	// 初始化文件系统
-	// bootstrap.InitializeStorage()
+	// initialize.InitializeStorage()
 
 	// 程序关闭前，释放数据库连接
 	defer func() {
@@ -43,5 +43,5 @@ func main() {
 	}()
 
 	// 启动服务器
-	bootstrap.RunServer()
+	initialize.RunServer()
 }
