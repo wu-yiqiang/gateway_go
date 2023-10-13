@@ -9,6 +9,7 @@ import (
 	"github.com/gorilla/websocket"
 	"os"
 	"os/exec"
+	"time"
 )
 
 func WebSocketHandler(c *gin.Context) {
@@ -87,7 +88,24 @@ func FileIsExit(fileName string) bool {
 	return false
 }
 
-// 构建定时任务扫描目录下的文件信息构建文件表
-func time() {
+type Score struct {
+	Num int
+}
 
+func (s *Score) Do() {
+	fmt.Println("num:", s.Num)
+	time.Sleep(1 * 1 * time.Second)
+}
+func HandleConcurrencyRequest(c *gin.Context) {
+	//response.ValidateFail(c, "该文件不存在")
+	return
+}
+
+func Initjob() {
+	// 最大线程数量
+	num := 100 * 100 * 20
+	// 注册工作池，传入任务
+	// 参数1 worker并发个数
+	p := utils.NewWorkerPool(num)
+	p.Run()
 }

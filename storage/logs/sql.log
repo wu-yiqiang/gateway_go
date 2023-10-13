@@ -7555,3 +7555,198 @@
 
 2023/09/28 15:57:20 /Users/atlas/go/src/gateway_go/bootstrap/cron.go:94
 [1.190ms] [rows:1] UPDATE `files` SET `is_delete`=0 WHERE file_hash = '1b22cad16ec75291cbafee8c348443c917963f1145466a8f17d4df8b19e03702' AND `id` = 79 ORDER BY `files`.`id` LIMIT 1
+
+2023/10/02 17:03:51 /Users/atlas/go/src/gateway_go/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2023/10/13 10:22:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:20 record not found
+[21.090ms] [rows:0] SELECT `id` FROM `users` WHERE username = 'jon1' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 10:22:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:26
+[2.709ms] [rows:1] INSERT INTO `users` (`username`,`nickname`,`email`,`password`,`phone`,`role`,`create_time`,`update_time`,`is_delete`) VALUES ('jon1','jon','wu_yiqiang@aliyun.com','$2a$04$B6h.ULh.fsQ0Id3AqvyEUO1ZkH7rCdS.lIwT8wGwd9z7ciFJ7bQ/S','15770870823','',1697163775,1697163775,0)
+
+2023/10/13 10:36:09 /Users/atlas/go/src/gateway_go/app/services/user.service.go:20
+[1.624ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon1' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 10:36:14 /Users/atlas/go/src/gateway_go/app/services/user.service.go:20 record not found
+[1.023ms] [rows:0] SELECT `id` FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 10:36:14 /Users/atlas/go/src/gateway_go/app/services/user.service.go:26
+[4.530ms] [rows:1] INSERT INTO `users` (`username`,`nickname`,`email`,`password`,`phone`,`role`,`create_time`,`update_time`,`is_delete`) VALUES ('jon2','jon','wu_yiqiang@aliyun.com','$2a$04$MNtsoBS1qwulq.WfcfbA3evKv6Er6jhokp1t2ROF52FbSMQm/T3Z6','15770870823','',1697164574,1697164574,0)
+
+2023/10/13 10:36:29 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[0.721ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 10:36:29 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[1.658ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 10:36:29 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[3.356ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 10:36:29 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[2.263ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 10:36:29 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[1.947ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:21:31 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[2.675ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:21:31 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.564ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:21:31 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[4.033ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:21:31 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[1.927ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:21:31 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.841ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:21:54 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[0.754ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:21:54 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[2.028ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:21:54 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[0.549ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:21:54 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[0.357ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:21:54 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.309ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[0.747ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.636ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[1.772ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[0.917ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.475ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[1.268ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[5.296ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[1.515ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[0.598ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:21:55 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.400ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:24:39 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[3.043ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:24:39 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[1.041ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:24:39 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[1.077ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:24:39 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[0.920ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:24:39 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[1.688ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:26:33 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[1.295ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:26:33 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.689ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:26:33 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[0.632ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:26:33 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[0.570ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:26:33 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.743ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:29:34 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[3.708ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:29:34 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[1.169ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:29:34 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[2.611ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:29:34 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[0.689ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:29:34 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.483ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:31:35 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[1.895ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:31:35 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[1.841ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:31:35 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[0.851ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:31:35 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[0.442ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:31:35 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.293ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 11:33:40 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[4.210ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:33:40 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[0.635ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 11:33:40 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[2.367ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 11:33:40 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[1.479ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 11:33:40 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.389ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 14:39:04 /Users/atlas/go/src/gateway_go/app/services/user.service.go:32
+[1.622ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon2' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 14:39:04 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[2.097ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 14:39:04 /Users/atlas/go/src/gateway_go/app/services/user.service.go:51 record not found
+[0.900ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/13 14:39:04 /Users/atlas/go/src/gateway_go/app/services/user.service.go:61 record not found
+[0.402ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/13 14:39:04 /Users/atlas/go/src/gateway_go/app/services/user.service.go:71 record not found
+[0.267ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/13 15:04:51 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[9.373ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 15:06:56 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[1.318ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 15:07:21 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[2.825ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/13 15:07:34 /Users/atlas/go/src/gateway_go/app/services/user.service.go:42
+[2.450ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` LIMIT 1

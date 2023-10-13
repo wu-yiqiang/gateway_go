@@ -9,8 +9,10 @@ import (
 )
 
 func JWTAuth(GuardName string) gin.HandlerFunc {
+
 	return func(c *gin.Context) {
 		tokenStr := c.Request.Header.Get("Authorization")
+
 		if tokenStr == "" {
 			response.TokenFail(c)
 			c.Abort()

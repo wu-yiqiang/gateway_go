@@ -11,4 +11,6 @@ func SetDemoGroupRoutes(router *gin.RouterGroup) {
 	router.GET("/ws", app.WebSocketHandler)
 	router.GET("/upload", app.UploadHandler)
 	router.GET("/download", app.DownloadHandler)
+
+	router.GET("/concurrency", app.HandleConcurrencyRequest)
 }

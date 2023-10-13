@@ -1,14 +1,18 @@
 package app
 
 import (
+	"context"
+	"fmt"
 	"gateway_go/app/common/request"
 	"gateway_go/app/common/response"
 	"gateway_go/app/models"
 	"gateway_go/app/services"
+	"gateway_go/global"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"strconv"
 	"strings"
+	"time"
 )
 
 type responseUser struct {
@@ -33,7 +37,13 @@ func Login(c *gin.Context) {
 			response.BusinessFail(c, err.Error())
 			return
 		}
-		// 存储到 redis
+		// token存储到 redis
+		err = global.App.Redis.Set(context.Background(), user.Username, tokenData.Token, 120*60*time.Second).Err()
+		fmt.Println("err", err)
+		if err != nil {
+			response.BusinessFail(c, err.Error())
+			return
+		}
 		// 查询用户信息
 		err, userInfo := services.UserService.GetUserInfo(strconv.FormatUint(uint64(user.ID.ID), 10))
 		if err != nil {
