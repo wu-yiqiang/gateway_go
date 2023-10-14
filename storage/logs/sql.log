@@ -7756,3 +7756,219 @@
 
 2023/10/14 11:01:45 /Users/atlas/go/src/gateway_go/services/user.service.go:26
 [3.536ms] [rows:1] INSERT INTO `users` (`username`,`nickname`,`email`,`password`,`phone`,`role`,`create_time`,`update_time`,`is_delete`) VALUES ('jon3','jon','wu_yiqiang@aliyun.com','$2a$04$/BdLcZqEpLfC1m0clrclu.Z9mShNHDcOn2k9gpQoOmBqrEZPtSbLS','15770870823','',1697252505,1697252505,0)
+
+2023/10/14 11:27:49 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[3.022ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon3' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:27:50 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.516ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon3' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:27:59 /Users/atlas/go/src/gateway_go/services/user.service.go:20 record not found
+[0.764ms] [rows:0] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:27:59 /Users/atlas/go/src/gateway_go/services/user.service.go:26
+[3.255ms] [rows:1] INSERT INTO `users` (`username`,`nickname`,`email`,`password`,`phone`,`role`,`create_time`,`update_time`,`is_delete`) VALUES ('jon4','jon','wu_yiqiang@aliyun.com','$2a$04$T10wtZTMBukxihOpEIjGde5EYyNPIHnqzUDDlzbGHHyM0hGQqQxGa','15770870823','',1697254079,1697254079,0)
+
+2023/10/14 11:28:00 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.578ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:11 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[1.928ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:12 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.994ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:13 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[1.167ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:13 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[1.021ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:14 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.803ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:23 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.609ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:28 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[5.199ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:29 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.570ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:51 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[2.499ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:28:51 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[1.151ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:29:41 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[1.148ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:30:03 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.816ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:30:04 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.980ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon4' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:30:10 /Users/atlas/go/src/gateway_go/services/user.service.go:20 record not found
+[1.242ms] [rows:0] SELECT `id` FROM `users` WHERE username = 'jon5' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 11:30:10 /Users/atlas/go/src/gateway_go/services/user.service.go:26
+[12.893ms] [rows:1] INSERT INTO `users` (`username`,`nickname`,`email`,`password`,`phone`,`role`,`create_time`,`update_time`,`is_delete`) VALUES ('jon5','jon','wu_yiqiang@aliyun.com','$2a$04$QV8ZWD6.XYhYZLFMDjBybe4dszb.crKBB65zPxMKjPlLJmBHGfAla','15770870823','',1697254210,1697254210,0)
+
+2023/10/14 15:19:17 /Users/atlas/go/src/gateway_go/services/user.service.go:20 record not found
+[4.208ms] [rows:0] SELECT `id` FROM `users` WHERE username = 'jon' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 15:19:17 /Users/atlas/go/src/gateway_go/services/user.service.go:26
+[4.788ms] [rows:1] INSERT INTO `users` (`username`,`nickname`,`email`,`password`,`phone`,`role`,`create_time`,`update_time`,`is_delete`) VALUES ('jon','jon','wu_yiqiang@aliyun.com','$2a$04$ieaqkSiQ8j.xYabicmxNueo7tuk954NYvYmd4yXA6hYr79PHXZJa6','15770870823','',1697267957,1697267957,0)
+
+2023/10/14 15:19:57 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[0.683ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 15:26:23 /Users/atlas/go/src/gateway_go/services/user.service.go:32
+[3.023ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 15:26:23 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.798ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 10 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 15:26:23 /Users/atlas/go/src/gateway_go/services/user.service.go:51 record not found
+[5.918ms] [rows:0] SELECT * FROM `roles` WHERE name = '' ORDER BY `roles`.`name` LIMIT 1
+
+2023/10/14 15:26:23 /Users/atlas/go/src/gateway_go/services/user.service.go:61 record not found
+[6.244ms] [rows:0] SELECT * FROM `routers` WHERE id = '' ORDER BY `routers`.`name` LIMIT 1
+
+2023/10/14 15:26:23 /Users/atlas/go/src/gateway_go/services/user.service.go:71 record not found
+[2.904ms] [rows:0] SELECT * FROM `menus` WHERE id = '' ORDER BY `menus`.`name` LIMIT 1
+
+2023/10/14 16:22:05 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[2.694ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 16:24:41 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[1.484ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 16:24:41 /Users/atlas/go/src/gateway_go/services/user.service.go:20
+[2.099ms] [rows:1] SELECT `id` FROM `users` WHERE username = 'jon' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:15:36 /Users/atlas/go/src/gateway_go/services/user.service.go:32
+[2.039ms] [rows:1] SELECT * FROM `users` WHERE username = 'jon' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:48:38 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.858ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 10 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:49:34 /Users/atlas/go/src/gateway_go/services/user.service.go:20 record not found
+[1.291ms] [rows:0] SELECT `id` FROM `users` WHERE username = 'jon68' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:49:34 /Users/atlas/go/src/gateway_go/services/user.service.go:26
+[6.498ms] [rows:1] INSERT INTO `users` (`username`,`nickname`,`email`,`password`,`phone`,`role`,`create_time`,`update_time`,`is_delete`) VALUES ('jon68','jon','wu_yiqiang@aliyun.com','$2a$04$DtB9efBLMGtHr/tatg1TkuMO8UGIPYPGXquGZ0C0cS90xrzKcVGTi','15770870823','',1697276974,1697276974,0)
+
+2023/10/14 17:49:48 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.772ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:50:05 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.556ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:52:22 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.432ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:58:45 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.941ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:58:48 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.671ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 17:59:52 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.901ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:00:15 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[2.034ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:01:00 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[11.311ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:03:11 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.608ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:03:11 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57 sql: converting argument $1 type: unsupported type models.ID, a struct
+[0.037ms] [rows:0] SELECT * FROM `users` WHERE id = '{11}' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:05:49 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[2.452ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:05:49 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57 sql: converting argument $1 type: unsupported type models.ID, a struct
+[0.071ms] [rows:0] SELECT * FROM `users` WHERE id = '{11}' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:08:16 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[2.229ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:08:16 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57 sql: converting argument $1 type: unsupported type models.ID, a struct
+[0.044ms] [rows:0] SELECT * FROM `users` WHERE id = '{11}' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:08:51 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.214ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:08:51 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57 sql: converting argument $1 type: unsupported type models.ID, a struct
+[0.055ms] [rows:0] SELECT * FROM `users` WHERE id = '{11}' ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:03 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.509ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:03 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[0.934ms] [rows:1] SELECT * FROM `users` WHERE id = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:03 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[5.858ms] [rows:1] UPDATE `users` SET `password`='$2a$04$3JjUjFBUE21vpszL9aSiBuQHxl8Rd1tqK47XE/jx45gD3DpWqm/nC' WHERE id = 11 AND `id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:08 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.647ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:17 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.094ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:17 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[0.593ms] [rows:1] SELECT * FROM `users` WHERE id = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:17 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[2.192ms] [rows:1] UPDATE `users` SET `password`='$2a$04$g.rpPpYKJMRC4m2GSkm72.tvligjExssfCu52jb.eGhP3E2K9F09m' WHERE id = 11 AND `id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:25 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.065ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:44 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.896ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:44 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[0.582ms] [rows:1] SELECT * FROM `users` WHERE id = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:09:44 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[2.261ms] [rows:1] UPDATE `users` SET `password`='$2a$04$n9Nqg7VlTsDoT6sDzBWggOM/a.da0he1mbMwJVNg63uV50pw939RK' WHERE id = 11 AND `id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:10:32 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[4.655ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:10:32 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[0.367ms] [rows:1] SELECT * FROM `users` WHERE id = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:10:32 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[2.278ms] [rows:1] UPDATE `users` SET `password`='$2a$04$xw2aF.czvWLwLCAFmhC4V.0Roa.DJ9UTteVBsF/zIvUEBq/7D328O' WHERE id = 11 AND `id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:10:36 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.078ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:10:40 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.909ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:10:40 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[0.658ms] [rows:1] SELECT * FROM `users` WHERE id = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:10:40 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[1.094ms] [rows:1] UPDATE `users` SET `password`='$2a$04$wOTrj3TWQIzrMB12x1e9cuD71Dh5mnTOuXZMqD.0LydBSqFORynqW' WHERE id = 11 AND `id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:11:36 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.619ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:11:36 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[0.811ms] [rows:1] SELECT * FROM `users` WHERE id = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/10/14 18:11:36 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
+[4.643ms] [rows:1] UPDATE `users` SET `password`='$2a$04$IZ5j/6KpNr2Gb69TTfDdLOIftGy05xOaGq20h6k85em7ZzNptCrje' WHERE id = 11 AND `id` = 11 ORDER BY `users`.`id` LIMIT 1

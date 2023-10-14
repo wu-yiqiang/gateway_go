@@ -33,6 +33,7 @@ func SetUserGroupRoutes(router *gin.RouterGroup) {
 	authRouter := router.Group("").Use(middleware.JWTAuth(services.AppGuardName))
 	{
 		authRouter.POST("/auth/info", app2.Info)
+		authRouter.POST("/auth/changepassword", app2.ChangePassword)
 		authRouter.POST("/auth/logout", app2.Logout)
 	}
 }

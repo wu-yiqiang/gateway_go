@@ -1,6 +1,7 @@
 package routes
 
 import (
+	"gateway_go/middleware"
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
@@ -8,6 +9,10 @@ import (
 
 func SetupRouter() *gin.Engine {
 	router := gin.Default()
+	// 跨域中间件
+	router.Use(middleware.CORS())
+	// 日志
+	//router.Use(middleware.CO)
 	// swagger
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	//// 前端项目静态资源

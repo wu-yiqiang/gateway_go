@@ -8,6 +8,7 @@ import (
 	"gateway_go/global"
 	models2 "gateway_go/models"
 	services2 "gateway_go/services"
+	"gateway_go/validator"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"strconv"
@@ -23,13 +24,14 @@ type responseUser struct {
 }
 
 func Login(c *gin.Context) {
-	var form request2.Login
+	var form validator.Login
 	if err := c.ShouldBindJSON(&form); err != nil {
 		response.ValidateFail(c, request2.GetErrorMsg(form, err))
 		return
 	}
-
-	if err, user := services2.UserService.Login(form); err != nil {
+	err, user := services2.UserService.Login(form)
+	fmt.Println("login", user)
+	if err != nil {
 		response.BusinessFail(c, err.Error())
 	} else {
 		tokenData, err, _ := services2.JwtService.CreateToken(services2.AppGuardName, user)
@@ -39,7 +41,6 @@ func Login(c *gin.Context) {
 		}
 		// token存储到 redis
 		err = global.App.Redis.Set(context.Background(), user.Username, tokenData.Token, 120*60*time.Second).Err()
-		fmt.Println("err", err)
 		if err != nil {
 			response.BusinessFail(c, err.Error())
 			return

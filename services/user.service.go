@@ -2,10 +2,10 @@ package services
 
 import (
 	"errors"
-	"gateway_go/common/request"
 	"gateway_go/global"
 	models2 "gateway_go/models"
 	"gateway_go/utils"
+	"gateway_go/validator"
 	"strconv"
 	"time"
 )
@@ -16,7 +16,7 @@ type userService struct {
 var UserService = new(userService)
 
 // 用户注册
-func (userService *userService) Register(params request.Register) (err error, user models2.User) {
+func (userService *userService) Register(params validator.Register) (err error, user models2.User) {
 	var result = global.App.DB.Where("username = ?", params.Username).Select("id").First(&models2.User{})
 	if result.RowsAffected != 0 {
 		err = errors.New("账号已存在")
@@ -28,7 +28,7 @@ func (userService *userService) Register(params request.Register) (err error, us
 }
 
 // 登陆获取Token
-func (userService *userService) Login(params request.Login) (err error, user *models2.User) {
+func (userService *userService) Login(params validator.Login) (err error, user *models2.User) {
 	err = global.App.DB.Where("username = ?", params.Username).First(&user).Error
 	if err != nil || !utils.BcryptMakeCheck([]byte(params.Password), user.Password) {
 		err = errors.New("用户名不存在或密码错误")
