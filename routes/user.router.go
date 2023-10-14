@@ -36,8 +36,3 @@ func SetUserGroupRoutes(router *gin.RouterGroup) {
 		authRouter.POST("/auth/logout", app2.Logout)
 	}
 }
-
-//// 通过token解析用户信息
-//func ParseToken(token string) (userInfo map[string]string, err error) {
-//
-//}
