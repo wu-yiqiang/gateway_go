@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"gateway_go/common/response"
+	"gateway_go/common"
 	"gateway_go/global"
 	"gateway_go/services"
 	"github.com/dgrijalva/jwt-go"
@@ -14,7 +14,7 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 		tokenStr := c.Request.Header.Get("Authorization")
 
 		if tokenStr == "" {
-			response.TokenFail(c)
+			common.TokenFail(c)
 			c.Abort()
 			return
 		}
@@ -25,7 +25,7 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			return []byte(global.App.Config.Jwt.Secret), nil
 		})
 		if err != nil {
-			response.TokenFail(c)
+			common.TokenFail(c)
 			c.Abort()
 			return
 		}
@@ -33,7 +33,7 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 		claims := token.Claims.(*services.CustomClaims)
 		// Token 发布者校验
 		if claims.Issuer != GuardName {
-			response.TokenFail(c)
+			common.TokenFail(c)
 			c.Abort()
 			return
 		}

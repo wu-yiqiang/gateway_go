@@ -19,7 +19,7 @@ mysql:
   driver: mysql # 数据库驱动
   host: 127.0.0.1 # 域名
   port: 3306 # 端口号
-  database: wserver # 数据库名称
+  database: gin_gateway # 数据库名称
   username: root # 用户名
   password: root@root # 密码
   charset: utf8mb4 # 编码格式
@@ -35,7 +35,10 @@ jwt:
   jwt_blacklist_grace_period: 10
 
 swagger:
-  url: 'http://localhost:8181/swagger/doc.json'
+  title="gateway_go swagger API"
+  desc="This is a sample server celler server."
+  host="127.0.0.1:8880"
+  base_path=""
 
 redis:
   host: 127.0.0.1

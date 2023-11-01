@@ -4,7 +4,6 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	_ "gateway_go/docs"
 	"gateway_go/global"
 	"gateway_go/routes"
 	"github.com/fsnotify/fsnotify"

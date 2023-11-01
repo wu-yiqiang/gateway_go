@@ -1,16 +1,55 @@
-basePath: /v2
-host: petstore.swagger.io
+definitions:
+  common.Response:
+    properties:
+      code:
+        description: 自定义错误码
+        type: integer
+      content:
+        description: 数据
+      message:
+        description: 信息
+        type: string
+    type: object
+  dto.RegisterInput:
+    properties:
+      password:
+        example: admin
+        type: string
+      username:
+        example: admin
+        type: string
+    type: object
+host: 127.0.0.1:9527
 info:
   contact:
-    email: support@swagger.io
-    name: API Support
-    url: http://www.swagger.io/support
-  description: This is a sample server Petstore server.
-  license:
-    name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0.html
-  termsOfService: http://swagger.io/terms/
-  title: Swagger Example API
+    email: wu_yiqiang@outlook.com
+    name: atlas
+  description: gin-web框架
+  termsOfService: https://github.com/18211167516/Go-Gin-Api
+  title: go-api 框架
   version: "1.0"
-paths: {}
+paths:
+  /user/register:
+    post:
+      consumes:
+      - application/json
+      description: 用户管理
+      operationId: /user/register
+      parameters:
+      - description: body
+        in: body
+        name: polygon
+        required: true
+        schema:
+          $ref: '#/definitions/dto.RegisterInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/common.Response'
+      summary: 用户管理
+      tags:
+      - 用户
 swagger: "2.0"

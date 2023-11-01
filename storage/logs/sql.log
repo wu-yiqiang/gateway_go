@@ -7972,3 +7972,42 @@
 
 2023/10/14 18:11:36 /Users/atlas/go/src/gateway_go/controllers/app/user.controllers.go:57
 [4.643ms] [rows:1] UPDATE `users` SET `password`='$2a$04$IZ5j/6KpNr2Gb69TTfDdLOIftGy05xOaGq20h6k85em7ZzNptCrje' WHERE id = 11 AND `id` = 11 ORDER BY `users`.`id` LIMIT 1
+
+2023/11/01 23:30:38 /Users/atlas/go/src/gateway_go/services/user.service.go:18 Error 1146 (42S02): Table 'gin_gateway.admins' doesn't exist
+[1.782ms] [rows:0] SELECT `id` FROM `admins` WHERE username = 'admin' ORDER BY `admins`.`id` LIMIT 1
+
+2023/11/01 23:30:38 /Users/atlas/go/src/gateway_go/services/user.service.go:25 Error 1146 (42S02): Table 'gin_gateway.admins' doesn't exist
+[1.137ms] [rows:0] INSERT INTO `admins` (`username`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('admin','$2a$04$3jk9bTHjT4LEUuH19NXVMuNoWBYLNkMuj1PhSfvhItJlBNPR0TLVG','2023-11-01 23:30:38.881','2023-11-01 23:30:38.881',0)
+
+2023/11/01 23:32:20 /Users/atlas/go/src/gateway_go/services/user.service.go:18 Error 1146 (42S02): Table 'gin_gateway.admins' doesn't exist
+[1.340ms] [rows:0] SELECT `id` FROM `admins` WHERE username = 'admin' ORDER BY `admins`.`id` LIMIT 1
+
+2023/11/01 23:32:20 /Users/atlas/go/src/gateway_go/services/user.service.go:25 Error 1146 (42S02): Table 'gin_gateway.admins' doesn't exist
+[0.602ms] [rows:0] INSERT INTO `admins` (`username`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('admin','$2a$04$uWkn5Q/cp0VH76Cg5gSBwew.F1RPUZDGx9Yq0DDFuHG9SXxXyX8bW','2023-11-01 23:32:20.623','2023-11-01 23:32:20.623',0)
+
+2023/11/01 23:37:10 /Users/atlas/go/src/gateway_go/services/user.service.go:23 Error 1146 (42S02): Table 'gin_gateway.admins' doesn't exist
+[1.083ms] [rows:0] SELECT `id` FROM `admins` WHERE user_name = 'admin' ORDER BY `admins`.`id` LIMIT 1
+
+2023/11/01 23:37:10 /Users/atlas/go/src/gateway_go/services/user.service.go:30 Error 1146 (42S02): Table 'gin_gateway.admins' doesn't exist
+[0.682ms] [rows:0] INSERT INTO `admins` (`username`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('admin','$2a$04$z1kMmEOMMx3p4K22ow3lFub7QDOfnRG3XWSYyGff8IebAbRxla7Cq','2023-11-01 23:37:10.983','2023-11-01 23:37:10.983',0)
+
+2023/11/01 23:37:12 /Users/atlas/go/src/gateway_go/services/user.service.go:23 Error 1146 (42S02): Table 'gin_gateway.admins' doesn't exist
+[0.849ms] [rows:0] SELECT `id` FROM `admins` WHERE user_name = 'admin' ORDER BY `admins`.`id` LIMIT 1
+
+2023/11/01 23:37:12 /Users/atlas/go/src/gateway_go/services/user.service.go:30 Error 1146 (42S02): Table 'gin_gateway.admins' doesn't exist
+[1.220ms] [rows:0] INSERT INTO `admins` (`username`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('admin','$2a$04$.ZLupiIjFruBJoshk.a5pefFIGoofByVUPrLhFRXHsbASTFDu7eVu','2023-11-01 23:37:12.325','2023-11-01 23:37:12.325',0)
+
+2023/11/01 23:39:08 /Users/atlas/go/src/gateway_go/services/user.service.go:22 Error 1054 (42S22): Unknown column 'username' in 'where clause'
+[1.466ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/01 23:39:08 /Users/atlas/go/src/gateway_go/services/user.service.go:28 Error 1054 (42S22): Unknown column 'username' in 'field list'
+[0.727ms] [rows:0] INSERT INTO `gateway_admin` (`username`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('admin','$2a$04$.0nVCA.fPvO.OrtUSkYFXOdHGXAdEr9bkiVdmFTCSDawvNTx8iNge','2023-11-01 23:39:08.072','2023-11-01 23:39:08.072',0)
+
+2023/11/01 23:40:17 /Users/atlas/go/src/gateway_go/services/user.service.go:22
+[1.047ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/01 23:40:33 /Users/atlas/go/src/gateway_go/services/user.service.go:22 record not found
+[0.619ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/01 23:40:33 /Users/atlas/go/src/gateway_go/services/user.service.go:28
+[3.147ms] [rows:1] INSERT INTO `gateway_admin` (`user_name`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('sys-admin','$2a$04$AR7GSrdPDpmU3hyJ48y3H.ZwD4/ZjkhiwvWoBNm7eCbhBwaS8aPie','2023-11-01 23:40:33.357','2023-11-01 23:40:33.357',0)

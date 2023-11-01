@@ -32,7 +32,7 @@ func ValidateEmail(fl validator.FieldLevel) bool {
 	return true
 }
 
-// 密码强度校验
+// ValidatePassword 密码强度校验
 func ValidatePassword(fl validator.FieldLevel) bool {
 	password := fl.Field().String()
 	if password == "" {

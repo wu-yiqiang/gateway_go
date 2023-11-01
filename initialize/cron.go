@@ -5,12 +5,10 @@ import (
 	"encoding/hex"
 	"fmt"
 	"gateway_go/global"
-	models2 "gateway_go/models"
 	"github.com/robfig/cron"
 	"io"
 	"io/ioutil"
 	"os"
-	"time"
 )
 
 // 多个定时任务设置channel 从channel里面获取
@@ -89,20 +87,20 @@ func GetFileHash(fileName string) (string, error) {
 
 func InsertFileInfo(fileName string, fileHash string) {
 	//  首先查询是否存在
-	var result = global.App.DB.Where("file_hash = ?", fileHash).Select("id").First(&models2.File{})
-	if result.RowsAffected != 0 {
-		updateError := global.App.DB.Where("file_hash = ?", fileHash).First(&models2.File{}).Update("is_delete", 0).Error
-		if updateError != nil {
-			global.App.Log.Info(updateError.Error())
-		}
-		fmt.Println("err", updateError)
-		return
-	}
-	file := models2.File{FileName: fileName, FileHash: fileHash, UpdateTime: time.Now().Unix(), IsDelete: models2.IsDelete{0}}
-	err := global.App.DB.Create(&file).Error
-	if err != nil {
-		global.App.Log.Info(err.Error())
-	}
+	//var result = global.App.DB.Where("file_hash = ?", fileHash).Select("id").First(&dao.File{})
+	//if result.RowsAffected != 0 {
+	//	updateError := global.App.DB.Where("file_hash = ?", fileHash).First(&dao.File{}).Update("is_delete", 0).Error
+	//	if updateError != nil {
+	//		global.App.Log.Info(updateError.Error())
+	//	}
+	//	fmt.Println("err", updateError)
+	//	return
+	//}
+	//file := dao.File{FileName: fileName, FileHash: fileHash, UpdateTime: time.Now().Unix(), IsDelete: dao.IsDelete{0}}
+	//err := global.App.DB.Create(&file).Error
+	//if err != nil {
+	//	global.App.Log.Info(err.Error())
+	//}
 }
 
 func LogCron() {

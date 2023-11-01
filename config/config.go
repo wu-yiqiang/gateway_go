@@ -7,4 +7,5 @@ type Configuration struct {
 	Jwt     Jwt     `mapstructure:"jwt" json:"jwt" yaml:"jwt"`
 	Redis   Redis   `mapstructure:"redis" json:"redis" yaml:"redis"`
 	Storage Storage `mapstructure:"storage" json:"storage" yaml:"storage"`
+	Swagger Swagger `mapstructure:"swagger" json:"swagger" yaml:"swagger"`
 }

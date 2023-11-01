@@ -1,13 +1,67 @@
 package routes
 
 import (
+	"gateway_go/docs"
+	"gateway_go/global"
 	"gateway_go/middleware"
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
+// @title Swagger Example API
+// @version 1.0
+// @description This is a sample server celler server.
+// @termsOfService http://swagger.io/terms/
+
+// @contact.name API Support
+// @contact.url http://www.swagger.io/support
+// @contact.email support@swagger.io
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+
+// @host localhost:8080
+// @BasePath /api/v1
+// @query.collection.format multi
+
+// @securityDefinitions.basic BasicAuth
+
+// @securityDefinitions.apikey ApiKeyAuth
+// @in header
+// @name Authorization
+
+// @securitydefinitions.oauth2.application OAuth2Application
+// @tokenUrl https://example.com/oauth/token
+// @scope.write Grants write access
+// @scope.admin Grants read and write access to administrative information
+
+// @securitydefinitions.oauth2.implicit OAuth2Implicit
+// @authorizationurl https://example.com/oauth/authorize
+// @scope.write Grants write access
+// @scope.admin Grants read and write access to administrative information
+
+// @securitydefinitions.oauth2.password OAuth2Password
+// @tokenUrl https://example.com/oauth/token
+// @scope.read Grants read access
+// @scope.write Grants write access
+// @scope.admin Grants read and write access to administrative information
+
+// @securitydefinitions.oauth2.accessCode OAuth2AccessCode
+// @tokenUrl https://example.com/oauth/token
+// @authorizationurl https://example.com/oauth/authorize
+// @scope.admin Grants read and write access to administrative information
+
+// @x-extension-openapi {"example": "value on a json format"}
 func SetupRouter() *gin.Engine {
+	// programatically set swagger info
+	docs.SwaggerInfo.Title = global.App.Config.Swagger.Title
+	docs.SwaggerInfo.Description = global.App.Config.Swagger.Desc
+	docs.SwaggerInfo.Version = "1.0"
+	docs.SwaggerInfo.Host = global.App.Config.Swagger.Host
+	docs.SwaggerInfo.BasePath = global.App.Config.Swagger.BasePath
+	docs.SwaggerInfo.Schemes = []string{"http", "https"}
+
 	router := gin.Default()
 	// 跨域中间件
 	router.Use(middleware.CORS())
@@ -15,21 +69,14 @@ func SetupRouter() *gin.Engine {
 	//router.Use(middleware.CO)
 	// swagger
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
-	//// 前端项目静态资源
-	//router.StaticFile("/", "./static/dist/index.html")
-	//router.Static("/assets", "./static/dist/assets")
-	//router.StaticFile("/favicon.ico", "./static/dist/favicon.ico")
-	//// 其他静态资源
-	//router.Static("/public", "./static")
-	//router.Static("/storage", "./storage/app/public")
 
-	// user路由 /user
+	// user路由
 	userGroup := router.Group("/user")
-	SetUserGroupRoutes(userGroup)
+	{
+		SetUserGroupRoutes(userGroup)
+	}
 
-	// demo路由 /demo
-	DemoGroup := router.Group("/demo")
-	SetDemoGroupRoutes(DemoGroup)
+	// 其他路由
 
 	return router
 }
