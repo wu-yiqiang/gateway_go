@@ -8011,3 +8011,153 @@
 
 2023/11/01 23:40:33 /Users/atlas/go/src/gateway_go/services/user.service.go:28
 [3.147ms] [rows:1] INSERT INTO `gateway_admin` (`user_name`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('sys-admin','$2a$04$AR7GSrdPDpmU3hyJ48y3H.ZwD4/ZjkhiwvWoBNm7eCbhBwaS8aPie','2023-11-01 23:40:33.357','2023-11-01 23:40:33.357',0)
+
+2023/11/02 09:04:02 /Users/atlas/go/src/gateway_go/services/user.service.go:22
+[7.701ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:08:55 /Users/atlas/go/src/gateway_go/services/user.service.go:37 Error 1054 (42S22): Unknown column 'username' in 'where clause'
+[0.588ms] [rows:0] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:10:05 /Users/atlas/go/src/gateway_go/services/user.service.go:38 Error 1054 (42S22): Unknown column 'username' in 'where clause'
+[0.650ms] [rows:0] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:10:14 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.652ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:10:45 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.570ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:14:43 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.194ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:16:54 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.149ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:17:18 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.947ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:18:59 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.915ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 09:19:59 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.631ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:11:38 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[1.502ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:17:39 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.620ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:57:25 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[1.543ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:57:29 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.658ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:57:29 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.579ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:57:30 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.634ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:57:30 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.623ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:57:30 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.859ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sys-admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:58:51 /Users/atlas/go/src/gateway_go/services/user.service.go:37 record not found
+[0.779ms] [rows:0] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:59:10 /Users/atlas/go/src/gateway_go/services/user.service.go:22 record not found
+[0.580ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 10:59:10 /Users/atlas/go/src/gateway_go/services/user.service.go:28
+[2.734ms] [rows:1] INSERT INTO `gateway_admin` (`user_name`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('admin','$2a$04$GYJG1yYOWD7yIUaQklnjE.v7tLmF22YBy4.xSRJgHoiR.KDGRvWzO','2023-11-02 10:59:10.927','2023-11-02 10:59:10.927',0)
+
+2023/11/02 10:59:15 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.931ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 11:25:20 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[1.620ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 11:26:38 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.894ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 11:27:14 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.914ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 11:28:15 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.820ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:29:02 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[12.741ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:29:02 /Users/atlas/go/src/gateway_go/services/user.service.go:55 Error 1054 (42S22): Unknown column 'username' in 'where clause'
+[0.929ms] [rows:0] UPDATE `gateway_admin` SET `password`='1234_abcf' WHERE username = 'admin'
+
+2023/11/02 20:30:03 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.829ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:30:17 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.554ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:30:32 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.855ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:30:32 /Users/atlas/go/src/gateway_go/services/user.service.go:55 Error 1054 (42S22): Unknown column 'username' in 'where clause'
+[0.544ms] [rows:0] UPDATE `gateway_admin` SET `password`='1234_abcf' WHERE username = 'admin'
+
+2023/11/02 20:31:48 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.871ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:31:48 /Users/atlas/go/src/gateway_go/services/user.service.go:55 Error 1054 (42S22): Unknown column 'username' in 'where clause'
+[0.565ms] [rows:0] UPDATE `gateway_admin` SET `password`='1234_abcf' WHERE username = 'admin'
+
+2023/11/02 20:32:14 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[0.541ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:32:14 /Users/atlas/go/src/gateway_go/services/user.service.go:55 Error 1054 (42S22): Unknown column 'username' in 'where clause'
+[0.655ms] [rows:0] UPDATE `gateway_admin` SET `password`='1234_abcf' WHERE username = 'admin'
+
+2023/11/02 20:32:45 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[1.664ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:32:45 /Users/atlas/go/src/gateway_go/services/user.service.go:55 Error 1054 (42S22): Unknown column 'username' in 'where clause'
+[0.397ms] [rows:0] UPDATE `gateway_admin` SET `password`='1234_abcf' WHERE username = 'admin'
+
+2023/11/02 20:33:01 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[1.439ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:33:01 /Users/atlas/go/src/gateway_go/services/user.service.go:55
+[3.336ms] [rows:1] UPDATE `gateway_admin` SET `password`='1234_abcf' WHERE user_name = 'admin'
+
+2023/11/02 20:34:09 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[1.112ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:35:49 /Users/atlas/go/src/gateway_go/services/user.service.go:22 record not found
+[0.525ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:35:49 /Users/atlas/go/src/gateway_go/services/user.service.go:28
+[2.024ms] [rows:1] INSERT INTO `gateway_admin` (`user_name`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('admin','$2a$04$6jZmhDPQH8KL/DYmrxOdMeN1mVRGSnadYhv0r3XG5KGwZ.LwQLdYG','2023-11-02 20:35:49.484','2023-11-02 20:35:49.484',0)
+
+2023/11/02 20:35:55 /Users/atlas/go/src/gateway_go/services/user.service.go:37
+[1.003ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:35:55 /Users/atlas/go/src/gateway_go/services/user.service.go:56
+[1.369ms] [rows:1] UPDATE `gateway_admin` SET `password`='$2a$04$JYE7ScRo6pi7hBn3COiWLuyfbdmI0RMqrnrUxudfjEyCP9DMhzDVS' WHERE user_name = 'admin'
+
+2023/11/02 20:44:02 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.935ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:44:10 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.575ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:44:10 /Users/atlas/go/src/gateway_go/services/user.service.go:57 sql: converting argument $2 type: unsupported type func(time.Time) int64, a func
+[0.241ms] [rows:0] UPDATE `gateway_admin` SET `password`='$2a$04$ZtJWnRf.TYApof24I6SEhO/kFBYTgUJCvEyPX9oqkdCa/GV1qPyJi',`update_at`='0x104cf8b30' WHERE user_name = 'admin'
+
+2023/11/02 20:45:33 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.150ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/02 20:45:33 /Users/atlas/go/src/gateway_go/services/user.service.go:57
+[2.877ms] [rows:1] UPDATE `gateway_admin` SET `password`='$2a$04$/brQLuPweAAxWarmLM6IvO3JPK3Bz6mYAHwGQF/CNJrtXlJ6ugkq2',`update_at`='2023-11-02 20:45:33.393' WHERE user_name = 'admin'

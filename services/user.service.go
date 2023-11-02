@@ -6,6 +6,7 @@ import (
 	"gateway_go/global"
 	"gateway_go/utils"
 	"gateway_go/validator"
+	"time"
 )
 
 type userService struct {
@@ -17,7 +18,7 @@ func (userService *userService) TableName() string {
 	return "gateway_admin"
 }
 
-// 用户注册
+// Register
 func (userService *userService) Register(params validator.Register) (err error, user dao.Admin) {
 	var result = global.App.DB.Table(userService.TableName()).Where("user_name = ?", params.Username).Select("id").First(&dao.Admin{})
 	if result.RowsAffected != 0 {
@@ -32,15 +33,34 @@ func (userService *userService) Register(params validator.Register) (err error, 
 	return
 }
 
-//
-//// 登陆获取Token
-//func (userService *userService) Login(params validator.Login) (err error, user *dao.User) {
-//	err = global.App.DB.Where("username = ?", params.Username).First(&user).Error
-//	if err != nil || !utils.BcryptMakeCheck([]byte(params.Password), user.Password) {
-//		err = errors.New("用户名不存在或密码错误")
-//	}
-//	return
-//}
+// Login
+func (userService *userService) Login(params validator.Register) (err error, user *dao.Admin) {
+	err = global.App.DB.Table(userService.TableName()).Where("user_name = ?", params.Username).First(&user).Error
+	if err != nil {
+		err = errors.New("该用户不存在")
+		return
+	}
+	if !utils.BcryptMakeCheck([]byte(params.Password), user.Password) {
+		err = errors.New("密码错误")
+		return
+	}
+	return
+}
+
+func (userService *userService) Changepassword(params validator.ChangePassword) (err error, user *dao.Admin) {
+	var param = validator.Register{Username: params.Username, Password: params.Password}
+	return userService.Login(param)
+}
+
+func (userService *userService) ModifyPassword(params validator.ChangePassword) (err error) {
+	hashPassword := utils.BcryptMake([]byte(params.Password))
+	err = global.App.DB.Table(userService.TableName()).Where("user_name = ?", params.Username).Updates(map[string]interface{}{"password": hashPassword, "update_at": time.Now()}).Error
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
 //
 //// GetUserInfo 获取用户信息
 //func (userService *userService) GetUserInfo(id string) (err error, user dao.User) {

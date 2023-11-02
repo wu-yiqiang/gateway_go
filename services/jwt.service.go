@@ -31,9 +31,9 @@ type CustomClaims struct {
 }
 
 type TokenOutPut struct {
-	Token   string `json:"token"`
-	Expires int    `json:"expires"`
-	Type    string `json:"type"`
+	Token string `json:"token"`
+	//Expires int    `json:"expires"`
+	//Type    string `json:"type"`
 }
 
 // CreateToken 生成 Token
@@ -54,8 +54,8 @@ func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (token
 
 	tokenData = TokenOutPut{
 		tokenStr,
-		int(global.App.Config.Jwt.JwtTtl),
-		TokenType,
+		//int(global.App.Config.Jwt.JwtTtl),
+		//TokenType,
 	}
 	return
 }

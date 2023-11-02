@@ -1,7 +1,6 @@
 package utils
 
 import (
-	"fmt"
 	"github.com/go-playground/validator/v10"
 	"regexp"
 )
@@ -39,7 +38,6 @@ func ValidatePassword(fl validator.FieldLevel) bool {
 		return true
 	}
 	ok, _ := regexp.MatchString(`^[\w_-]{8,16}$`, password)
-	fmt.Println("check", ok)
 	if !ok {
 		return false
 	}

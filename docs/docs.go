@@ -20,9 +20,9 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/user/register": {
+        "/user/auth/changePassword": {
             "post": {
-                "description": "用户管理",
+                "description": "修改密码",
                 "consumes": [
                     "application/json"
                 ],
@@ -30,9 +30,91 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "用户"
+                    "用户管理"
                 ],
-                "summary": "用户管理",
+                "summary": "修改密码",
+                "operationId": "/user/auth/changePassword",
+                "parameters": [
+                    {
+                        "description": "body",
+                        "name": "polygon",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/dto.ChangePasswordInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "$ref": "#/definitions/response.Response"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/login": {
+            "post": {
+                "description": "用户登录",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户管理"
+                ],
+                "summary": "用户登录",
+                "operationId": "/user/login",
+                "parameters": [
+                    {
+                        "description": "body",
+                        "name": "polygon",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/dto.LoginInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/response.Response"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "content": {
+                                            "$ref": "#/definitions/dto.LoginOutput"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "/user/register": {
+            "post": {
+                "description": "用户注册",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户管理"
+                ],
+                "summary": "用户注册",
                 "operationId": "/user/register",
                 "parameters": [
                     {
@@ -49,7 +131,7 @@ const docTemplate = `{
                     "200": {
                         "description": "success",
                         "schema": {
-                            "$ref": "#/definitions/common.Response"
+                            "$ref": "#/definitions/response.Response"
                         }
                     }
                 }
@@ -57,7 +139,59 @@ const docTemplate = `{
         }
     },
     "definitions": {
-        "common.Response": {
+        "dto.ChangePasswordInput": {
+            "type": "object",
+            "properties": {
+                "newpassword": {
+                    "type": "string",
+                    "example": "1234_abcd"
+                },
+                "password": {
+                    "type": "string",
+                    "example": "1234_abcd"
+                },
+                "username": {
+                    "type": "string",
+                    "example": "admin"
+                }
+            }
+        },
+        "dto.LoginInput": {
+            "type": "object",
+            "properties": {
+                "password": {
+                    "type": "string",
+                    "example": "1234_abcd"
+                },
+                "username": {
+                    "type": "string",
+                    "example": "admin"
+                }
+            }
+        },
+        "dto.LoginOutput": {
+            "type": "object",
+            "properties": {
+                "token": {
+                    "type": "string",
+                    "example": ""
+                }
+            }
+        },
+        "dto.RegisterInput": {
+            "type": "object",
+            "properties": {
+                "password": {
+                    "type": "string",
+                    "example": "1234_abcd"
+                },
+                "username": {
+                    "type": "string",
+                    "example": "admin"
+                }
+            }
+        },
+        "response.Response": {
             "type": "object",
             "properties": {
                 "code": {
@@ -70,19 +204,6 @@ const docTemplate = `{
                 "message": {
                     "description": "信息",
                     "type": "string"
-                }
-            }
-        },
-        "dto.RegisterInput": {
-            "type": "object",
-            "properties": {
-                "password": {
-                    "type": "string",
-                    "example": "admin"
-                },
-                "username": {
-                    "type": "string",
-                    "example": "admin"
                 }
             }
         }

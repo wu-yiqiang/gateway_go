@@ -1,5 +1,41 @@
 definitions:
-  common.Response:
+  dto.ChangePasswordInput:
+    properties:
+      newpassword:
+        example: 1234_abcd
+        type: string
+      password:
+        example: 1234_abcd
+        type: string
+      username:
+        example: admin
+        type: string
+    type: object
+  dto.LoginInput:
+    properties:
+      password:
+        example: 1234_abcd
+        type: string
+      username:
+        example: admin
+        type: string
+    type: object
+  dto.LoginOutput:
+    properties:
+      token:
+        example: ""
+        type: string
+    type: object
+  dto.RegisterInput:
+    properties:
+      password:
+        example: 1234_abcd
+        type: string
+      username:
+        example: admin
+        type: string
+    type: object
+  response.Response:
     properties:
       code:
         description: 自定义错误码
@@ -8,15 +44,6 @@ definitions:
         description: 数据
       message:
         description: 信息
-        type: string
-    type: object
-  dto.RegisterInput:
-    properties:
-      password:
-        example: admin
-        type: string
-      username:
-        example: admin
         type: string
     type: object
 host: 127.0.0.1:9527
@@ -29,11 +56,62 @@ info:
   title: go-api 框架
   version: "1.0"
 paths:
+  /user/auth/changePassword:
+    post:
+      consumes:
+      - application/json
+      description: 修改密码
+      operationId: /user/auth/changePassword
+      parameters:
+      - description: body
+        in: body
+        name: polygon
+        required: true
+        schema:
+          $ref: '#/definitions/dto.ChangePasswordInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 修改密码
+      tags:
+      - 用户管理
+  /user/login:
+    post:
+      consumes:
+      - application/json
+      description: 用户登录
+      operationId: /user/login
+      parameters:
+      - description: body
+        in: body
+        name: polygon
+        required: true
+        schema:
+          $ref: '#/definitions/dto.LoginInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                content:
+                  $ref: '#/definitions/dto.LoginOutput'
+              type: object
+      summary: 用户登录
+      tags:
+      - 用户管理
   /user/register:
     post:
       consumes:
       - application/json
-      description: 用户管理
+      description: 用户注册
       operationId: /user/register
       parameters:
       - description: body
@@ -48,8 +126,8 @@ paths:
         "200":
           description: success
           schema:
-            $ref: '#/definitions/common.Response'
-      summary: 用户管理
+            $ref: '#/definitions/response.Response'
+      summary: 用户注册
       tags:
-      - 用户
+      - 用户管理
 swagger: "2.0"

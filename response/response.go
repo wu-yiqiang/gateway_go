@@ -1,4 +1,4 @@
-package common
+package response
 
 import (
 	"gateway_go/global"
