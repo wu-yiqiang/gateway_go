@@ -3,6 +3,7 @@ package controllers
 import (
 	"context"
 	"fmt"
+	"gateway_go/dto"
 	"gateway_go/global"
 	"gateway_go/request"
 	"gateway_go/response"
@@ -21,12 +22,12 @@ var AdminController = new(adminController)
 // @Summary 用户注册
 // @Description 用户注册
 // @Tags 用户管理
-// @ID /user/register
+// @ID /admin/register
 // @Accept  json
 // @Produce  json
 // @Param polygon body dto.RegisterInput true "body"
 // @Success 200 {object} response.Response{} "success"
-// @Router /user/register [post]
+// @Router /admin/register [post]
 func (admin *adminController) AdminRegister(c *gin.Context) {
 	var form validator.Register
 	if err := c.ShouldBindJSON(&form); err != nil {
@@ -44,12 +45,12 @@ func (admin *adminController) AdminRegister(c *gin.Context) {
 // @Summary 用户登录
 // @Description 用户登录
 // @Tags 用户管理
-// @ID /user/login
+// @ID /admin/login
 // @Accept  json
 // @Produce  json
 // @Param polygon body dto.LoginInput true "body"
-// @Success 200 {object} response.Response{content=dto.LoginOutput} "success"
-// @Router /user/login [post]
+// @Success 200 {object} response.Response{data=dto.LoginOutput} "success"
+// @Router /admin/login [post]
 func (admin *adminController) AdminLogin(c *gin.Context) {
 	var form validator.Register
 	if err := c.ShouldBindJSON(&form); err != nil {
@@ -62,10 +63,10 @@ func (admin *adminController) AdminLogin(c *gin.Context) {
 	} else {
 		// 查询redis中token
 		joinUnixStr, err := global.App.Redis.Get(context.Background(), user.Username).Result()
-		if err != nil {
-			response.BusinessFail(c, err.Error())
-			return
-		}
+		//if err != nil {
+		//	response.BusinessFail(c, err.Error())
+		//	return
+		//}
 		if joinUnixStr != "" {
 			response.Success(c, &services.TokenOutPut{Token: joinUnixStr})
 			return
@@ -83,7 +84,6 @@ func (admin *adminController) AdminLogin(c *gin.Context) {
 			response.Success(c, "token存储失败")
 		}
 		response.Success(c, tokenData)
-
 	}
 
 }
@@ -92,12 +92,12 @@ func (admin *adminController) AdminLogin(c *gin.Context) {
 // @Summary 修改密码
 // @Description 修改密码
 // @Tags 用户管理
-// @ID /user/auth/changePassword
+// @ID /admin/changePassword
 // @Accept  json
 // @Produce  json
 // @Param polygon body dto.ChangePasswordInput true "body"
 // @Success 200 {object} response.Response{} "success"
-// @Router /user/auth/changePassword [post]
+// @Router /admin/changePassword [post]
 func (admin *adminController) AdminChangePassword(c *gin.Context) {
 	var form validator.ChangePassword
 	if err := c.ShouldBindJSON(&form); err != nil {
@@ -125,6 +125,70 @@ func (admin *adminController) AdminChangePassword(c *gin.Context) {
 	return
 }
 
-func (admin *adminController) AdminLogout(c *gin.Context) {
+// ListPage godoc
+// @Summary 管理员信息获取
+// @Description 管理员信息获取
+// @Tags 用户管理
+// @ID /admin/admin_info
+// @Accept  json
+// @Produce  json
+// @Param token query string true "token"
+// @Success 200 {object} response.Response{data=dto.AdminInfoOutput} "success"
+// @Router /admin/admin_info [get]
+func (admin *adminController) AdminInfo(c *gin.Context) {
+	token := c.Query("token")
+	if token == "" {
+		response.BusinessFail(c, "token username参数不能为空")
+		return
+	}
+	// 解密token
+	err, data := services.JwtService.DecryptToken(token)
+	if err != nil {
+		response.BusinessFail(c, "用户信息不存在")
+		return
+	}
 
+	tokenStr, err := global.App.Redis.Get(context.Background(), data).Result()
+	if err != nil {
+		response.BusinessFail(c, "用户信息不存在")
+		return
+	}
+	out := &dto.AdminInfoOutput{
+		Name:      data,
+		Id:        1,
+		Avatar:    "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg",
+		LoginTime: "2023-10-26",
+		Roles:     []string{"admin"},
+	}
+	fmt.Println(tokenStr)
+	response.Success(c, out)
+}
+
+// ListPage godoc
+// @Summary 管理员注销
+// @Description 管理员注销
+// @Tags 用户管理
+// @ID /admin_login/logout
+// @Accept  json
+// @Produce  json
+// @Success 200 {object} response.Response{} "success"
+// @Router /admin_login/logout [get]
+func (admin *adminController) AdminLogout(c *gin.Context) {
+	token := c.Request.Header.Get("Authorization")
+	if token == "" {
+		response.TokenFail(c)
+		return
+	}
+	// 解密token
+	err, data := services.JwtService.DecryptToken(token)
+	if err != nil {
+		response.BusinessFail(c, "用户信息不存在")
+		return
+	}
+	error := global.App.Redis.Del(context.Background(), data).Err()
+	if error != nil {
+		response.BusinessFail(c, "用户注销失败")
+		return
+	}
+	response.Success(c, "用户注销成功")
 }

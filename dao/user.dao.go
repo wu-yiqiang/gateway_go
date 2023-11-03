@@ -1,7 +1,6 @@
 package dao
 
 import (
-	"strconv"
 	"time"
 )
 
@@ -14,6 +13,6 @@ type Admin struct {
 	IsDelete  int       `json:"is_delete" gorm:"column:is_delete" description:"是否删除"`
 }
 
-func (admin *Admin) GetUid() string {
-	return strconv.Itoa(int(admin.Id))
+func (admin *Admin) GetName() string {
+	return admin.Username
 }

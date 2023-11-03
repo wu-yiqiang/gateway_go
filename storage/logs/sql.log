@@ -8161,3 +8161,345 @@
 
 2023/11/02 20:45:33 /Users/atlas/go/src/gateway_go/services/user.service.go:57
 [2.877ms] [rows:1] UPDATE `gateway_admin` SET `password`='$2a$04$/brQLuPweAAxWarmLM6IvO3JPK3Bz6mYAHwGQF/CNJrtXlJ6ugkq2',`update_at`='2023-11-02 20:45:33.393' WHERE user_name = 'admin'
+
+2023/11/03 09:40:54 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[10.637ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:41:33 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.977ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:41:48 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.613ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:42:44 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.976ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:43:30 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.891ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:43:38 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.927ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:45:04 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.033ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:45:48 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.035ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:46:06 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.873ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:46:46 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.689ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:49:10 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[4.608ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:51:33 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.692ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:51:53 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.770ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:53:03 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.487ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:53:34 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.198ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:53:53 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.086ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 09:57:01 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.572ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:00:07 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.176ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:00:26 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.185ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:00:28 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.663ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:00:28 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.824ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:00:28 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.681ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:01:55 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.349ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:01:56 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.259ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:01:58 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.587ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:01:59 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.675ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:01:59 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.004ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:01:59 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.649ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:02:01 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.248ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:02:01 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.648ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:02:02 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.184ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:07:30 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.055ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:07:56 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.342ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:38:43 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.867ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 10:42:27 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.145ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:23:47 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.212ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:23:47 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.319ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:23:48 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.097ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:23:48 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.591ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:23:48 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.100ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:23:49 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.571ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:23:53 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.970ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:24:03 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.263ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:24:04 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.316ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:24:12 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.389ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 11:24:13 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.423ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 14:58:57 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[3.209ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 14:59:05 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.606ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 14:59:17 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.747ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 15:00:40 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.399ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 15:00:51 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.651ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 15:01:07 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.608ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 16:41:46 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.280ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 16:42:52 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.927ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 16:42:52 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.879ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 16:42:52 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.544ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 16:42:53 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.886ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 16:58:51 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.054ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:09:09 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.251ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:09:23 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.800ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:10:25 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.912ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:10:48 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[4.035ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:11:21 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.763ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:11:55 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.395ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:12:27 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[4.122ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:12:54 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[3.339ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:14:03 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.124ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:14:38 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.059ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:15:34 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.601ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:15:48 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.170ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:16:09 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.746ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:16:22 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.908ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:19:54 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.020ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:20:16 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[3.868ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:20:44 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[4.860ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:21:13 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.579ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:21:36 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.338ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:21:37 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[3.563ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:21:37 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.555ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:21:38 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.159ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:25:10 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.256ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:25:41 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.286ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:49:04 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.422ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:56:43 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[5.768ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 17:56:49 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.836ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/03 21:49:42 /Users/atlas/go/src/gateway_go/services/services.service.go:28 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?% or service_desc like %?%)) LIMIT 10' at line 1
+[0.765ms] [rows:0] SELECT * FROM `service_info` WHERE is_delete = 0 AND ((service_name like %'test'% or service_desc like %'test'%)) LIMIT 10
+
+2023/11/03 21:50:26 /Users/atlas/go/src/gateway_go/services/services.service.go:28 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?% or service_desc like %?%)) LIMIT 10' at line 1
+[1.109ms] [rows:0] SELECT * FROM `service_info` WHERE is_delete = 0 AND ((service_name like %'test'% or service_desc like %'test'%)) LIMIT 10
+
+2023/11/03 21:50:57 /Users/atlas/go/src/gateway_go/services/services.service.go:28 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?% or service_desc like %?%)) LIMIT 10' at line 1
+[0.558ms] [rows:0] SELECT * FROM `service_info` WHERE is_delete = 0 AND ((service_name like %'test'% or service_desc like %'test'%)) LIMIT 10
+
+2023/11/03 21:51:38 /Users/atlas/go/src/gateway_go/services/services.service.go:29 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?% or service_desc like %?%)) LIMIT 10' at line 1
+[0.824ms] [rows:0] SELECT * FROM `service_info` WHERE is_delete = 0 AND ((service_name like %'test'% or service_desc like %'test'%)) LIMIT 10
+
+2023/11/03 21:52:12 /Users/atlas/go/src/gateway_go/services/services.service.go:29 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?% or service_desc like %?%)) LIMIT 10' at line 1
+[0.786ms] [rows:0] SELECT * FROM `service_info` WHERE is_delete = 0 AND ((service_name like %'test'% or service_desc like %'test'%)) LIMIT 10
+
+2023/11/03 22:01:46 /Users/atlas/go/src/gateway_go/services/services.service.go:29 Error 1146 (42S02): Table 'gin_gateway.service_info' doesn't exist
+[5.377ms] [rows:0] SELECT * FROM `service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 10
+
+2023/11/03 22:02:20 /Users/atlas/go/src/gateway_go/services/services.service.go:29
+[1.666ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 10
+
+2023/11/03 22:03:15 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[1.333ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 10
+
+2023/11/03 22:03:15 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.454ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 10
+
+2023/11/03 22:04:07 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[0.794ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:04:07 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.435ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:07:41 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[2.078ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:07:41 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.571ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:08:22 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[1.994ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:08:22 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.427ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:08:27 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[1.583ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:08:27 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.625ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:08:40 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[1.502ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:08:40 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[2.243ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:08:54 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[1.097ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:08:54 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.542ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 AND ((service_name like '%test%' or service_desc like '%test%')) LIMIT 20
+
+2023/11/03 22:09:19 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[2.347ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/03 22:09:19 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.474ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/03 22:09:29 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[0.818ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/03 22:09:29 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.324ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/03 22:09:32 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[0.906ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/03 22:09:32 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.353ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/03 22:09:42 /Users/atlas/go/src/gateway_go/services/services.service.go:28
+[1.075ms] [rows:6] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/03 22:09:42 /Users/atlas/go/src/gateway_go/services/services.service.go:31
+[0.754ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20

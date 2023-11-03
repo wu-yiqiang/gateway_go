@@ -1,4 +1,38 @@
 definitions:
+  dao.ServicesInfo:
+    properties:
+      created_at:
+        type: string
+      id:
+        type: integer
+      load_type:
+        type: integer
+      service_desc:
+        type: string
+      service_name:
+        type: string
+      total_node:
+        type: integer
+      updated_at:
+        type: string
+    type: object
+  dto.AdminInfoOutput:
+    properties:
+      avatar:
+        type: string
+      id:
+        type: integer
+      introduction:
+        type: string
+      login_time:
+        type: string
+      name:
+        type: string
+      roles:
+        items:
+          type: string
+        type: array
+    type: object
   dto.ChangePasswordInput:
     properties:
       newpassword:
@@ -35,12 +69,25 @@ definitions:
         example: admin
         type: string
     type: object
+  dto.ServicesListOutput:
+    properties:
+      info:
+        example: admin
+        type: string
+      list:
+        items:
+          $ref: '#/definitions/dao.ServicesInfo'
+        type: array
+      total:
+        example: 400
+        type: integer
+    type: object
   response.Response:
     properties:
       code:
         description: 自定义错误码
         type: integer
-      content:
+      data:
         description: 数据
       message:
         description: 信息
@@ -56,12 +103,39 @@ info:
   title: go-api 框架
   version: "1.0"
 paths:
-  /user/auth/changePassword:
+  /admin/admin_info:
+    get:
+      consumes:
+      - application/json
+      description: 管理员信息获取
+      operationId: /admin/admin_info
+      parameters:
+      - description: token
+        in: query
+        name: token
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/dto.AdminInfoOutput'
+              type: object
+      summary: 管理员信息获取
+      tags:
+      - 用户管理
+  /admin/changePassword:
     post:
       consumes:
       - application/json
       description: 修改密码
-      operationId: /user/auth/changePassword
+      operationId: /admin/changePassword
       parameters:
       - description: body
         in: body
@@ -79,12 +153,12 @@ paths:
       summary: 修改密码
       tags:
       - 用户管理
-  /user/login:
+  /admin/login:
     post:
       consumes:
       - application/json
       description: 用户登录
-      operationId: /user/login
+      operationId: /admin/login
       parameters:
       - description: body
         in: body
@@ -101,18 +175,18 @@ paths:
             allOf:
             - $ref: '#/definitions/response.Response'
             - properties:
-                content:
+                data:
                   $ref: '#/definitions/dto.LoginOutput'
               type: object
       summary: 用户登录
       tags:
       - 用户管理
-  /user/register:
+  /admin/register:
     post:
       consumes:
       - application/json
       description: 用户注册
-      operationId: /user/register
+      operationId: /admin/register
       parameters:
       - description: body
         in: body
@@ -130,4 +204,55 @@ paths:
       summary: 用户注册
       tags:
       - 用户管理
+  /admin_login/logout:
+    get:
+      consumes:
+      - application/json
+      description: 管理员注销
+      operationId: /admin_login/logout
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 管理员注销
+      tags:
+      - 用户管理
+  /service/service_list:
+    get:
+      consumes:
+      - application/json
+      description: 服务查询
+      operationId: /service/service_list
+      parameters:
+      - description: 服务名
+        in: query
+        name: info
+        type: string
+      - description: 页码
+        in: query
+        name: page_no
+        type: integer
+      - description: 页数
+        in: query
+        name: page_size
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/dto.ServicesListOutput'
+              type: object
+      summary: 服务查询
+      tags:
+      - 服务管理
 swagger: "2.0"

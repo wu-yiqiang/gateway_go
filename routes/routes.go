@@ -71,9 +71,19 @@ func SetupRouter() *gin.Engine {
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	// user路由
-	userGroup := router.Group("/user")
+	userGroup := router.Group("/admin")
 	{
 		SetUserGroupRoutes(userGroup)
+	}
+
+	adminGroup := router.Group("/admin_login")
+	{
+		SetAdminGroupRoutes(adminGroup)
+	}
+	// services
+	servicesGroup := router.Group("/service")
+	{
+		SetServicesGroupRoutes(servicesGroup)
 	}
 
 	// 其他路由

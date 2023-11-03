@@ -38,6 +38,6 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			return
 		}
 		c.Set("token", token)
-		c.Set("id", claims.Id)
+		c.Set("id", claims.UserName)
 	}
 }

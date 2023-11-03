@@ -20,7 +20,52 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/user/auth/changePassword": {
+        "/admin/admin_info": {
+            "get": {
+                "description": "管理员信息获取",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户管理"
+                ],
+                "summary": "管理员信息获取",
+                "operationId": "/admin/admin_info",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "token",
+                        "name": "token",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/response.Response"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/definitions/dto.AdminInfoOutput"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "/admin/changePassword": {
             "post": {
                 "description": "修改密码",
                 "consumes": [
@@ -33,7 +78,7 @@ const docTemplate = `{
                     "用户管理"
                 ],
                 "summary": "修改密码",
-                "operationId": "/user/auth/changePassword",
+                "operationId": "/admin/changePassword",
                 "parameters": [
                     {
                         "description": "body",
@@ -55,7 +100,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/user/login": {
+        "/admin/login": {
             "post": {
                 "description": "用户登录",
                 "consumes": [
@@ -68,7 +113,7 @@ const docTemplate = `{
                     "用户管理"
                 ],
                 "summary": "用户登录",
-                "operationId": "/user/login",
+                "operationId": "/admin/login",
                 "parameters": [
                     {
                         "description": "body",
@@ -91,7 +136,7 @@ const docTemplate = `{
                                 {
                                     "type": "object",
                                     "properties": {
-                                        "content": {
+                                        "data": {
                                             "$ref": "#/definitions/dto.LoginOutput"
                                         }
                                     }
@@ -102,7 +147,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/user/register": {
+        "/admin/register": {
             "post": {
                 "description": "用户注册",
                 "consumes": [
@@ -115,7 +160,7 @@ const docTemplate = `{
                     "用户管理"
                 ],
                 "summary": "用户注册",
-                "operationId": "/user/register",
+                "operationId": "/admin/register",
                 "parameters": [
                     {
                         "description": "body",
@@ -136,9 +181,142 @@ const docTemplate = `{
                     }
                 }
             }
+        },
+        "/admin_login/logout": {
+            "get": {
+                "description": "管理员注销",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户管理"
+                ],
+                "summary": "管理员注销",
+                "operationId": "/admin_login/logout",
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "$ref": "#/definitions/response.Response"
+                        }
+                    }
+                }
+            }
+        },
+        "/service/service_list": {
+            "get": {
+                "description": "服务查询",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "服务管理"
+                ],
+                "summary": "服务查询",
+                "operationId": "/service/service_list",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "服务名",
+                        "name": "info",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "页码",
+                        "name": "page_no",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "页数",
+                        "name": "page_size",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/response.Response"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/definitions/dto.ServicesListOutput"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
         }
     },
     "definitions": {
+        "dao.ServicesInfo": {
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "load_type": {
+                    "type": "integer"
+                },
+                "service_desc": {
+                    "type": "string"
+                },
+                "service_name": {
+                    "type": "string"
+                },
+                "total_node": {
+                    "type": "integer"
+                },
+                "updated_at": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.AdminInfoOutput": {
+            "type": "object",
+            "properties": {
+                "avatar": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "introduction": {
+                    "type": "string"
+                },
+                "login_time": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "roles": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
         "dto.ChangePasswordInput": {
             "type": "object",
             "properties": {
@@ -191,6 +369,25 @@ const docTemplate = `{
                 }
             }
         },
+        "dto.ServicesListOutput": {
+            "type": "object",
+            "properties": {
+                "info": {
+                    "type": "string",
+                    "example": "admin"
+                },
+                "list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dao.ServicesInfo"
+                    }
+                },
+                "total": {
+                    "type": "integer",
+                    "example": 400
+                }
+            }
+        },
         "response.Response": {
             "type": "object",
             "properties": {
@@ -198,7 +395,7 @@ const docTemplate = `{
                     "description": "自定义错误码",
                     "type": "integer"
                 },
-                "content": {
+                "data": {
                     "description": "数据"
                 },
                 "message": {

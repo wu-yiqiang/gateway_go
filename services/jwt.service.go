@@ -2,6 +2,7 @@ package services
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"gateway_go/global"
 	"gateway_go/utils"
@@ -22,7 +23,7 @@ var JwtService = new(jwtService)
 
 // 所有需要颁发 token 的用户模型必须实现这个接口
 type JwtUser interface {
-	GetUid() string
+	GetName() string
 }
 
 // CustomClaims 自定义 Claims
@@ -43,7 +44,8 @@ func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (token
 		CustomClaims{
 			StandardClaims: jwt.StandardClaims{
 				ExpiresAt: time.Now().Unix() + global.App.Config.Jwt.JwtTtl,
-				Id:        user.GetUid(),
+				//Id:        user.GetUid(),
+				UserName:  user.GetName(),
 				Issuer:    GuardName, // 用于在中间件中区分不同客户端颁发的 token，避免 token 跨端使用
 				NotBefore: time.Now().Unix() - 1000,
 			},
@@ -58,6 +60,23 @@ func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (token
 		//TokenType,
 	}
 	return
+}
+
+// token解密
+func (jwtService *jwtService) DecryptToken(token string) (err error, username string) {
+	if len(token) < 10 {
+		return errors.New("token不合法"), ""
+	}
+	tokenStr, err := jwt.ParseWithClaims(token, &CustomClaims{}, func(token *jwt.Token) (interface{}, error) {
+		return []byte(global.App.Config.Jwt.Secret), nil
+	})
+
+	if err != nil {
+		return err, ""
+	}
+	claims := tokenStr.Claims.(*CustomClaims)
+	fmt.Println("data", claims)
+	return nil, claims.UserName
 }
 
 // 获取黑名单缓存 key

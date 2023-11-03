@@ -9,7 +9,7 @@ import (
 // 响应结构体
 type Response struct {
 	Code    int         `json:"code"`    // 自定义错误码
-	Content interface{} `json:"content"` // 数据
+	Data    interface{} `json:"data"`    // 数据
 	Message string      `json:"message"` // 信息
 }
 
