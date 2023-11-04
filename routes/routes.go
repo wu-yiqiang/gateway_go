@@ -54,14 +54,12 @@ import (
 
 // @x-extension-openapi {"example": "value on a json format"}
 func SetupRouter() *gin.Engine {
-	// programatically set swagger info
 	docs.SwaggerInfo.Title = global.App.Config.Swagger.Title
 	docs.SwaggerInfo.Description = global.App.Config.Swagger.Desc
-	docs.SwaggerInfo.Version = "1.0"
-	docs.SwaggerInfo.Host = global.App.Config.Swagger.Host
+	docs.SwaggerInfo.Host = global.App.Config.Swagger.Host + ":" + global.App.Config.App.Port
 	docs.SwaggerInfo.BasePath = global.App.Config.Swagger.BasePath
+	docs.SwaggerInfo.Version = "1.0"
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
-
 	router := gin.Default()
 	// 跨域中间件
 	router.Use(middleware.CORS())

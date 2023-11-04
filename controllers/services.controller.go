@@ -1,7 +1,11 @@
 package controllers
 
 import (
+	"fmt"
+	"gateway_go/common"
+	"gateway_go/dao"
 	"gateway_go/dto"
+	"gateway_go/global"
 	"gateway_go/response"
 	"gateway_go/services"
 	"github.com/gin-gonic/gin"
@@ -40,15 +44,85 @@ func (ser *servicesController) ServicesList(c *gin.Context) {
 		PageSize: sizeNum,
 		PageNo:   noNum,
 	}
-	list, total, err := services.ServicesService.FindList(c, parmas)
+	list, total, err := services.ServicesService.FindList(parmas)
 	if err != nil {
 		response.BusinessFail(c, "查询失败")
 		return
 	}
+	outList := []dto.ServicesListItemOutput{}
+	for _, listItem := range list {
+		item, err := services.ServicesService.ServiceDetail(&listItem)
+		if err != nil {
+
+		}
+		serviceAddr := ""
+		clusterIp := global.App.Config.Cluster.ClusterIp
+		clusterPort := global.App.Config.Cluster.ClusterPort
+		clusterSslPort := global.App.Config.Cluster.ClusterSslPort
+		if listItem.LoadType == common.LoadTypeHttp && item.Http.RuleType == common.HttpRuleTypePrefixURL && item.Http.NeedHttps == 1 {
+			serviceAddr = clusterIp + clusterSslPort + item.Http.Rule
+		}
+		if listItem.LoadType == common.LoadTypeHttp && item.Http.RuleType == common.HttpRuleTypePrefixURL && item.Http.NeedHttps == 0 {
+			serviceAddr = clusterIp + clusterPort + item.Http.Rule
+		}
+		if listItem.LoadType == common.LoadTypeHttp && item.Http.RuleType == common.HttpRuleTypeDomain {
+			serviceAddr = item.Http.Rule
+		}
+		if listItem.LoadType == common.LoadTypeTcp {
+			serviceAddr = fmt.Sprintf("%s:%d", clusterIp, item.Tcp.Port)
+		}
+		if listItem.LoadType == common.LoadTypeGrpc {
+			serviceAddr = fmt.Sprintf("%s:%d", clusterIp, item.Grpc.Port)
+		}
+		ipList := dao.LoadBalance{ID: item.LoadBalance.ID, ServiceId: item.LoadBalance.ServiceId, CheckMethod: item.LoadBalance.CheckMethod,
+			CheckTimeout: item.LoadBalance.CheckTimeout, CheckInterval: item.LoadBalance.CheckInterval, RoundType: item.LoadBalance.RoundType,
+			IpList: item.LoadBalance.IpList, WeightList: item.LoadBalance.WeightList, ForbidList: item.LoadBalance.ForbidList,
+			UpstreamConnectTimeout: item.LoadBalance.UpstreamConnectTimeout, UpstreamHeaderTimeout: item.LoadBalance.UpstreamHeaderTimeout,
+			UpstreamIdleTimeout: item.LoadBalance.UpstreamIdleTimeout, UpstreamMaxIdle: item.LoadBalance.UpstreamMaxIdle,
+		}
+		iplist := ipList.GetIpListByModel()
+		outItem := dto.ServicesListItemOutput{
+			ID:          listItem.ID,
+			ServiceName: listItem.ServiceName,
+			ServiceDesc: listItem.ServiceDesc,
+			LoadType:    listItem.LoadType,
+			ServiceAddr: serviceAddr,
+			Qps:         0,
+			Qpd:         0,
+			TotalNode:   len(iplist),
+		}
+		outList = append(outList, outItem)
+	}
 	out := &dto.ServicesListOutput{
 		Total: total,
-		List:  list,
+		List:  outList,
 		Info:  info,
 	}
 	response.Success(c, out)
+}
+
+// ListPage godoc
+// @Summary 服务删除
+// @Description 服务删除
+// @Tags 服务管理
+// @ID /service/service_delete
+// @Accept  json
+// @Produce  json
+// @Param id query string false "服务ID"
+// @Success 200 {object} response.Response{} "success"
+// @Router /service/service_delete [get]
+func (ser *servicesController) ServicesDelete(c *gin.Context) {
+	id := c.Query("id")
+	if id == "" {
+		response.BusinessFail(c, "服务ID不能为空")
+		return
+	}
+	Id, _ := strconv.Atoi(id)
+	err := services.ServicesService.ServiceDelete(Id)
+	if err != nil {
+		response.BusinessFail(c, err.Error())
+		return
+	}
+	response.Success(c, "id为"+id+"的服务删除成功")
+	return
 }

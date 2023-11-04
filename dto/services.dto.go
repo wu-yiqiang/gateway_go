@@ -1,7 +1,5 @@
 package dto
 
-import "gateway_go/dao"
-
 type ServicesListInput struct {
 	Info     string `form:"info" form:"info" description:"关键词" example:"admin"`
 	PageNo   int    `form:"page_no" form:"page_no" description:"页码" example:"1"`
@@ -20,7 +18,7 @@ type ServicesListItemOutput struct {
 }
 
 type ServicesListOutput struct {
-	Info  string             `json:"info" form:"info" description:"关键词" example:"admin"`
-	Total int64              `json:"total" form:"total" description:"总数" example:"400"`
-	List  []dao.ServicesInfo `json:"list" form:"list" description:"数据"`
+	Info  string                   `json:"info" form:"info" description:"关键词" example:"admin"`
+	Total int64                    `json:"total" form:"total" description:"总数" example:"400"`
+	List  []ServicesListItemOutput `json:"list" form:"list" description:"数据"`
 }

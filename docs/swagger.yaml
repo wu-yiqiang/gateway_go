@@ -1,21 +1,4 @@
 definitions:
-  dao.ServicesInfo:
-    properties:
-      created_at:
-        type: string
-      id:
-        type: integer
-      load_type:
-        type: integer
-      service_desc:
-        type: string
-      service_name:
-        type: string
-      total_node:
-        type: integer
-      updated_at:
-        type: string
-    type: object
   dto.AdminInfoOutput:
     properties:
       avatar:
@@ -69,6 +52,25 @@ definitions:
         example: admin
         type: string
     type: object
+  dto.ServicesListItemOutput:
+    properties:
+      id:
+        type: integer
+      load_type:
+        type: integer
+      qpd:
+        type: integer
+      qps:
+        type: integer
+      service_addr:
+        type: string
+      service_desc:
+        type: string
+      service_name:
+        type: string
+      total_node:
+        type: integer
+    type: object
   dto.ServicesListOutput:
     properties:
       info:
@@ -76,7 +78,7 @@ definitions:
         type: string
       list:
         items:
-          $ref: '#/definitions/dao.ServicesInfo'
+          $ref: '#/definitions/dto.ServicesListItemOutput'
         type: array
       total:
         example: 400
@@ -220,6 +222,27 @@ paths:
       summary: 管理员注销
       tags:
       - 用户管理
+  /service/service_delete:
+    get:
+      consumes:
+      - application/json
+      description: 服务删除
+      operationId: /service/service_delete
+      parameters:
+      - description: 服务ID
+        in: query
+        name: id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 服务删除
+      tags:
+      - 服务管理
   /service/service_list:
     get:
       consumes:

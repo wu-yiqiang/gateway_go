@@ -206,6 +206,38 @@ const docTemplate = `{
                 }
             }
         },
+        "/service/service_delete": {
+            "get": {
+                "description": "服务删除",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "服务管理"
+                ],
+                "summary": "服务删除",
+                "operationId": "/service/service_delete",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "服务ID",
+                        "name": "id",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "$ref": "#/definitions/response.Response"
+                        }
+                    }
+                }
+            }
+        },
         "/service/service_list": {
             "get": {
                 "description": "服务查询",
@@ -265,32 +297,6 @@ const docTemplate = `{
         }
     },
     "definitions": {
-        "dao.ServicesInfo": {
-            "type": "object",
-            "properties": {
-                "created_at": {
-                    "type": "string"
-                },
-                "id": {
-                    "type": "integer"
-                },
-                "load_type": {
-                    "type": "integer"
-                },
-                "service_desc": {
-                    "type": "string"
-                },
-                "service_name": {
-                    "type": "string"
-                },
-                "total_node": {
-                    "type": "integer"
-                },
-                "updated_at": {
-                    "type": "string"
-                }
-            }
-        },
         "dto.AdminInfoOutput": {
             "type": "object",
             "properties": {
@@ -369,6 +375,35 @@ const docTemplate = `{
                 }
             }
         },
+        "dto.ServicesListItemOutput": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "load_type": {
+                    "type": "integer"
+                },
+                "qpd": {
+                    "type": "integer"
+                },
+                "qps": {
+                    "type": "integer"
+                },
+                "service_addr": {
+                    "type": "string"
+                },
+                "service_desc": {
+                    "type": "string"
+                },
+                "service_name": {
+                    "type": "string"
+                },
+                "total_node": {
+                    "type": "integer"
+                }
+            }
+        },
         "dto.ServicesListOutput": {
             "type": "object",
             "properties": {
@@ -379,7 +414,7 @@ const docTemplate = `{
                 "list": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/dao.ServicesInfo"
+                        "$ref": "#/definitions/dto.ServicesListItemOutput"
                     }
                 },
                 "total": {
