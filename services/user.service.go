@@ -6,7 +6,6 @@ import (
 	"gateway_go/dto"
 	"gateway_go/global"
 	"gateway_go/utils"
-	"gateway_go/validator"
 	"time"
 )
 
@@ -20,7 +19,7 @@ func (userService *userService) TableName() string {
 }
 
 // Register
-func (userService *userService) Register(params validator.Register) (err error, user dao.Admin) {
+func (userService *userService) Register(params dto.RegisterInput) (err error, user dao.Admin) {
 	var result = global.App.DB.Table(userService.TableName()).Where("user_name = ?", params.Username).Select("id").First(&dao.Admin{})
 	if result.RowsAffected != 0 {
 		err = errors.New("账号已存在")
@@ -35,7 +34,7 @@ func (userService *userService) Register(params validator.Register) (err error, 
 }
 
 // Login
-func (userService *userService) Login(params validator.Register) (err error, user *dao.Admin) {
+func (userService *userService) Login(params dto.RegisterInput) (err error, user *dao.Admin) {
 	err = global.App.DB.Table(userService.TableName()).Where("user_name = ?", params.Username).First(&user).Error
 	if err != nil {
 		err = errors.New("该用户不存在")
@@ -49,7 +48,7 @@ func (userService *userService) Login(params validator.Register) (err error, use
 }
 
 func (userService *userService) Changepassword(params dto.ChangePasswordInput) (err error, user *dao.Admin) {
-	var param = validator.Register{Username: params.Username, Password: params.Password}
+	var param = dto.RegisterInput{Username: params.Username, Password: params.Password}
 	return userService.Login(param)
 }
 

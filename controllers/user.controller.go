@@ -8,7 +8,6 @@ import (
 	"gateway_go/request"
 	"gateway_go/response"
 	"gateway_go/services"
-	"gateway_go/validator"
 	"github.com/gin-gonic/gin"
 	"time"
 )
@@ -29,7 +28,7 @@ var AdminController = new(adminController)
 // @Success 200 {object} response.Response{} "success"
 // @Router /admin/register [post]
 func (admin *adminController) AdminRegister(c *gin.Context) {
-	var form validator.Register
+	var form dto.RegisterInput
 	if err := c.ShouldBindJSON(&form); err != nil {
 		response.ValidateFail(c, request.GetErrorMsg(form, err))
 		return
@@ -52,7 +51,7 @@ func (admin *adminController) AdminRegister(c *gin.Context) {
 // @Success 200 {object} response.Response{data=dto.LoginOutput} "success"
 // @Router /admin/login [post]
 func (admin *adminController) AdminLogin(c *gin.Context) {
-	var form validator.Register
+	var form dto.RegisterInput
 	if err := c.ShouldBindJSON(&form); err != nil {
 		response.ValidateFail(c, request.GetErrorMsg(form, err))
 		return
