@@ -3,9 +3,18 @@ package dto
 import "gateway_go/request"
 
 type ServicesListInput struct {
-	Info     string `form:"info" form:"info" description:"关键词" example:"admin"`
-	PageNo   int    `form:"page_no" form:"page_no" description:"页码" example:"1"`
-	PageSize int    `form:"page_size" form:"page_size" description:"页数" example:"10"`
+	Info     string `json:"info" form:"info" gorm:"info" description:"服务名" example:"test" binding:""`
+	PageNo   int    `json:"page_no" form:"page_no" gorm:"page_no" description:"页码" example:"1" binding:"required,min=1"`
+	PageSize int    `json:"page_size" form:"page_size" gorm:"page_size" description:"页数" example:"10" binding:"required,min=1"`
+}
+
+func (servicesListInput ServicesListInput) GetMessages() request.ValidatorMessages {
+	return request.ValidatorMessages{
+		"page_no.required":   "页码不能为空",
+		"page_no.min":        "页码最小不能小于1",
+		"page_size.required": "页数不能为空",
+		"page_size.min":      "页数最小不能小于1",
+	}
 }
 
 type ServicesListItemOutput struct {

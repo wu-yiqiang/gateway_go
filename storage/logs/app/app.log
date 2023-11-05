@@ -1,0 +1,24 @@
+[2023-11-05 19:32:21.355]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 19:32:21.357]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 19:32:57.930]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 19:32:57.932]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 19:41:59.477]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 19:41:59.479]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 19:43:44.606]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 19:43:44.608]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 19:45:34.318]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 19:45:34.320]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 19:56:38.926]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 19:56:38.931]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 19:58:41.835]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 19:58:41.838]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 19:59:25.818]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 19:59:25.820]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 20:06:21.874]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 20:06:21.876]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 20:07:36.375]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 20:07:36.378]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 20:13:31.598]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 20:13:31.600]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2023-11-05 20:14:13.652]	dev.info	gateway_go/main.go:26	log init success!
+[2023-11-05 20:14:13.654]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax

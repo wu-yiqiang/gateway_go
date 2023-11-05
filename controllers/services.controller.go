@@ -26,26 +26,17 @@ var ServicesController = new(servicesController)
 // @Accept  json
 // @Produce  json
 // @Param info query string false "服务名"
-// @Param page_no query int false "页码"
-// @Param page_size query int true "页数"
+// @Param page_no query int true "页码" default(1)
+// @Param page_size query int true "页数" default(10)
 // @Success 200 {object} response.Response{data=dto.ServicesListOutput} "success"
 // @Router /service/service_list [get]
 func (ser *servicesController) ServicesList(c *gin.Context) {
-	info := c.Query("info")
-	no := c.Query("page_no")
-	size := c.Query("page_size")
-	if no == "" || size == "" {
-		response.BusinessFail(c, "分页参数不能为空")
+	var form dto.ServicesListInput
+	if err := c.ShouldBindQuery(&form); err != nil {
+		response.ValidateFail(c, request.GetErrorMsg(form, err))
 		return
 	}
-	sizeNum, _ := strconv.Atoi(size)
-	noNum, _ := strconv.Atoi(no)
-	parmas := &dto.ServicesListInput{
-		Info:     info,
-		PageSize: sizeNum,
-		PageNo:   noNum,
-	}
-	list, total, err := services.ServicesService.FindList(parmas)
+	list, total, err := services.ServicesService.FindList(&form)
 	if err != nil {
 		response.BusinessFail(c, "查询失败")
 		return
@@ -97,7 +88,7 @@ func (ser *servicesController) ServicesList(c *gin.Context) {
 	out := &dto.ServicesListOutput{
 		Total: total,
 		List:  outList,
-		Info:  info,
+		Info:  form.Info,
 	}
 	response.Success(c, out)
 }

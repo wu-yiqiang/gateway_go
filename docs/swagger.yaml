@@ -259,6 +259,39 @@ paths:
       summary: 管理员注销
       tags:
       - 用户管理
+  /app/app_list:
+    get:
+      consumes:
+      - application/json
+      description: 租户查询
+      operationId: /app/app_list
+      parameters:
+      - description: 租户名
+        in: query
+        name: info
+        type: string
+      - default: 1
+        description: 页码
+        in: query
+        name: page_no
+        required: true
+        type: integer
+      - default: 10
+        description: 页数
+        in: query
+        name: page_size
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 租户查询
+      tags:
+      - 租户管理
   /service/service_add_grpc:
     post:
       consumes:
@@ -314,11 +347,14 @@ paths:
         in: query
         name: info
         type: string
-      - description: 页码
+      - default: 1
+        description: 页码
         in: query
         name: page_no
+        required: true
         type: integer
-      - description: 页数
+      - default: 10
+        description: 页数
         in: query
         name: page_size
         required: true

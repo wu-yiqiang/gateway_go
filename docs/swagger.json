@@ -198,6 +198,54 @@
                 }
             }
         },
+        "/app/app_list": {
+            "get": {
+                "description": "租户查询",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "租户管理"
+                ],
+                "summary": "租户查询",
+                "operationId": "/app/app_list",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "租户名",
+                        "name": "info",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "default": 1,
+                        "description": "页码",
+                        "name": "page_no",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "default": 10,
+                        "description": "页数",
+                        "name": "page_size",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "$ref": "#/definitions/response.Response"
+                        }
+                    }
+                }
+            }
+        },
         "/service/service_add_grpc": {
             "post": {
                 "description": "grpc服务新增",
@@ -288,12 +336,15 @@
                     },
                     {
                         "type": "integer",
+                        "default": 1,
                         "description": "页码",
                         "name": "page_no",
-                        "in": "query"
+                        "in": "query",
+                        "required": true
                     },
                     {
                         "type": "integer",
+                        "default": 10,
                         "description": "页数",
                         "name": "page_size",
                         "in": "query",
