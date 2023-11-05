@@ -43,3 +43,24 @@ func ValidatePassword(fl validator.FieldLevel) bool {
 	}
 	return true
 }
+
+// ValidateServiceName 服务名校验
+func ValidateServiceName(fl validator.FieldLevel) bool {
+	return false
+}
+
+// ValidateHeaderTransfor 头字段校验
+func ValidateHeaderTransfor(fl validator.FieldLevel) bool {
+	return false
+}
+
+// ValidateIpList IP列表校验
+func ValidateIpList(fl validator.FieldLevel) bool {
+	return false
+}
+
+// ValidateIpPortList IP端口列表校验
+func ValidateIpPortList(fl validator.FieldLevel) bool {
+
+	return false
+}

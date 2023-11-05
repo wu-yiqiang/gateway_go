@@ -47,7 +47,7 @@ func (admin *adminController) AdminRegister(c *gin.Context) {
 // @ID /admin/login
 // @Accept  json
 // @Produce  json
-// @Param polygon body dto.LoginInput true "body"
+// @Param polygon body dto.RegisterInput true "body"
 // @Success 200 {object} response.Response{data=dto.LoginOutput} "success"
 // @Router /admin/login [post]
 func (admin *adminController) AdminLogin(c *gin.Context) {

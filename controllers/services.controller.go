@@ -6,6 +6,7 @@ import (
 	"gateway_go/dao"
 	"gateway_go/dto"
 	"gateway_go/global"
+	"gateway_go/request"
 	"gateway_go/response"
 	"gateway_go/services"
 	"github.com/gin-gonic/gin"
@@ -128,15 +129,20 @@ func (ser *servicesController) ServicesDelete(c *gin.Context) {
 }
 
 // ListPage godoc
-// @Summary tcp服务新增
-// @Description tcp服务新增
+// @Summary grpc服务新增
+// @Description grpc服务新增
 // @Tags 服务管理
-// @ID /service/service_add_tcp
+// @ID /service/service_add_grpc
 // @Accept  json
 // @Produce  json
-// @Param polygon body dto.ServicesTcpInput true "body"
+// @Param polygon body dto.GrpcServiceInput true "body"
 // @Success 200 {object} response.Response{} "success"
-// @Router /service/service_add_tcp [post]
-//func (ser *servicesController) ServicesAddTcp(c *gin.Context) {
-//	var form validator.GrpcService
-//}
+// @Router /service/service_add_grpc [post]
+func (ser *servicesController) ServicesAddGrpc(c *gin.Context) {
+	var form dto.GrpcServiceInput
+	if err := c.ShouldBindJSON(&form); err != nil {
+		response.ValidateFail(c, request.GetErrorMsg(form, err))
+		return
+	}
+	fmt.Println("asda", form)
+}

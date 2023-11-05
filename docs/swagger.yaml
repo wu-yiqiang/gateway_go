@@ -27,15 +27,49 @@ definitions:
       username:
         example: admin
         type: string
+    required:
+    - newpassword
+    - password
+    - username
     type: object
-  dto.LoginInput:
+  dto.GrpcServiceInput:
     properties:
-      password:
-        example: 1234_abcd
+      black_list:
         type: string
-      username:
-        example: admin
+      clientip_flow_limit:
+        type: integer
+      forbid_list:
         type: string
+      header_transfor:
+        type: string
+      ip_list:
+        type: string
+      open_auth:
+        type: integer
+      port:
+        maximum: 8999
+        minimum: 8001
+        type: integer
+      round_type:
+        type: integer
+      service_desc:
+        type: string
+      service_flow_limit:
+        type: integer
+      service_name:
+        type: string
+      weight_list:
+        type: string
+      white_host_name:
+        type: string
+      white_list:
+        type: string
+    required:
+    - ip_list
+    - port
+    - service_desc
+    - service_name
+    - weight_list
     type: object
   dto.LoginOutput:
     properties:
@@ -51,6 +85,9 @@ definitions:
       username:
         example: admin
         type: string
+    required:
+    - password
+    - username
     type: object
   dto.ServicesListItemOutput:
     properties:
@@ -167,7 +204,7 @@ paths:
         name: polygon
         required: true
         schema:
-          $ref: '#/definitions/dto.LoginInput'
+          $ref: '#/definitions/dto.RegisterInput'
       produces:
       - application/json
       responses:
@@ -222,6 +259,29 @@ paths:
       summary: 管理员注销
       tags:
       - 用户管理
+  /service/service_add_grpc:
+    post:
+      consumes:
+      - application/json
+      description: grpc服务新增
+      operationId: /service/service_add_grpc
+      parameters:
+      - description: body
+        in: body
+        name: polygon
+        required: true
+        schema:
+          $ref: '#/definitions/dto.GrpcServiceInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: grpc服务新增
+      tags:
+      - 服务管理
   /service/service_delete:
     get:
       consumes:

@@ -7,10 +7,10 @@ type RegisterInput struct {
 	Password string `json:"password" gorm:"column:password" json:"password" description:"用户密码" example:"1234_abcd" binding:"required,password"`
 }
 
-type LoginInput struct {
-	Username string `json:"username" gorm:"column:username" description:"用户名称" example:"admin"`
-	Password string `json:"password" gorm:"column:password" description:"用户密码" example:"1234_abcd"`
-}
+//type LoginInput struct {
+//	Username string `json:"username" gorm:"column:username" description:"用户名称" example:"admin"`
+//	Password string `json:"password" gorm:"column:password" description:"用户密码" example:"1234_abcd"`
+//}
 
 // 自定义错误信息
 func (register RegisterInput) GetMessages() request.ValidatorMessages {
@@ -49,7 +49,3 @@ type AdminInfoOutput struct {
 	Name         string   `json:"name"`
 	Roles        []string `json:"roles"`
 }
-
-//type RegisterOut struct {
-//	Username:
-//}

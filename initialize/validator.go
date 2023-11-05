@@ -14,6 +14,10 @@ func InitializeValidator() {
 		_ = v.RegisterValidation("email", utils.ValidateEmail)
 		_ = v.RegisterValidation("password", utils.ValidatePassword)
 		_ = v.RegisterValidation("mobile", utils.ValidateMobile)
+		_ = v.RegisterValidation("valid_service_name", utils.ValidateServiceName)
+		_ = v.RegisterValidation("valid_header_transfor", utils.ValidateHeaderTransfor)
+		_ = v.RegisterValidation("valid_iplist", utils.ValidateIpList)
+		_ = v.RegisterValidation("valid_ipportlist", utils.ValidateIpPortList)
 		// 注册自定义 json tag 函数
 		v.RegisterTagNameFunc(func(fld reflect.StructField) string {
 			name := strings.SplitN(fld.Tag.Get("json"), ",", 2)[0]

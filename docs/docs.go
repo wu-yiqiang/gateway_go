@@ -121,7 +121,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/dto.LoginInput"
+                            "$ref": "#/definitions/dto.RegisterInput"
                         }
                     }
                 ],
@@ -196,6 +196,41 @@ const docTemplate = `{
                 ],
                 "summary": "管理员注销",
                 "operationId": "/admin_login/logout",
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "$ref": "#/definitions/response.Response"
+                        }
+                    }
+                }
+            }
+        },
+        "/service/service_add_grpc": {
+            "post": {
+                "description": "grpc服务新增",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "服务管理"
+                ],
+                "summary": "grpc服务新增",
+                "operationId": "/service/service_add_grpc",
+                "parameters": [
+                    {
+                        "description": "body",
+                        "name": "polygon",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/dto.GrpcServiceInput"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "success",
@@ -325,6 +360,11 @@ const docTemplate = `{
         },
         "dto.ChangePasswordInput": {
             "type": "object",
+            "required": [
+                "newpassword",
+                "password",
+                "username"
+            ],
             "properties": {
                 "newpassword": {
                     "type": "string",
@@ -340,16 +380,59 @@ const docTemplate = `{
                 }
             }
         },
-        "dto.LoginInput": {
+        "dto.GrpcServiceInput": {
             "type": "object",
+            "required": [
+                "ip_list",
+                "port",
+                "service_desc",
+                "service_name",
+                "weight_list"
+            ],
             "properties": {
-                "password": {
-                    "type": "string",
-                    "example": "1234_abcd"
+                "black_list": {
+                    "type": "string"
                 },
-                "username": {
-                    "type": "string",
-                    "example": "admin"
+                "clientip_flow_limit": {
+                    "type": "integer"
+                },
+                "forbid_list": {
+                    "type": "string"
+                },
+                "header_transfor": {
+                    "type": "string"
+                },
+                "ip_list": {
+                    "type": "string"
+                },
+                "open_auth": {
+                    "type": "integer"
+                },
+                "port": {
+                    "type": "integer",
+                    "maximum": 8999,
+                    "minimum": 8001
+                },
+                "round_type": {
+                    "type": "integer"
+                },
+                "service_desc": {
+                    "type": "string"
+                },
+                "service_flow_limit": {
+                    "type": "integer"
+                },
+                "service_name": {
+                    "type": "string"
+                },
+                "weight_list": {
+                    "type": "string"
+                },
+                "white_host_name": {
+                    "type": "string"
+                },
+                "white_list": {
+                    "type": "string"
                 }
             }
         },
@@ -364,6 +447,10 @@ const docTemplate = `{
         },
         "dto.RegisterInput": {
             "type": "object",
+            "required": [
+                "password",
+                "username"
+            ],
             "properties": {
                 "password": {
                     "type": "string",
