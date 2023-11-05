@@ -1,4 +1,21 @@
 definitions:
+  dao.Tenement:
+    properties:
+      app_id:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      qpd:
+        type: integer
+      qps:
+        type: integer
+      secret:
+        type: string
+      white_ips:
+        type: string
+    type: object
   dto.AdminInfoOutput:
     properties:
       avatar:
@@ -119,6 +136,17 @@ definitions:
         type: array
       total:
         example: 400
+        type: integer
+    type: object
+  dto.TenementListOutput:
+    properties:
+      info:
+        type: string
+      list:
+        items:
+          $ref: '#/definitions/dao.Tenement'
+        type: array
+      total:
         type: integer
     type: object
   response.Response:
@@ -259,6 +287,27 @@ paths:
       summary: 管理员注销
       tags:
       - 用户管理
+  /app/app_delete:
+    get:
+      consumes:
+      - application/json
+      description: 租户删除
+      operationId: /app/app_delete
+      parameters:
+      - description: 租户名ID
+        in: query
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 租户删除
+      tags:
+      - 租户管理
   /app/app_list:
     get:
       consumes:
@@ -288,7 +337,12 @@ paths:
         "200":
           description: success
           schema:
-            $ref: '#/definitions/response.Response'
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/dto.TenementListOutput'
+              type: object
       summary: 租户查询
       tags:
       - 租户管理

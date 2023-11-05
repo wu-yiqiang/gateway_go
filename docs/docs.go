@@ -206,6 +206,38 @@ const docTemplate = `{
                 }
             }
         },
+        "/app/app_delete": {
+            "get": {
+                "description": "租户删除",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "租户管理"
+                ],
+                "summary": "租户删除",
+                "operationId": "/app/app_delete",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "租户名ID",
+                        "name": "id",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "$ref": "#/definitions/response.Response"
+                        }
+                    }
+                }
+            }
+        },
         "/app/app_list": {
             "get": {
                 "description": "租户查询",
@@ -248,7 +280,19 @@ const docTemplate = `{
                     "200": {
                         "description": "success",
                         "schema": {
-                            "$ref": "#/definitions/response.Response"
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/response.Response"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/definitions/dto.TenementListOutput"
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     }
                 }
@@ -383,6 +427,32 @@ const docTemplate = `{
         }
     },
     "definitions": {
+        "dao.Tenement": {
+            "type": "object",
+            "properties": {
+                "app_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "qpd": {
+                    "type": "integer"
+                },
+                "qps": {
+                    "type": "integer"
+                },
+                "secret": {
+                    "type": "string"
+                },
+                "white_ips": {
+                    "type": "string"
+                }
+            }
+        },
         "dto.AdminInfoOutput": {
             "type": "object",
             "properties": {
@@ -558,6 +628,23 @@ const docTemplate = `{
                 "total": {
                     "type": "integer",
                     "example": 400
+                }
+            }
+        },
+        "dto.TenementListOutput": {
+            "type": "object",
+            "properties": {
+                "info": {
+                    "type": "string"
+                },
+                "list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dao.Tenement"
+                    }
+                },
+                "total": {
+                    "type": "integer"
                 }
             }
         },

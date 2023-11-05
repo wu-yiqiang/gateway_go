@@ -7,4 +7,5 @@ import (
 
 func SetTenementGroupRoutes(router *gin.RouterGroup) {
 	router.GET("/app_list", controllers.TenementController.TenementList)
+	router.GET("/app_delete", controllers.TenementController.TenementDelete)
 }
