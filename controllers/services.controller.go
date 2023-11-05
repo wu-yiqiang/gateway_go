@@ -126,3 +126,17 @@ func (ser *servicesController) ServicesDelete(c *gin.Context) {
 	response.Success(c, "id为"+id+"的服务删除成功")
 	return
 }
+
+// ListPage godoc
+// @Summary tcp服务新增
+// @Description tcp服务新增
+// @Tags 服务管理
+// @ID /service/service_add_tcp
+// @Accept  json
+// @Produce  json
+// @Param polygon body dto.ServicesTcpInput true "body"
+// @Success 200 {object} response.Response{} "success"
+// @Router /service/service_add_tcp [post]
+//func (ser *servicesController) ServicesAddTcp(c *gin.Context) {
+//	var form validator.GrpcService
+//}

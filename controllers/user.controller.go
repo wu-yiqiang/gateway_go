@@ -99,7 +99,7 @@ func (admin *adminController) AdminLogin(c *gin.Context) {
 // @Success 200 {object} response.Response{} "success"
 // @Router /admin/changePassword [post]
 func (admin *adminController) AdminChangePassword(c *gin.Context) {
-	var form validator.ChangePassword
+	var form dto.ChangePasswordInput
 	if err := c.ShouldBindJSON(&form); err != nil {
 		response.ValidateFail(c, request.GetErrorMsg(form, err))
 		return

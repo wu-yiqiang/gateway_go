@@ -3,6 +3,7 @@ package services
 import (
 	"errors"
 	"gateway_go/dao"
+	"gateway_go/dto"
 	"gateway_go/global"
 	"gateway_go/utils"
 	"gateway_go/validator"
@@ -47,12 +48,12 @@ func (userService *userService) Login(params validator.Register) (err error, use
 	return
 }
 
-func (userService *userService) Changepassword(params validator.ChangePassword) (err error, user *dao.Admin) {
+func (userService *userService) Changepassword(params dto.ChangePasswordInput) (err error, user *dao.Admin) {
 	var param = validator.Register{Username: params.Username, Password: params.Password}
 	return userService.Login(param)
 }
 
-func (userService *userService) ModifyPassword(params validator.ChangePassword) (err error) {
+func (userService *userService) ModifyPassword(params dto.ChangePasswordInput) (err error) {
 	hashPassword := utils.BcryptMake([]byte(params.Password))
 	err = global.App.DB.Table(userService.TableName()).Where("user_name = ?", params.Username).Updates(map[string]interface{}{"password": hashPassword, "update_at": time.Now()}).Error
 	if err != nil {

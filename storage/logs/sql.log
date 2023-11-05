@@ -31093,3 +31093,2046 @@
 
 2023/11/04 23:05:30 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
 [0.327ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 58
+
+2023/11/05 07:37:25 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[14.571ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[2.551ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.635ms] [rows:20] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[1.585ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 34
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[1.738ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 34
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[1.336ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 34
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[1.746ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 34
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[1.015ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 34
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.237ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 35
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.210ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 35
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.235ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 35
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.268ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 35
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.282ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 35
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.268ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 36
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.312ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 36
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.380ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 36
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.205ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 36
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.180ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 36
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.277ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 38
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.233ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 38
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.266ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 38
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.213ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 38
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.213ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 38
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.236ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 41
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.372ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 41
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.367ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 41
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.283ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 41
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.187ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 41
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.212ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 42
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.232ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 42
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.341ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 42
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.251ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 42
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.196ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 42
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.214ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 43
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.221ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 43
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.229ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 43
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.215ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 43
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.199ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 43
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.199ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 44
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.222ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 44
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.276ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 44
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.228ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 44
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.177ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 44
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.206ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 45
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.195ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 45
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.231ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 45
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.204ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 45
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.196ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 45
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.188ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 46
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.230ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 46
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.224ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 46
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.351ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 46
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.235ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 46
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.248ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 47
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.316ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 47
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.294ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 47
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.206ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 47
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.219ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 47
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.229ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 48
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.264ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 48
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.247ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 48
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.227ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 48
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.185ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 48
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.205ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 49
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.204ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 49
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.225ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 49
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.212ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 49
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.205ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 49
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.219ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 50
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.212ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 50
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.221ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 50
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.209ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 50
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.206ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 50
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.208ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 51
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.218ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 51
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.243ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 51
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.367ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 51
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.240ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 51
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.320ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 52
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.207ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 52
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.205ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 52
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.190ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 52
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.214ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 52
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.233ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 53
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.155ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 53
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.180ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 53
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.179ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 53
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.153ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 53
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.183ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 54
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.166ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 54
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.178ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 54
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.180ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 54
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.164ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 54
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.152ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 55
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.154ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 55
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.178ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 55
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.162ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 55
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.137ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 55
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.189ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 58
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.107ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 58
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.116ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 58
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.100ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 58
+
+2023/11/05 07:37:29 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.089ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 58
+
+2023/11/05 07:37:31 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[0.913ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:37:31 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.448ms] [rows:1] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20 OFFSET 20
+
+2023/11/05 07:37:31 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.304ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 59
+
+2023/11/05 07:37:31 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.306ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 59
+
+2023/11/05 07:37:31 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50") to a int64: invalid syntax
+[0.335ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 59
+
+2023/11/05 07:37:31 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.284ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 59
+
+2023/11/05 07:37:31 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.199ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 59
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[1.692ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[1.331ms] [rows:20] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.696ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 34
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.519ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 34
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.476ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 34
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.346ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 34
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.260ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 34
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.239ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 35
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.444ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 35
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.511ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 35
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.451ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 35
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.377ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 35
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.448ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 36
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.480ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 36
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.500ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 36
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.552ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 36
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.389ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 36
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.379ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 38
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.603ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 38
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.660ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 38
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.502ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 38
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.506ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 38
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.691ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 41
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.582ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 41
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.693ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 41
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.474ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 41
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.335ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 41
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.322ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 42
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.334ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 42
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.365ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 42
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.399ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 42
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.344ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 42
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.306ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 43
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.330ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 43
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.283ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 43
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.267ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 43
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.230ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 43
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.252ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 44
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.291ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 44
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.287ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 44
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.238ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 44
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.214ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 44
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.205ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 45
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.247ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 45
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.310ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 45
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.234ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 45
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.182ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 45
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.173ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 46
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.222ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 46
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.311ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 46
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.224ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 46
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.170ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 46
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.182ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 47
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.199ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 47
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.236ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 47
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.226ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 47
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.189ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 47
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.181ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 48
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.194ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 48
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.235ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 48
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.219ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 48
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.174ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 48
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.250ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 49
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.225ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 49
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.230ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 49
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.214ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 49
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.190ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 49
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.186ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 50
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.210ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 50
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.235ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 50
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.250ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 50
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.230ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 50
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.227ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 51
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.222ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 51
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.250ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 51
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.324ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 51
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.215ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 51
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.190ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 52
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.225ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 52
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.223ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 52
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.194ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 52
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.175ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 52
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.172ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 53
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.229ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 53
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.222ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 53
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.198ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 53
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.172ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 53
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.192ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 54
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.197ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 54
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.224ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 54
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.202ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 54
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.169ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 54
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.174ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 55
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.195ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 55
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.223ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 55
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.196ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 55
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.172ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 55
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.166ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 58
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.205ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 58
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.228ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 58
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.210ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 58
+
+2023/11/05 07:37:34 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.185ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 58
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[1.447ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.762ms] [rows:10] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 10
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.502ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 34
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.555ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 34
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.807ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 34
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.308ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 34
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.265ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 34
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.250ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 35
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[1.006ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 35
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.331ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 35
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.273ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 35
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.209ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 35
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.229ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 36
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.247ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 36
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.243ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 36
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.214ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 36
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.195ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 36
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.195ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 38
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.220ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 38
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.271ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 38
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.209ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 38
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.281ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 38
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.245ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 41
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.220ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 41
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.228ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 41
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.243ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 41
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.204ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 41
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.190ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 42
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.191ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 42
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.226ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 42
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.237ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 42
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.201ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 42
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.175ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 43
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.270ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 43
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.301ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 43
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.272ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 43
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.227ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 43
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.226ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 44
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.269ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 44
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.312ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 44
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.275ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 44
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.218ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 44
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.203ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 45
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.251ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 45
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.293ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 45
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.247ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 45
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.203ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 45
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.195ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 46
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.199ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 46
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.232ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 46
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.240ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 46
+
+2023/11/05 07:37:38 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.199ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 46
+
+2023/11/05 07:37:41 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[1.242ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:37:41 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.458ms] [rows:1] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 10 OFFSET 20
+
+2023/11/05 07:37:41 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[1.546ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 59
+
+2023/11/05 07:37:41 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.307ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 59
+
+2023/11/05 07:37:41 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50") to a int64: invalid syntax
+[0.337ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 59
+
+2023/11/05 07:37:41 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.278ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 59
+
+2023/11/05 07:37:41 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.517ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 59
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[1.317ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.536ms] [rows:10] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 10 OFFSET 10
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.525ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 47
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.540ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 47
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.452ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 47
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.639ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 47
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.386ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 47
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.324ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 48
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.320ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 48
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.341ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 48
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.413ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 48
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.384ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 48
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.463ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 49
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.436ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 49
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.483ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 49
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.477ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 49
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.444ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 49
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.452ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 50
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.414ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 50
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.384ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 50
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.311ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 50
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.278ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 50
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.293ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 51
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.289ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 51
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.343ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 51
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.317ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 51
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.303ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 51
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.276ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 52
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.297ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 52
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.294ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 52
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.327ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 52
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.276ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 52
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.293ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 53
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.362ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 53
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.353ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 53
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.323ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 53
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.243ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 53
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.256ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 54
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.358ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 54
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.518ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 54
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.358ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 54
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.414ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 54
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.348ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 55
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.431ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 55
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.944ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 55
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.362ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 55
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.315ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 55
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.375ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 58
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.341ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 58
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.627ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 58
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.427ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 58
+
+2023/11/05 07:37:43 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.245ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 58
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[1.830ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.832ms] [rows:10] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 10
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.301ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 34
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.308ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 34
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.320ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 34
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.308ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 34
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.230ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 34
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.202ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 35
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.219ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 35
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.266ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 35
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.227ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 35
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.201ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 35
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.216ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 36
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.244ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 36
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.235ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 36
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.224ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 36
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.195ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 36
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.190ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 38
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.201ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 38
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.289ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 38
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.347ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 38
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.316ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 38
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.289ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 41
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.344ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 41
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.442ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 41
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.346ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 41
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.322ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 41
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.293ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 42
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.356ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 42
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.349ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 42
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.262ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 42
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.227ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 42
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.236ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 43
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.282ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 43
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.292ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 43
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.264ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 43
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.218ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 43
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.219ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 44
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.266ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 44
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.289ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 44
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.271ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 44
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.249ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 44
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.197ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 45
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.292ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 45
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.317ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 45
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.212ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 45
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.198ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 45
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.226ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 46
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.239ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 46
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.263ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 46
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.284ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 46
+
+2023/11/05 07:37:45 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.190ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 46
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[1.324ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.734ms] [rows:20] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.423ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 34
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.335ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 34
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.595ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 34
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.586ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 34
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[1.397ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 34
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.426ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 35
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.282ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 35
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.251ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 35
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.245ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 35
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.199ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 35
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.214ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 36
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.229ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 36
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.262ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 36
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.840ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 36
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.586ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 36
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.402ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 38
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.305ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 38
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.619ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 38
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.312ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 38
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.279ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 38
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.229ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 41
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.245ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 41
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.266ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 41
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.237ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 41
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.212ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 41
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.205ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 42
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.255ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 42
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.403ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 42
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.624ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 42
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.336ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 42
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.271ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 43
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.265ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 43
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.266ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 43
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.417ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 43
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.261ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 43
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.288ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 44
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.404ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 44
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.310ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 44
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.225ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 44
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.252ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 44
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.221ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 45
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.291ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 45
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.267ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 45
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.216ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 45
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.197ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 45
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.189ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 46
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.344ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 46
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.258ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 46
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.252ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 46
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.222ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 46
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.207ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 47
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.235ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 47
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.332ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 47
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.399ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 47
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.217ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 47
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.237ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 48
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.297ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 48
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.264ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 48
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.209ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 48
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.331ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 48
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.222ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 49
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.215ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 49
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.242ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 49
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.214ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 49
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.226ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 49
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.388ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 50
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.339ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 50
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.386ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 50
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.308ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 50
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.211ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 50
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.207ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 51
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.293ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 51
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.263ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 51
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.281ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 51
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.214ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 51
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.202ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 52
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.231ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 52
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.230ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 52
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.215ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 52
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.188ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 52
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.208ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 53
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.198ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 53
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.285ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 53
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.236ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 53
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.188ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 53
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.264ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 54
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.471ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 54
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.265ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 54
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.473ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 54
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.199ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 54
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.187ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 55
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.193ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 55
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.242ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 55
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.223ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 55
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.170ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 55
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.175ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 58
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.194ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 58
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.223ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 58
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.209ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 58
+
+2023/11/05 07:37:58 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.176ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 58
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[0.709ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.414ms] [rows:20] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.204ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 34
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.246ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 34
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.356ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 34
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.339ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 34
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.219ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 34
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.208ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 35
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.263ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 35
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.275ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 35
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.284ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 35
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.463ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 35
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.539ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 36
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.522ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 36
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.557ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 36
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.503ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 36
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.419ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 36
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.368ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 38
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.352ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 38
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.537ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 38
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.367ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 38
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.323ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 38
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.322ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 41
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.332ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 41
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.424ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 41
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.352ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 41
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.379ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 41
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.291ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 42
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.367ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 42
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.285ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 42
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.251ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 42
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.213ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 42
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.202ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 43
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.245ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 43
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.262ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 43
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.259ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 43
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.203ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 43
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.199ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 44
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.273ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 44
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.291ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 44
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.263ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 44
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.232ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 44
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.218ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 45
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.275ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 45
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.317ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 45
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.266ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 45
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.223ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 45
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.221ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 46
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.241ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 46
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.316ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 46
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.288ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 46
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.220ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 46
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.194ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 47
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.229ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 47
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.263ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 47
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.209ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 47
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.216ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 47
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.212ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 48
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.241ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 48
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.250ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 48
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.233ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 48
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.217ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 48
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.197ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 49
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.248ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 49
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.384ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 49
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.296ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 49
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.150ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 49
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.139ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 50
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.140ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 50
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.131ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 50
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.107ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 50
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.100ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 50
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.109ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 51
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.142ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 51
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.112ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 51
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.112ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 51
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.090ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 51
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.096ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 52
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.110ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 52
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.104ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 52
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.118ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 52
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.103ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 52
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.095ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 53
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.098ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 53
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.103ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 53
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.112ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 53
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.181ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 53
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.127ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 54
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.212ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 54
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.149ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 54
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.128ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 54
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.128ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 54
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.133ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 55
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.173ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 55
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.115ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 55
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.134ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 55
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.155ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 55
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.087ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 58
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.086ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 58
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.095ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 58
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.138ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 58
+
+2023/11/05 07:38:21 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.119ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 58
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/services.service.go:39
+[0.520ms] [rows:1] SELECT count(*) FROM `gateway_service_info` WHERE is_delete = 0
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/services.service.go:43
+[0.591ms] [rows:20] SELECT * FROM `gateway_service_info` WHERE is_delete = 0 LIMIT 20
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.347ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 34
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.245ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 34
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.366ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 34
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.259ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 34
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.206ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 34
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.203ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 35
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.233ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 35
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.260ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 35
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.265ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 35
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.198ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 35
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.169ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 36
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.251ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 36
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("50,50,50,80") to a int64: invalid syntax
+[0.286ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 36
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.257ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 36
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.263ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 36
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.276ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 38
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.237ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 38
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.382ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 38
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.301ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 38
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.263ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 38
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.563ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 41
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.480ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 41
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[1.785ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 41
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.727ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 41
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.377ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 41
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.246ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 42
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.238ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 42
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.279ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 42
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.252ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 42
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.196ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 42
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.201ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 43
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.230ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 43
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20 sql: Scan error on column index 7, name "weight_list": converting driver.Value type []uint8 ("11,11") to a int64: invalid syntax
+[0.252ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 43
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.206ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 43
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.177ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 43
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.227ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 44
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.249ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 44
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.241ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 44
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.245ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 44
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.233ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 44
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.193ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 45
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.209ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 45
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.258ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 45
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.245ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 45
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.327ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 45
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.216ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 46
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.209ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 46
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.275ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 46
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.323ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 46
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.479ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 46
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.292ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 47
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.273ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 47
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.235ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 47
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.252ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 47
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.193ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 47
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.237ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 48
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.252ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 48
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.246ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 48
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.272ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 48
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.187ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 48
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.190ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 49
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.243ms] [rows:1] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 49
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.260ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 49
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.301ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 49
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.236ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 49
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.242ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 50
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.261ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 50
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.603ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 50
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.285ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 50
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.238ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 50
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.448ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 51
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.218ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 51
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.319ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 51
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.204ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 51
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.193ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 51
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.227ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 52
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.247ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 52
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.233ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 52
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.193ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 52
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.178ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 52
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.345ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 53
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.318ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 53
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.261ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 53
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.207ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 53
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.154ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 53
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.169ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 54
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.240ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 54
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.177ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 54
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.165ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 54
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.164ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 54
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.255ms] [rows:0] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 55
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.200ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 55
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.230ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 55
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.185ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 55
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.197ms] [rows:1] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 55
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/grpc.service.go:21
+[0.171ms] [rows:1] SELECT * FROM `gateway_service_grpc_rule` WHERE service_id = 58
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/http.service.go:20
+[0.198ms] [rows:0] SELECT * FROM `gateway_service_http_rule` WHERE service_id = 58
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/load_balance.service.go:20
+[0.220ms] [rows:1] SELECT * FROM `gateway_service_load_balance` WHERE service_id = 58
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/access_control.service.go:20
+[0.181ms] [rows:1] SELECT * FROM `gateway_service_access_control` WHERE service_id = 58
+
+2023/11/05 07:39:01 /Users/atlas/go/src/gateway_go/services/tcp.service.go:20
+[0.164ms] [rows:0] SELECT * FROM `gateway_service_tcp_rule` WHERE service_id = 58
