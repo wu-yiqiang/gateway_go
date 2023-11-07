@@ -12,7 +12,7 @@ const docTemplate = `{
         "title": "{{.Title}}",
         "termsOfService": "https://github.com/18211167516/Go-Gin-Api",
         "contact": {
-            "name": "atlas",
+            "name": "sutter",
             "email": "wu_yiqiang@outlook.com"
         },
         "version": "{{.Version}}"
@@ -22,6 +22,11 @@ const docTemplate = `{
     "paths": {
         "/admin/admin_info": {
             "get": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
                 "description": "管理员信息获取",
                 "consumes": [
                     "application/json"
@@ -67,6 +72,11 @@ const docTemplate = `{
         },
         "/admin/changePassword": {
             "post": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
                 "description": "修改密码",
                 "consumes": [
                     "application/json"
@@ -184,6 +194,11 @@ const docTemplate = `{
         },
         "/admin_login/logout": {
             "get": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
                 "description": "管理员注销",
                 "consumes": [
                     "application/json"
@@ -208,6 +223,11 @@ const docTemplate = `{
         },
         "/app/app_delete": {
             "get": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
                 "description": "租户删除",
                 "consumes": [
                     "application/json"
@@ -240,6 +260,11 @@ const docTemplate = `{
         },
         "/app/app_list": {
             "get": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
                 "description": "租户查询",
                 "consumes": [
                     "application/json"
@@ -300,6 +325,11 @@ const docTemplate = `{
         },
         "/service/service_add_grpc": {
             "post": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
                 "description": "grpc服务新增",
                 "consumes": [
                     "application/json"
@@ -335,6 +365,11 @@ const docTemplate = `{
         },
         "/service/service_delete": {
             "get": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
                 "description": "服务删除",
                 "consumes": [
                     "application/json"
@@ -367,6 +402,11 @@ const docTemplate = `{
         },
         "/service/service_list": {
             "get": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
                 "description": "服务查询",
                 "consumes": [
                     "application/json"
@@ -663,6 +703,13 @@ const docTemplate = `{
                     "type": "string"
                 }
             }
+        }
+    },
+    "securityDefinitions": {
+        "Auth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
         }
     }
 }`

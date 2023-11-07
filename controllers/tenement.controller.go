@@ -21,6 +21,7 @@ var TenementController = new(tenementController)
 // @ID /app/app_list
 // @Accept  json
 // @Produce  json
+// @Security Auth
 // @Param info query string false "租户名"
 // @Param page_no query int true "页码" default(1)
 // @Param page_size query int true "页数" default(10)
@@ -53,6 +54,7 @@ func (ten *tenementController) TenementList(c *gin.Context) {
 // @ID /app/app_delete
 // @Accept  json
 // @Produce  json
+// @Security Auth
 // @Param id query int false "租户名ID"
 // @Success 200 {object} response.Response{} "success"
 // @Router /app/app_delete [get]

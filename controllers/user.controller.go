@@ -3,6 +3,7 @@ package controllers
 import (
 	"context"
 	"fmt"
+	"gateway_go/common"
 	"gateway_go/dto"
 	"gateway_go/global"
 	"gateway_go/request"
@@ -71,18 +72,20 @@ func (admin *adminController) AdminLogin(c *gin.Context) {
 			return
 		}
 		// 生成token
-		tokenData, err, _ := services.JwtService.CreateToken(services.AppGuardName, user)
+		tokenData, err, _ := services.JwtService.CreateToken(common.AppGuardName, user)
 		if err != nil {
 			response.BusinessFail(c, err.Error())
 			return
 		}
 		// 将token存储到redis中
 		err = global.App.Redis.SetNX(context.Background(), user.Username, tokenData.Token, time.Duration(global.App.Config.Jwt.JwtTtl)*time.Second).Err()
-		fmt.Println("sad", err)
 		if err != nil {
-			response.Success(c, "token存储失败")
+			response.BusinessFail(c, "token存储失败")
+			return
 		}
+		tokenData.Token = common.TokenType + " " + tokenData.Token
 		response.Success(c, tokenData)
+		return
 	}
 
 }
@@ -94,6 +97,7 @@ func (admin *adminController) AdminLogin(c *gin.Context) {
 // @ID /admin/changePassword
 // @Accept  json
 // @Produce  json
+// @Security Auth
 // @Param polygon body dto.ChangePasswordInput true "body"
 // @Success 200 {object} response.Response{} "success"
 // @Router /admin/changePassword [post]
@@ -131,6 +135,7 @@ func (admin *adminController) AdminChangePassword(c *gin.Context) {
 // @ID /admin/admin_info
 // @Accept  json
 // @Produce  json
+// @Security Auth
 // @Param token query string true "token"
 // @Success 200 {object} response.Response{data=dto.AdminInfoOutput} "success"
 // @Router /admin/admin_info [get]
@@ -141,25 +146,25 @@ func (admin *adminController) AdminInfo(c *gin.Context) {
 		return
 	}
 	// 解密token
-	err, data := services.JwtService.DecryptToken(token)
+	err, customClaims := services.JwtService.DecryptToken(token)
 	if err != nil {
 		response.BusinessFail(c, "用户信息不存在")
 		return
 	}
 
-	tokenStr, err := global.App.Redis.Get(context.Background(), data).Result()
+	tokenStr, err := global.App.Redis.Get(context.Background(), customClaims.UserName).Result()
+	fmt.Println("token 不能删除用于打印token", tokenStr)
 	if err != nil {
 		response.BusinessFail(c, "用户信息不存在")
 		return
 	}
 	out := &dto.AdminInfoOutput{
-		Name:      data,
+		Name:      customClaims.UserName,
 		Id:        1,
 		Avatar:    "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg",
 		LoginTime: "2023-10-26",
 		Roles:     []string{"admin"},
 	}
-	fmt.Println(tokenStr)
 	response.Success(c, out)
 }
 
@@ -170,21 +175,18 @@ func (admin *adminController) AdminInfo(c *gin.Context) {
 // @ID /admin_login/logout
 // @Accept  json
 // @Produce  json
+// @Security Auth
 // @Success 200 {object} response.Response{} "success"
 // @Router /admin_login/logout [get]
 func (admin *adminController) AdminLogout(c *gin.Context) {
 	token := c.Request.Header.Get("Authorization")
-	if token == "" {
-		response.TokenFail(c)
-		return
-	}
 	// 解密token
-	err, data := services.JwtService.DecryptToken(token)
+	err, customClaims := services.JwtService.DecryptToken(token)
 	if err != nil {
 		response.BusinessFail(c, "用户信息不存在")
 		return
 	}
-	error := global.App.Redis.Del(context.Background(), data).Err()
+	error := global.App.Redis.Del(context.Background(), customClaims.UserName).Err()
 	if error != nil {
 		response.BusinessFail(c, "用户注销失败")
 		return

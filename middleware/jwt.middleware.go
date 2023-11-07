@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"gateway_go/common"
 	"gateway_go/global"
 	"gateway_go/response"
 	"gateway_go/services"
@@ -18,7 +19,7 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			c.Abort()
 			return
 		}
-		tokenStr = tokenStr[len(services.TokenType)+1:]
+		tokenStr = tokenStr[len(common.TokenType)+1:]
 
 		// Token 解析校验
 		token, err := jwt.ParseWithClaims(tokenStr, &services.CustomClaims{}, func(token *jwt.Token) (interface{}, error) {

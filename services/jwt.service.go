@@ -2,18 +2,11 @@ package services
 
 import (
 	"context"
-	"errors"
-	"fmt"
 	"gateway_go/global"
 	"gateway_go/utils"
 	"github.com/dgrijalva/jwt-go"
 	"strconv"
 	"time"
-)
-
-const (
-	TokenType    = "Bearer"
-	AppGuardName = "app"
 )
 
 type jwtService struct {
@@ -37,7 +30,7 @@ type TokenOutPut struct {
 	//Type    string `json:"type"`
 }
 
-// CreateToken 生成 Token
+// CreateToken 生成Token
 func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (tokenData TokenOutPut, err error, token *jwt.Token) {
 	token = jwt.NewWithClaims(
 		jwt.SigningMethodHS256,
@@ -63,20 +56,15 @@ func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (token
 }
 
 // token解密
-func (jwtService *jwtService) DecryptToken(token string) (err error, username string) {
-	if len(token) < 10 {
-		return errors.New("token不合法"), ""
-	}
+func (jwtService *jwtService) DecryptToken(token string) (err error, customClaims *CustomClaims) {
 	tokenStr, err := jwt.ParseWithClaims(token, &CustomClaims{}, func(token *jwt.Token) (interface{}, error) {
 		return []byte(global.App.Config.Jwt.Secret), nil
 	})
-
 	if err != nil {
-		return err, ""
+		return err, nil
 	}
 	claims := tokenStr.Claims.(*CustomClaims)
-	fmt.Println("data", claims)
-	return nil, claims.UserName
+	return nil, claims
 }
 
 // 获取黑名单缓存 key
@@ -88,7 +76,6 @@ func (jwtService *jwtService) getBlackListKey(tokenStr string) string {
 func (jwtService *jwtService) JoinBlackList(token *jwt.Token) (err error) {
 	nowUnix := time.Now().Unix()
 	timer := time.Duration(token.Claims.(*CustomClaims).ExpiresAt-nowUnix) * time.Second
-	fmt.Println("unix", jwtService.getBlackListKey(token.Raw))
 	// 将 token 剩余时间设置为缓存有效期，并将当前时间作为缓存 value 值
 	err = global.App.Redis.SetNX(context.Background(), jwtService.getBlackListKey(token.Raw), nowUnix, timer).Err()
 	return

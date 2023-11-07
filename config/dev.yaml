@@ -40,8 +40,8 @@ cluster:
   cluster_ssl_port: "8880"
 
 swagger:
-  title: "gateway_go swagger API"
-  desc: "This is a sample server celler server."
+  title: "gateway_go project swagger API"
+  desc: "gateway_go API 管理"
   host: "127.0.0.1"
   base_path: "/"
 

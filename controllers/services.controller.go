@@ -25,6 +25,7 @@ var ServicesController = new(servicesController)
 // @ID /service/service_list
 // @Accept  json
 // @Produce  json
+// @Security Auth
 // @Param info query string false "服务名"
 // @Param page_no query int true "页码" default(1)
 // @Param page_size query int true "页数" default(10)
@@ -100,6 +101,7 @@ func (ser *servicesController) ServicesList(c *gin.Context) {
 // @ID /service/service_delete
 // @Accept  json
 // @Produce  json
+// @Security Auth
 // @Param id query string false "服务ID"
 // @Success 200 {object} response.Response{} "success"
 // @Router /service/service_delete [get]
@@ -126,6 +128,7 @@ func (ser *servicesController) ServicesDelete(c *gin.Context) {
 // @ID /service/service_add_grpc
 // @Accept  json
 // @Produce  json
+// @Security Auth
 // @Param polygon body dto.GrpcServiceInput true "body"
 // @Success 200 {object} response.Response{} "success"
 // @Router /service/service_add_grpc [post]

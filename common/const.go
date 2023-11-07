@@ -7,3 +7,8 @@ const (
 	HttpRuleTypeDomain    = 1
 	HttpRuleTypePrefixURL = 0
 )
+
+const (
+	TokenType    = "Bearer"
+	AppGuardName = "app"
+)

@@ -164,7 +164,7 @@ host: 127.0.0.1:9527
 info:
   contact:
     email: wu_yiqiang@outlook.com
-    name: atlas
+    name: sutter
   description: gin-web框架
   termsOfService: https://github.com/18211167516/Go-Gin-Api
   title: go-api 框架
@@ -194,6 +194,8 @@ paths:
                 data:
                   $ref: '#/definitions/dto.AdminInfoOutput'
               type: object
+      security:
+      - Auth: []
       summary: 管理员信息获取
       tags:
       - 用户管理
@@ -217,6 +219,8 @@ paths:
           description: success
           schema:
             $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
       summary: 修改密码
       tags:
       - 用户管理
@@ -284,6 +288,8 @@ paths:
           description: success
           schema:
             $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
       summary: 管理员注销
       tags:
       - 用户管理
@@ -305,6 +311,8 @@ paths:
           description: success
           schema:
             $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
       summary: 租户删除
       tags:
       - 租户管理
@@ -343,6 +351,8 @@ paths:
                 data:
                   $ref: '#/definitions/dto.TenementListOutput'
               type: object
+      security:
+      - Auth: []
       summary: 租户查询
       tags:
       - 租户管理
@@ -366,6 +376,8 @@ paths:
           description: success
           schema:
             $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
       summary: grpc服务新增
       tags:
       - 服务管理
@@ -387,6 +399,8 @@ paths:
           description: success
           schema:
             $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
       summary: 服务删除
       tags:
       - 服务管理
@@ -425,7 +439,14 @@ paths:
                 data:
                   $ref: '#/definitions/dto.ServicesListOutput'
               type: object
+      security:
+      - Auth: []
       summary: 服务查询
       tags:
       - 服务管理
+securityDefinitions:
+  Auth:
+    in: header
+    name: Authorization
+    type: apiKey
 swagger: "2.0"

@@ -1,7 +1,9 @@
 package routes
 
 import (
+	"gateway_go/common"
 	"gateway_go/controllers"
+	"gateway_go/middleware"
 	"github.com/gin-gonic/gin"
 )
 
@@ -9,22 +11,18 @@ func SetUserGroupRoutes(router *gin.RouterGroup) {
 	// 用户注册
 	router.POST("/register", controllers.AdminController.AdminRegister)
 	router.POST("/login", controllers.AdminController.AdminLogin)
-	router.POST("/changePassword", controllers.AdminController.AdminChangePassword)
-	router.GET("/admin_info", controllers.AdminController.AdminInfo)
-	// token验证
-	// authRouter := router.Group("").Use(middleware.JWTAuth(services.AppGuardName))
-	//{
-	//	authRouter.POST("/auth/changePassword", controllers.AdminController.AdminChangePassword)
-	//	authRouter.POST("/auth/logout", controllers.AdminController.AdminLogout)
-	//}
+	// 需要token验证的接口
+	authRouter := router.Group("").Use(middleware.JWTAuth(common.AppGuardName))
+	{
+		authRouter.POST("/changePassword", controllers.AdminController.AdminChangePassword)
+		authRouter.GET("/admin_info", controllers.AdminController.AdminInfo)
+	}
 }
 
 func SetAdminGroupRoutes(router *gin.RouterGroup) {
-	router.GET("/logout", controllers.AdminController.AdminLogout)
 	// token验证
-	// authRouter := router.Group("").Use(middleware.JWTAuth(services.AppGuardName))
-	//{
-	//	authRouter.POST("/auth/changePassword", controllers.AdminController.AdminChangePassword)
-	//	authRouter.POST("/auth/logout", controllers.AdminController.AdminLogout)
-	//}
+	authRouter := router.Group("").Use(middleware.JWTAuth(common.AppGuardName))
+	{
+		authRouter.GET("/logout", controllers.AdminController.AdminLogout)
+	}
 }
