@@ -1576,3 +1576,117 @@
 
 2023/11/07 18:49:12 /Users/atlas/go/src/gateway_go/services/tenement.service.go:23
 [1.258ms] [rows:4] SELECT * FROM `gateway_app` WHERE is_delete = 0 LIMIT 10
+
+2024/01/06 16:13:51 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/01/06 16:19:46 /Users/atlas/go/src/gateway_go/services/user.service.go:23 record not found
+[16.176ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'jon68' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/06 16:19:46 /Users/atlas/go/src/gateway_go/services/user.service.go:29
+[2.010ms] [rows:1] INSERT INTO `gateway_admin` (`user_name`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('jon68','$2a$04$yP2Y3wj3w2WfjKqL6X08Eetz32wMZdxyhbyc0rj3nHwKsqI8ynwoS','2024-01-06 16:19:46.802','2024-01-06 16:19:46.802',0)
+
+2024/01/06 16:20:06 /Users/atlas/go/src/gateway_go/services/user.service.go:23 record not found
+[0.522ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/06 16:20:06 /Users/atlas/go/src/gateway_go/services/user.service.go:29
+[2.335ms] [rows:1] INSERT INTO `gateway_admin` (`user_name`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('sutter','$2a$04$qtygFGuY2mR5JFFomY6RSOe4YR/5WvwapHpsaUNNZWufQxlXVJTZC','2024-01-06 16:20:06.528','2024-01-06 16:20:06.528',0)
+
+2024/01/06 16:20:16 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.767ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/07 16:17:44 /Users/atlas/go/src/gateway_go/services/user.service.go:23
+[13.003ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/07 16:17:49 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.969ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/07 21:07:29 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/01/08 14:31:50 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[51.498ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:10:50 /Users/atlas/go/src/gateway_go/services/user.service.go:23
+[74.942ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:12:08 /Users/atlas/go/src/gateway_go/services/user.service.go:23 record not found
+[1.809ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter1' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:12:08 /Users/atlas/go/src/gateway_go/services/user.service.go:29
+[23.040ms] [rows:1] INSERT INTO `gateway_admin` (`user_name`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('sutter1','$2a$04$GlYYL2rgbL8Rp97x7RuYd.SxdHibXS.kY3TjoBgnRg6NUQFfFT06a','2024-01-09 00:12:08.973','2024-01-09 00:12:08.973',0)
+
+2024/01/09 00:12:10 /Users/atlas/go/src/gateway_go/services/user.service.go:23
+[1.929ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter1' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:12:10 /Users/atlas/go/src/gateway_go/services/user.service.go:23
+[2.837ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter1' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:12:11 /Users/atlas/go/src/gateway_go/services/user.service.go:23
+[1.324ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter1' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:12:18 /Users/atlas/go/src/gateway_go/services/user.service.go:23 record not found
+[1.928ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter3' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:12:18 /Users/atlas/go/src/gateway_go/services/user.service.go:29
+[5.877ms] [rows:1] INSERT INTO `gateway_admin` (`user_name`,`password`,`update_at`,`create_at`,`is_delete`) VALUES ('sutter3','$2a$04$po.eX7Z4IPXnDZImQYI5weAKUAZASg8VxlCTcXCDeEqSoptcUz0Ii','2024-01-09 00:12:18.299','2024-01-09 00:12:18.299',0)
+
+2024/01/09 00:14:50 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[5.449ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:48:50 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.201ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:49:09 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[9.244ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 00:49:42 /Users/atlas/go/src/gateway_go/services/user.service.go:23
+[1.238ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/09 10:47:15 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[18.595ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/10 13:23:56 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[77.252ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/10 13:34:56 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.717ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/10 13:34:57 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.536ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/10 13:34:57 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[2.593ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/10 13:34:58 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[0.547ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/01/10 13:34:58 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.081ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'sutter' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/03/06 17:18:50 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/03/06 17:21:14 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/03/06 17:22:14 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/03/06 17:22:19 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/03/06 17:22:58 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[10.197ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/03/06 17:23:32 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.317ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/03/06 22:43:37 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[1.110ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/03/07 16:17:14 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[12.940ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/03/08 21:01:39 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[13.640ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1

@@ -54,14 +54,14 @@ redis:
 storage:
   default: local # 默认驱动
   disks:
-    local:
-      root_dir: ./storage/app # 本地存储根目录
+    local_storage:
+      root_dir: ./storage/files/image # 本地存储根目录
       app_url: http://localhost:8888/storage # 本地图片 url 前部
     ali_oss:
-      access_key_id:
-      access_key_secret:
-      bucket:
-      endpoint:
+      access_key_id: LTAI5tPaFWokrKh9xxdgeefQ
+      access_key_secret: osyjqCvonSKsmAjJIdKP8zdVazVAIw
+      bucket: imgg-go
+      endpoint: http://oss-cn-beijing.aliyuncs.com
       is_ssl: true # 是否使用 https 协议
       is_private: false # 是否私有读
     qi_niu:

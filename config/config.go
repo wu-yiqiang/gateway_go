@@ -78,10 +78,22 @@ type Storage struct {
 }
 
 type Disks struct {
-	//Local  local.Config `mapstructure:"local" json:"local" yaml:"local"`
-	//AliOss oss.Config   `mapstructure:"ali_oss" json:"ali_oss" yaml:"ali_oss"`
-	//QiNiu  kodo.Config  `mapstructure:"qi_niu" json:"qi_niu" yaml:"qi_niu"`
-	// TencentOss cos.Config `mapstructure:"tencentoss" json:"tencentoss" yaml:"tencentoss"`
+	AliOss       Alioss       `mapstructure:"ali_oss" json:"ali_oss" yaml:"ali_oss"`
+	LocalStorage LocalStorage `mapstructure:"local_storage" json:"local_storage" yaml:"local_storage"`
+}
+
+type LocalStorage struct {
+	RootDir string `mapstructure:"root_dir" json:"root_dir" yaml:"root_dir"`
+	AppUrl  string `mapstructure:"app_url" json:"app_url" yaml:"app_url"`
+}
+
+type Alioss struct {
+	AccessKeyId     string `mapstructure:"access_key_id" json:"access_key_id" yaml:"access_key_id"`
+	AccessKeySecret string `mapstructure:"access_key_secret" json:"access_key_secret" yaml:"access_key_secret"`
+	Bucket          string `mapstructure:"bucket" json:"bucket" yaml:"bucket"`
+	Endpoint        string `mapstructure:"endpoint" json:"endpoint" yaml:"endpoint"`
+	IsSsl           string `mapstructure:"is_ssl" json:"is_ssl" yaml:"is_ssl"`
+	IsPrivate       string `mapstructure:"is_private" json:"is_private" yaml:"is_private"`
 }
 
 type Swagger struct {

@@ -199,6 +199,31 @@ paths:
       summary: 管理员信息获取
       tags:
       - 用户管理
+  /admin/avator:
+    post:
+      consumes:
+      - application/json
+      - multipart/form-data
+      description: 管理员头像更新
+      operationId: /admin/avator
+      parameters:
+      - description: file
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
+      summary: 管理员头像更新
+      tags:
+      - 用户管理
   /admin/changePassword:
     post:
       consumes:
@@ -356,6 +381,46 @@ paths:
       summary: 租户查询
       tags:
       - 租户管理
+  /flet/newsList:
+    post:
+      consumes:
+      - application/json
+      description: 查询资讯
+      operationId: /flet/newsList
+      parameters:
+      - description: token
+        in: query
+        name: token
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - Auth: []
+      summary: flutter管理
+      tags:
+      - flutter管理
+  /flet/weather:
+    post:
+      consumes:
+      - application/json
+      description: 查询天气信息
+      operationId: /flet/weather
+      parameters:
+      - description: token
+        in: query
+        name: token
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      security:
+      - Auth: []
+      summary: flutter管理
+      tags:
+      - flutter管理
   /service/service_add_grpc:
     post:
       consumes:

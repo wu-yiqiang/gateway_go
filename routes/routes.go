@@ -45,7 +45,10 @@ func SetupRouter() *gin.Engine {
 	{
 		SetTenementGroupRoutes(tenementGroup)
 	}
-	// 其他路由
-
+	// flutter接口
+	fletGroup := router.Group("/flet")
+	{
+		SetFletGroupRoutes(fletGroup)
+	}
 	return router
 }

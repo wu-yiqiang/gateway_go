@@ -49,3 +49,13 @@ type AdminInfoOutput struct {
 	Name         string   `json:"name"`
 	Roles        []string `json:"roles"`
 }
+
+type AdminInfoAvator struct {
+	Avator []byte `json:"avator"  gorm:"column:avator" binding:"required"`
+}
+
+func (adminInfoAvator AdminInfoAvator) GetMessages() request.ValidatorMessages {
+	return request.ValidatorMessages{
+		"avator.required": "文件不能为空",
+	}
+}

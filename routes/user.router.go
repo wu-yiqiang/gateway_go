@@ -16,6 +16,7 @@ func SetUserGroupRoutes(router *gin.RouterGroup) {
 	{
 		authRouter.POST("/changePassword", controllers.AdminController.AdminChangePassword)
 		authRouter.GET("/admin_info", controllers.AdminController.AdminInfo)
+		authRouter.POST("/avator", controllers.AdminController.AdminInfoAvator)
 	}
 }
 

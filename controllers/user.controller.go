@@ -9,7 +9,11 @@ import (
 	"gateway_go/request"
 	"gateway_go/response"
 	"gateway_go/services"
+	"gateway_go/utils"
 	"github.com/gin-gonic/gin"
+	"io"
+	"log"
+	"os"
 	"time"
 )
 
@@ -192,4 +196,56 @@ func (admin *adminController) AdminLogout(c *gin.Context) {
 		return
 	}
 	response.Success(c, "用户注销成功")
+}
+
+// ListPage godoc
+// @Summary 管理员头像更新
+// @Description 管理员头像更新
+// @Tags 用户管理
+// @ID /admin/avator
+// @Accept  json
+// @Produce  json
+// @Security Auth
+// @Accept multipart/form-data
+// @Param file formData file true "file"
+// @Success 200 {object} response.Response{} "success"
+// @Router /admin/avator [post]
+func (admin *adminController) AdminInfoAvator(c *gin.Context) {
+	token := c.Request.Header.Get("Authorization")
+	// 解密token
+	err, _ := services.JwtService.DecryptToken(token[len(common.TokenType)+1:])
+	if err != nil {
+		response.BusinessFail(c, "用户信息不存在")
+		return
+	}
+	// username := customClaims.UserName
+	file, header, err := c.Request.FormFile("file")
+	if err != nil {
+		response.BusinessFail(c, "参数错误")
+		return
+	}
+	//获取文件名
+	filename := header.Filename
+	//写入文件
+	out, err := os.Create(global.App.Config.Storage.Disks.LocalStorage.RootDir + filename)
+	if err != nil {
+		response.BusinessFail(c, "服务错误")
+		return
+	}
+	defer out.Close()
+	_, err = io.Copy(out, file)
+	if err != nil {
+		log.Fatal(err)
+	}
+	url, err := utils.Upload2Ali(filename)
+	if err != nil {
+		fmt.Println("sssss", err)
+		response.BusinessFail(c, "图片上传失败")
+		return
+	}
+	data := make(map[string]string)
+	data["url"] = url
+	response.Success(c, data)
+	return
+	// services.UserService.ModifyAvator(username, imgdata)
 }

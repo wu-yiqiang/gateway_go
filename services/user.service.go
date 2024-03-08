@@ -61,6 +61,15 @@ func (userService *userService) ModifyPassword(params dto.ChangePasswordInput) (
 	return nil
 }
 
+func (userService *userService) ModifyAvator(username string, params dto.AdminInfoAvator) (err error) {
+
+	//err = global.App.DB.Table(userService.TableName()).Where("username = ?", username).Updates(map[string]interface{}{"avator": hashPassword, "update_at": time.Now()}).Error
+	//if err != nil {
+	//	return err
+	//}
+	return nil
+}
+
 //
 //// GetUserInfo 获取用户信息
 //func (userService *userService) GetUserInfo(id string) (err error, user dao.User) {
