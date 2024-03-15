@@ -55,7 +55,9 @@ storage:
   default: local # 默认驱动
   disks:
     local_storage:
-      root_dir: ./storage/files/image # 本地存储根目录
+      root_file_dir: ./storage/files/ # 文件本地存储根目录
+      root_image_dir: ./storage/images/ # 图片本地存储根目录
+      root_video_dir: ./storage/videos/ # 视频本地存储根目录
       app_url: http://localhost:8888/storage # 本地图片 url 前部
     ali_oss:
       access_key_id: LTAI5tPaFWokrKh9xxdgeefQ

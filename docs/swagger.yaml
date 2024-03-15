@@ -381,6 +381,31 @@ paths:
       summary: 租户查询
       tags:
       - 租户管理
+  /file/upload:
+    post:
+      consumes:
+      - application/json
+      - multipart/form-data
+      description: 文件上传
+      operationId: /file/upload
+      parameters:
+      - description: file
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
+      summary: 文件上传
+      tags:
+      - 文件管理
   /flet/newsList:
     post:
       consumes:

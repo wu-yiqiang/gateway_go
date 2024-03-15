@@ -83,8 +83,9 @@ type Disks struct {
 }
 
 type LocalStorage struct {
-	RootDir string `mapstructure:"root_dir" json:"root_dir" yaml:"root_dir"`
-	AppUrl  string `mapstructure:"app_url" json:"app_url" yaml:"app_url"`
+	RootFileDir  string `mapstructure:"root_file_dir" json:"root_file_dir" yaml:"root_file_dir"`
+	RootImageDir string `mapstructure:"root_image_dir" json:"root_image_dir" yaml:"root_image_dir"`
+	AppUrl       string `mapstructure:"app_url" json:"app_url" yaml:"app_url"`
 }
 
 type Alioss struct {

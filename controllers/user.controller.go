@@ -227,7 +227,7 @@ func (admin *adminController) AdminInfoAvator(c *gin.Context) {
 	//获取文件名
 	filename := header.Filename
 	//写入文件
-	out, err := os.Create(global.App.Config.Storage.Disks.LocalStorage.RootDir + filename)
+	out, err := os.Create(global.App.Config.Storage.Disks.LocalStorage.RootImageDir + filename)
 	if err != nil {
 		response.BusinessFail(c, "服务错误")
 		return
@@ -239,7 +239,6 @@ func (admin *adminController) AdminInfoAvator(c *gin.Context) {
 	}
 	url, err := utils.Upload2Ali(filename)
 	if err != nil {
-		fmt.Println("sssss", err)
 		response.BusinessFail(c, "图片上传失败")
 		return
 	}

@@ -50,5 +50,10 @@ func SetupRouter() *gin.Engine {
 	{
 		SetFletGroupRoutes(fletGroup)
 	}
+	// 文件管理
+	fileGroup := router.Group("/file")
+	{
+		SetFileGroupRoutes(fileGroup)
+	}
 	return router
 }
