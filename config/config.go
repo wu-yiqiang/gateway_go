@@ -12,10 +12,11 @@ type Configuration struct {
 }
 
 type App struct {
-	Env     string `mapstructure:"env" json:"env" yaml:"env"`
-	Port    string `mapstructure:"port" json:"port" yaml:"port"`
-	AppName string `mapstructure:"app_name" json:"app_name" yaml:"app_name"`
-	AppUrl  string `mapstructure:"app_url" json:"app_url" yaml:"app_url"`
+	Env        string `mapstructure:"env" json:"env" yaml:"env"`
+	Port       string `mapstructure:"port" json:"port" yaml:"port"`
+	AppName    string `mapstructure:"app_name" json:"app_name" yaml:"app_name"`
+	AppUrl     string `mapstructure:"app_url" json:"app_url" yaml:"app_url"`
+	StaticPort string `mapstructure:"static_port" json:"static_port" yaml:"static_port"`
 }
 
 type Log struct {
@@ -85,6 +86,7 @@ type Disks struct {
 type LocalStorage struct {
 	RootFileDir  string `mapstructure:"root_file_dir" json:"root_file_dir" yaml:"root_file_dir"`
 	RootImageDir string `mapstructure:"root_image_dir" json:"root_image_dir" yaml:"root_image_dir"`
+	RootVideoDir string `mapstructure:"root_video_dir" json:"root_video_dir" yaml:"root_video_dir"`
 	AppUrl       string `mapstructure:"app_url" json:"app_url" yaml:"app_url"`
 }
 

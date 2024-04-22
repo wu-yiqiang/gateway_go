@@ -5,8 +5,11 @@ import (
 	"gateway_go/global"
 	"gateway_go/middleware"
 	"github.com/gin-gonic/gin"
+	"github.com/juju/ratelimit"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
+	"net/http"
+	"time"
 )
 
 func SetupRouter() *gin.Engine {
@@ -17,13 +20,16 @@ func SetupRouter() *gin.Engine {
 	docs.SwaggerInfo.Version = "1.0"
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
 	router := gin.Default()
+	// 静态资源
+	router.Static("/assets", "./storage/images/")
+	// router.Static("/flet/videos", "./storage/videos/")
 	// 跨域中间件
 	router.Use(middleware.CORS())
 	// 日志
 	//router.Use(middleware.CO)
 	// swagger
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
-
+	router.Use(RateLimitMiddleware(time.Second, 1, 1)) //初始100，每秒放出100
 	// user路由
 	userGroup := router.Group("/admin")
 	{
@@ -56,4 +62,17 @@ func SetupRouter() *gin.Engine {
 		SetFileGroupRoutes(fileGroup)
 	}
 	return router
+}
+
+// 接口限流
+func RateLimitMiddleware(fillInterval time.Duration, cap, quantum int64) gin.HandlerFunc {
+	bucket := ratelimit.NewBucketWithQuantum(fillInterval, cap, quantum)
+	return func(c *gin.Context) {
+		if bucket.TakeAvailable(1) < 1 {
+			c.String(http.StatusForbidden, "rate limit...")
+			c.Abort()
+			return
+		}
+		c.Next()
+	}
 }

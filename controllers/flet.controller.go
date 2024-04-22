@@ -1,16 +1,28 @@
 package controllers
 
 import (
+	"bytes"
 	"encoding/json"
+	"errors"
 	"fmt"
+	"gateway_go/dao"
 	"gateway_go/dto"
+	"gateway_go/global"
 	"gateway_go/request"
 	"gateway_go/response"
+	"gateway_go/utils"
+	"github.com/disintegration/imaging"
 	"github.com/gin-gonic/gin"
+	ffmpeg "github.com/u2takey/ffmpeg-go"
 	"io"
 	"io/ioutil"
+	"log"
+	"net"
 	"net/http"
 	"net/url"
+	"os"
+	"path/filepath"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -178,4 +190,178 @@ func HttpRequest(method, rawUrl string, bodyMaps, headers map[string]string, tim
 		return "", err
 	}
 	return string(res), nil
+}
+
+// 获取当前目录下的视频
+func (f *fletController) GetVideo(c *gin.Context) {
+	// 获取当前文件下的视频
+	path := global.App.Config.Storage.Disks.LocalStorage.RootVideoDir
+	var list = make([]dao.Video, 0)
+	taverFile(path, &list)
+	data := dto.VideoListOutput{
+		List: &list,
+	}
+	response.Success(c, data)
+	return
+}
+
+func taverFile(path string, list *[]dao.Video) {
+	files, err := ioutil.ReadDir(path)
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+
+	for _, file := range files {
+		if file.IsDir() {
+			taverFile(path+file.Name()+"/", list)
+		} else {
+			if mimeType(path+file.Name()) == "video/mp4" {
+				videotype := strings.Split(path, "/")
+				url, err := GetSnapshot(path+file.Name(), global.App.Config.Storage.Disks.LocalStorage.RootImageDir+filepath.Base(file.Name()), file.Name(), 1)
+				if err != nil {
+					log.Fatal("获取封面失败")
+				}
+				addr, _ := netAddr()
+				videoUrl := "http://" + addr + "/videos/play/" + file.Name()
+				item := &dao.Video{
+					Name:     file.Name(),
+					Path:     path + file.Name(),
+					Types:    videotype[len(videotype)-2],
+					ImgUrl:   url,
+					VideoUrl: videoUrl,
+				}
+				*list = append(*list, *item)
+			}
+		}
+	}
+}
+
+func mimeType(path string) string {
+	file, err := os.Open(path)
+
+	if err != nil {
+		panic(err)
+	}
+
+	defer file.Close()
+
+	// Get the file content
+	contentType, err := GetFileContentType(file)
+
+	if err != nil {
+		panic(err)
+	}
+	return contentType
+}
+
+func GetFileContentType(ouput *os.File) (string, error) {
+
+	// to sniff the content type only the first
+	// 512 bytes are used.
+
+	buf := make([]byte, 512)
+
+	_, err := ouput.Read(buf)
+
+	if err != nil {
+		return "", err
+	}
+	contentType := http.DetectContentType(buf)
+	return contentType, nil
+}
+
+func GetSnapshot(videoPath, snapshotPath string, filename string, frameNum int) (string, error) {
+	isExist, err := utils.PathExists(snapshotPath + filename)
+
+	if err != nil {
+		return "", err
+	}
+	if isExist != true {
+		buf := bytes.NewBuffer(nil)
+		err := ffmpeg.Input(videoPath).
+			Filter("select", ffmpeg.Args{fmt.Sprintf("gte(n,%d)", frameNum)}).
+			Output("pipe:", ffmpeg.KwArgs{"vframes": 1, "format": "image2", "vcodec": "mjpeg"}).
+			WithOutput(buf, os.Stdout).
+			Run()
+		if err != nil {
+			log.Fatal("输入缩略图失败：", err)
+			return "", err
+		}
+
+		img, err := imaging.Decode(buf)
+		if err != nil {
+			log.Fatal("缩略图编码失败：", err)
+			return "", err
+		}
+
+		err = imaging.Save(img, snapshotPath+".png")
+		if err != nil {
+			log.Fatal("保存缩略图失败：", err)
+			return "", err
+		}
+	}
+	// 本地网络
+	addr, err := netAddr()
+	if err != nil {
+		return "", err
+	}
+	url := "http://" + addr + ":" + global.App.Config.App.Port + "/assets/" + filename + ".png"
+	return url, nil
+}
+
+func netAddr() (string, error) {
+	// 思路来自于Python版本的内网IP获取，其他版本不准确
+	conn, err := net.Dial("udp", "8.8.8.8:80")
+	if err != nil {
+		return "", errors.New("internal IP fetch failed, detail:" + err.Error())
+	}
+	defer conn.Close()
+	// udp 面向无连接，所以这些东西只在你本地捣鼓
+	res := conn.LocalAddr().String()
+	res = strings.Split(res, ":")[0]
+	return res, nil
+
+}
+
+func (f *fletController) PlayVideo(c *gin.Context) {
+	//通过动态路由方式获取文件名，以实现下载不同文件的功能
+	name := c.Query("name")
+	types := c.Query("types")
+	if name == "" {
+		response.ValidateFail(c, "请输入视频名字")
+		return
+	}
+	if types == "" {
+		response.ValidateFail(c, "请输入视频类型")
+		return
+	}
+	//拼接路径,如果没有这一步，则默认在当前路径下寻找
+	addr, err := netAddr()
+	if err != nil {
+		response.ValidateFail(c, err.Error())
+		return
+	}
+	filename := "http://" + addr + ":" + global.App.Config.App.StaticPort + "/" + types + "/" + name
+	//响应一个文件
+	var data = make(map[string]string)
+	data["addr"] = filename
+	response.Success(c, data)
+	return
+}
+
+func (f *fletController) GetBanner(c *gin.Context) {
+	lists := make([]string, 0)
+	addr, err := netAddr()
+	if err != nil {
+		response.BusinessFail(c, err.Error())
+		return
+	}
+	for i := 1; i < 4; i++ {
+		// str := "http://" + addr + global.App.Config.Storage.Disks.LocalStorage.RootImageDir + "hot" + string(i) + ".avif"
+		str := "http://" + addr + ":" + global.App.Config.App.Port + "/assets/" + "hot" + strconv.Itoa(i) + ".avif"
+		lists = append(lists, str)
+	}
+	response.Success(c, lists)
+	return
 }

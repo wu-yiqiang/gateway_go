@@ -1,6 +1,9 @@
 package dto
 
-import "gateway_go/request"
+import (
+	"gateway_go/dao"
+	"gateway_go/request"
+)
 
 type FletWeatherInput struct {
 	Location string `json:"location" form:"location" description:"位置" example:"上海" binding:"required"`
@@ -16,6 +19,10 @@ type FletNewsInput struct {
 	Type     string `json:"type" form:"type" gorm:"type" comment:"类型" binding:""`
 	PageNo   int    `json:"page_no" form:"page_no" gorm:"page_no" comment:"页码" default:"1" binding:"required,min=1"`
 	PageSize int    `json:"page_size" form:"page_size" gorm:"page_size" comment:"页数" default:"10" binding:"required,min=1"`
+}
+
+type VideoListOutput struct {
+	List *[]dao.Video `json:"list" form:"list" gorm:"list" comment:"列表"`
 }
 
 func (fletNewsInput FletNewsInput) GetMessages() request.ValidatorMessages {
