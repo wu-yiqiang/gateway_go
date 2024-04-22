@@ -156,14 +156,14 @@ func (admin *adminController) AdminInfo(c *gin.Context) {
 		return
 	}
 
-	tokenStr, err := global.App.Redis.Get(context.Background(), customClaims.Id).Result()
+	tokenStr, err := global.App.Redis.Get(context.Background(), customClaims.UserName).Result()
 	fmt.Println("token 不能删除用于打印token", tokenStr)
 	if err != nil {
 		response.BusinessFail(c, "用户信息不存在")
 		return
 	}
 	out := &dto.AdminInfoOutput{
-		Name:      customClaims.Id,
+		Name:      customClaims.UserName,
 		Id:        1,
 		Avatar:    "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg",
 		LoginTime: "2023-10-26",
@@ -190,7 +190,7 @@ func (admin *adminController) AdminLogout(c *gin.Context) {
 		response.BusinessFail(c, "用户信息不存在")
 		return
 	}
-	error := global.App.Redis.Del(context.Background(), customClaims.Id).Err()
+	error := global.App.Redis.Del(context.Background(), customClaims.UserName).Err()
 	if error != nil {
 		response.BusinessFail(c, "用户注销失败")
 		return

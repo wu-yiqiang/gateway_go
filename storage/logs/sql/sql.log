@@ -2155,3 +2155,9 @@
 
 2024/04/20 22:03:59 /Users/atlas/go/src/gateway_go/services/user.service.go:38
 [13.999ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/22 15:32:05 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/04/22 15:38:09 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused

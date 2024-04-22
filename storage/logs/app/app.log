@@ -1138,3 +1138,11 @@
 [2024-04-20 22:07:28.112]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
 [2024-04-20 22:15:40.401]	dev.info	gateway_go/main.go:28	log init success!
 [2024-04-20 22:15:40.405]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-22 15:32:05.236]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-22 15:32:05.237]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-04-22 15:32:05.305]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-04-22 15:32:05.305]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-22 15:38:09.539]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-22 15:38:09.540]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-04-22 15:38:09.608]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-04-22 15:38:09.608]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax

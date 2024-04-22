@@ -37,8 +37,8 @@ func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (token
 		CustomClaims{
 			StandardClaims: jwt.StandardClaims{
 				ExpiresAt: time.Now().Unix() + global.App.Config.Jwt.JwtTtl,
-				Id:        user.GetName(),
-				// UserName:  user.GetName(),
+				// Id:        user.GetName(),
+				UserName:  user.GetName(),
 				Issuer:    GuardName, // 用于在中间件中区分不同客户端颁发的 token，避免 token 跨端使用
 				NotBefore: time.Now().Unix() - 1000,
 			},
