@@ -187,6 +187,47 @@ const docTemplate = `{
                 }
             }
         },
+        "/admin/queryUser": {
+            "post": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
+                "description": "用户信息获取",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户管理"
+                ],
+                "summary": "管理员信息获取",
+                "operationId": "/admin/queryUser",
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/response.Response"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/definitions/dto.AdminInfoOutput"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
         "/admin/register": {
             "post": {
                 "description": "用户注册",
@@ -241,6 +282,35 @@ const docTemplate = `{
                 ],
                 "summary": "管理员注销",
                 "operationId": "/admin_login/logout",
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "schema": {
+                            "$ref": "#/definitions/response.Response"
+                        }
+                    }
+                }
+            }
+        },
+        "/contact/add": {
+            "post": {
+                "security": [
+                    {
+                        "Auth": []
+                    }
+                ],
+                "description": "添加好友",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "通讯模块"
+                ],
+                "summary": "通讯模块",
+                "operationId": "/contact/add",
                 "responses": {
                     "200": {
                         "description": "success",
@@ -369,19 +439,19 @@ const docTemplate = `{
                 "id": {
                     "type": "string"
                 },
-                "nick_name": {
+                "nickname": {
                     "type": "string"
                 },
-                "roles": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
+                "phone": {
+                    "type": "string"
                 },
-                "update_time": {
+                "role": {
+                    "type": "string"
+                },
+                "updated_time": {
                     "type": "integer"
                 },
-                "user_name": {
+                "username": {
                     "type": "string"
                 }
             }

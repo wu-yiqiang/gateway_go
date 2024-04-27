@@ -45,6 +45,16 @@ func (userService *userService) UserInfo(userId string) (err error, userInfo dto
 	return
 }
 
+// 通过用户名查询用户
+func (userService *userService) QueryUserinfoByUsername(username string) (err error, userInfo dto.AdminInfoOutput) {
+	result := global.App.DB.Table(userService.TableName()).Where("username = ? AND is_delete = ?", username, 0).First(&userInfo)
+	if result.Error != nil {
+		err = result.Error
+		return
+	}
+	return
+}
+
 // Login
 func (userService *userService) Login(params dto.RegisterInput) (err error, user *dao.Admin) {
 	err = global.App.DB.Table(userService.TableName()).Where("username = ?", params.Username).First(&user).Error

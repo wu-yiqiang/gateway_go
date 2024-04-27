@@ -14,6 +14,7 @@ func SetUserGroupRoutes(router *gin.RouterGroup) {
 	// 需要token验证的接口
 	authRouter := router.Group("").Use(middleware.JWTAuth(common.AppGuardName))
 	{
+		authRouter.POST("/queryUser", controllers.AdminController.QueryUserInfo)
 		authRouter.POST("/changePassword", controllers.AdminController.AdminChangePassword)
 		authRouter.POST("/admin_info", controllers.AdminController.AdminInfo)
 		authRouter.POST("/avatar", controllers.AdminController.AdminInfoAvatar)

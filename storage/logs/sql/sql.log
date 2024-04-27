@@ -3085,3 +3085,183 @@
 
 2024/04/27 13:38:42 /Users/atlas/go/src/gateway_go/services/user.service.go:40
 [1.040ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 16:03:54 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[3.343ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 16:03:54 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[0.817ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:27:32 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[28.491ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:27:43 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.724ms] [rows:0] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:28:09 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[6.030ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutter' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:28:26 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[0.745ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutter' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:29:42 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[2.331ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutter' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:29:47 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[1.892ms] [rows:1] SELECT * FROM `users` WHERE username = 'sutter' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:30:43 /Users/atlas/go/src/gateway_go/services/user.service.go:60 record not found
+[1.353ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 21:31:11 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.756ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 21:31:11 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[11.476ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('98f11d94-cefb-4d87-a685-867afaa0e9a2','admin','$2a$04$Q9kTlC4KD2qP7prifdzhdukXDsKV9iFn.jmNMGFpSW6Ui5P4/sVKe','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1714224671,1714224671,0)
+
+2024/04/27 21:31:18 /Users/atlas/go/src/gateway_go/services/user.service.go:60
+[2.588ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 21:31:19 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[0.990ms] [rows:1] SELECT * FROM `users` WHERE uuid = '98f11d94-cefb-4d87-a685-867afaa0e9a2' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:31:44 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[1.531ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:32:06 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.008ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'root' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 21:32:06 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[3.023ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('0a6c5acd-eefe-4b0f-86c3-b257c8075d5f','root','$2a$04$T7VgvRVpcMnmUZjhPqjP7e6TEWHyVkggItEfBUMKqhCnWzr4L.XbK','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1714224726,1714224726,0)
+
+2024/04/27 21:32:12 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[1.066ms] [rows:1] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:32:18 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[2.825ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:32:58 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[1.437ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:32:59 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.789ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:32:59 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.725ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:05 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.999ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:06 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[1.192ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:06 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.540ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:06 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.781ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:06 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.553ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:06 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.913ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:07 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[1.105ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:09 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[0.933ms] [rows:1] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:11 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.673ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:12 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[1.341ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 21:33:12 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.649ms] [rows:0] SELECT * FROM `users` WHERE username = 'root1' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 23:34:24 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[3.747ms] [rows:1] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 23:36:16 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[14.944ms] [rows:1] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 23:36:34 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[0.658ms] [rows:1] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 23:37:47 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[2.468ms] [rows:1] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 23:38:37 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[3.379ms] [rows:1] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 23:39:42 /Users/atlas/go/src/gateway_go/services/userFriends.service.go:21 Error 1054 (42S22): Unknown column 'updated_time' in 'field list'
+[1.103ms] [rows:0] INSERT INTO `user_friends` (`user_id`,`friend_id`,`updated_time`,`created_time`,`is_delete`) VALUES ('98f11d94-cefb-4d87-a685-867afaa0e9a2','0a6c5acd-eefe-4b0f-86c3-b257c8075d5f',1714232382,1714232382,0)
+
+2024/04/28 00:04:56 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.970ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/28 00:04:56 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[2.041ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('adad71f0-c368-4213-b4de-a9e52ff97fc3','admin','$2a$04$cZVQxkLeN9kcG5oSXjzoguJach8aoThsNQb0vnZzqQz.ArvajZmtq','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1714233896,1714233896,0)
+
+2024/04/28 00:05:12 /Users/atlas/go/src/gateway_go/services/user.service.go:60
+[3.009ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/28 00:05:12 /Users/atlas/go/src/gateway_go/services/user.service.go:40 record not found
+[1.089ms] [rows:0] SELECT * FROM `users` WHERE uuid = '98f11d94-cefb-4d87-a685-867afaa0e9a2' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/28 00:05:29 /Users/atlas/go/src/gateway_go/services/user.service.go:50 record not found
+[0.888ms] [rows:0] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/28 00:05:39 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.738ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'root' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/28 00:05:39 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[4.090ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('4b5272ea-c35f-48bc-9874-2a3567ad0b50','root','$2a$04$.Oa/QeIr4ZKUCjEfA.Hvre/Pk0sdAcLGiNwDjeGqNS0Gv3GM8dOSu','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1714233939,1714233939,0)
+
+2024/04/28 00:05:44 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[0.631ms] [rows:1] SELECT * FROM `users` WHERE username = 'root' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/28 00:05:49 /Users/atlas/go/src/gateway_go/services/userFriends.service.go:21
+[5.919ms] [rows:1] INSERT INTO `user_friends` (`user_id`,`friend_id`,`updated_time`,`created_time`,`is_delete`) VALUES ('98f11d94-cefb-4d87-a685-867afaa0e9a2','4b5272ea-c35f-48bc-9874-2a3567ad0b50',1714233949,1714233949,0)
+
+2024/04/28 00:08:05 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[4.913ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'system' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/28 00:08:05 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[2.589ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('817aac51-0a78-47c9-a28b-259bd9343ac2','system','$2a$04$P9Z4MI0OjdBUX4xIu7UDVeGGpFM1hz//71lWOFYQSyErrVHx6Igsu','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1714234085,1714234085,0)
+
+2024/04/28 00:08:11 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[0.784ms] [rows:1] SELECT * FROM `users` WHERE username = 'system' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/28 00:08:13 /Users/atlas/go/src/gateway_go/services/userFriends.service.go:21
+[2.843ms] [rows:1] INSERT INTO `user_friends` (`user_id`,`friend_id`,`updated_time`,`created_time`,`is_delete`) VALUES ('98f11d94-cefb-4d87-a685-867afaa0e9a2','817aac51-0a78-47c9-a28b-259bd9343ac2',1714234093,1714234093,0)
+
+2024/04/28 00:09:40 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[6.325ms] [rows:1] SELECT * FROM `users` WHERE username = 'system' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/28 00:09:54 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.520ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'sys' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/28 00:09:54 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[8.738ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('8a33aeb1-8a1d-437d-a794-c02483d98ee3','sys','$2a$04$gSuX6vaxtwB58tjm/EGF9uqSyIqrpzoDVPhhB1ItDJxsvze/7gVXe','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1714234194,1714234194,0)
+
+2024/04/28 00:10:00 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[0.780ms] [rows:1] SELECT * FROM `users` WHERE username = 'sys' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/28 00:10:01 /Users/atlas/go/src/gateway_go/services/userFriends.service.go:21
+[2.096ms] [rows:1] INSERT INTO `user_friends` (`user_id`,`friend_id`,`updated_time`,`created_time`,`is_delete`) VALUES ('98f11d94-cefb-4d87-a685-867afaa0e9a2','8a33aeb1-8a1d-437d-a794-c02483d98ee3',1714234201,1714234201,0)
+
+2024/04/28 00:10:23 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.512ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'super' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/28 00:10:23 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[2.196ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('67a0b1d9-627e-4883-9e57-449b360e6d4e','super','$2a$04$0RsmEmUyYdWKaffDTKWBZefiyILaSqT6gIIXQiSW977EUdtfFkixe','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1714234223,1714234223,0)
+
+2024/04/28 00:10:29 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[7.115ms] [rows:1] SELECT * FROM `users` WHERE username = 'super' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/28 00:10:29 /Users/atlas/go/src/gateway_go/services/userFriends.service.go:21
+[2.141ms] [rows:1] INSERT INTO `user_friends` (`user_id`,`friend_id`,`updated_time`,`created_time`,`is_delete`) VALUES ('98f11d94-cefb-4d87-a685-867afaa0e9a2','67a0b1d9-627e-4883-9e57-449b360e6d4e',1714234229,1714234229,0)

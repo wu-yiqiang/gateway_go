@@ -9,15 +9,15 @@ definitions:
         type: string
       id:
         type: string
-      nick_name:
+      nickname:
         type: string
-      roles:
-        items:
-          type: string
-        type: array
-      update_time:
+      phone:
+        type: string
+      role:
+        type: string
+      updated_time:
         type: integer
-      user_name:
+      username:
         type: string
     type: object
   dto.ChangePasswordInput:
@@ -176,6 +176,29 @@ paths:
       summary: 用户登录
       tags:
       - 用户管理
+  /admin/queryUser:
+    post:
+      consumes:
+      - application/json
+      description: 用户信息获取
+      operationId: /admin/queryUser
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/dto.AdminInfoOutput'
+              type: object
+      security:
+      - Auth: []
+      summary: 管理员信息获取
+      tags:
+      - 用户管理
   /admin/register:
     post:
       consumes:
@@ -217,6 +240,24 @@ paths:
       summary: 管理员注销
       tags:
       - 用户管理
+  /contact/add:
+    post:
+      consumes:
+      - application/json
+      description: 添加好友
+      operationId: /contact/add
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
+      summary: 通讯模块
+      tags:
+      - 通讯模块
   /file/upload:
     post:
       consumes:

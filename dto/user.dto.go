@@ -62,3 +62,13 @@ func (adminInfoAvator AdminInfoAvatar) GetMessages() request.ValidatorMessages {
 		"avatar.required": "文件不能为空",
 	}
 }
+
+type QueryUser struct {
+	Username string `json:"username" gorm:"column:username" description:"用户名称"`
+}
+
+func (queryUser QueryUser) GetMessages() request.ValidatorMessages {
+	return request.ValidatorMessages{
+		"username.required": "用户名不能为空",
+	}
+}

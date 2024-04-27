@@ -150,15 +150,39 @@ func (admin *adminController) AdminInfo(c *gin.Context) {
 		response.BusinessFail(c, "用户不存在")
 		return
 	}
-
 	tokenStr, err := global.App.Redis.Get(context.Background(), username.(string)).Result()
 	fmt.Println("token 不能删除用于打印token", tokenStr)
 	if err != nil {
 		response.BusinessFail(c, "用户信息不存在")
 		return
 	}
-	//
 	err, data := services.UserService.UserInfo(userId.(string))
+	if err != nil {
+		response.BusinessFail(c, err.Error())
+		return
+	}
+	response.Success(c, data)
+	return
+}
+
+// ListPage godoc
+// @Summary 管理员信息获取
+// @Description 用户信息获取
+// @Tags 用户管理
+// @ID /admin/queryUser
+// @Accept  json
+// @Produce  json
+// @Security Auth
+// @Success 200 {object} response.Response{data=dto.AdminInfoOutput} "success"
+// @Router /admin/queryUser [post]
+func (admin *adminController) QueryUserInfo(c *gin.Context) {
+	// 查询用户名
+	var form dto.QueryUser
+	if err := c.ShouldBindJSON(&form); err != nil {
+		response.ValidateFail(c, request.GetErrorMsg(form, err))
+		return
+	}
+	err, data := services.UserService.QueryUserinfoByUsername(form.Username)
 	if err != nil {
 		response.BusinessFail(c, err.Error())
 		return
