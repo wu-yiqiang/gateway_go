@@ -16,11 +16,16 @@ var JwtService = new(jwtService)
 
 // 所有需要颁发 token 的用户模型必须实现这个接口
 type JwtUser interface {
-	GetName() string
+	GetUsername() string
+	GetUuid() string
+	GetPassword() string
 }
 
 // CustomClaims 自定义 Claims
 type CustomClaims struct {
+	Uuid     string `json:"uuid"`
+	Username string `json:"username"`
+	Password string `json:"password"`
 	jwt.StandardClaims
 }
 
@@ -35,12 +40,11 @@ func (jwtService *jwtService) CreateToken(GuardName string, user JwtUser) (token
 	token = jwt.NewWithClaims(
 		jwt.SigningMethodHS256,
 		CustomClaims{
+			Uuid:     user.GetUuid(),
+			Username: user.GetUsername(),
+			Password: user.GetPassword(),
 			StandardClaims: jwt.StandardClaims{
-				ExpiresAt: time.Now().Unix() + global.App.Config.Jwt.JwtTtl,
-				// Id:        user.GetName(),
-				UserName:  user.GetName(),
-				Issuer:    GuardName, // 用于在中间件中区分不同客户端颁发的 token，避免 token 跨端使用
-				NotBefore: time.Now().Unix() - 1000,
+				Issuer: GuardName,
 			},
 		},
 	)

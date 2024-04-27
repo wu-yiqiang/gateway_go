@@ -2161,3 +2161,927 @@
 
 2024/04/22 15:38:09 /Users/atlas/go/src/gateway_go/initialize/db.go:45
 [error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/04/23 17:27:56 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/04/23 21:52:47 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/04/24 00:49:41 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/04/24 10:58:13 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/04/25 20:09:19 /Users/atlas/go/src/gateway_go/services/user.service.go:38
+[8.744ms] [rows:1] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:31:04 /Users/atlas/go/src/gateway_go/services/user.service.go:24
+[1.037ms] [rows:1] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:35:22 /Users/atlas/go/src/gateway_go/services/user.service.go:24 Error 1146 (42S02): Table 'gin_gateway.gateway_admin' doesn't exist
+[5.258ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:35:22 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1146 (42S02): Table 'gin_gateway.gateway_admin' doesn't exist
+[1.962ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('5bc5f541-2c94-4b13-a5c2-8e4fed8fb64c','admin','$2a$04$vx8iCJqtKqCRF2BsKyB9BeairAUxRGdRyLPtClxZCPUfukdk1Mt6a','','2024-04-25 23:35:22.107','2024-04-25 23:35:22.107',0)
+
+2024/04/25 23:35:49 /Users/atlas/go/src/gateway_go/services/user.service.go:24 Error 1146 (42S02): Table 'gin_gateway.gateway_admin' doesn't exist
+[0.860ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:35:49 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1146 (42S02): Table 'gin_gateway.gateway_admin' doesn't exist
+[1.854ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('b5b17e12-5afe-485d-9cff-64be82dbda3c','admin','$2a$04$1RuNDjQzSebjXQsH/SRo6eBJroxN3tCY//R5W..qnOICl2sfOKPb2','','2024-04-25 23:35:49.694','2024-04-25 23:35:49.694',0)
+
+2024/04/25 23:38:23 /Users/atlas/go/src/gateway_go/services/user.service.go:24 Error 1054 (42S22): Unknown column 'user_name' in 'where clause'
+[15.247ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:38:23 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[1.043ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('371ee77e-03f6-49cf-916a-2f557ef60cff','admin','$2a$04$hHH0XkVqGk8rbVJFlMAVtu6eKomyVuCZAjLyTt/TTLB.z7IbbSVde','','2024-04-25 23:38:23.742','2024-04-25 23:38:23.742',0)
+
+2024/04/25 23:41:24 /Users/atlas/go/src/gateway_go/services/user.service.go:24 Error 1054 (42S22): Unknown column 'user_name' in 'where clause'
+[1.035ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:41:24 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[1.482ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('7232f2aa-08d0-4443-be44-06a1e297631f','admin','$2a$04$b6.VLlQqQa8eC0Ul7BQC4O7bPgD4GgRKOJAkXSLW2/l9WZQND073O','','2024-04-25 23:41:24.553','2024-04-25 23:41:24.553',0)
+
+2024/04/25 23:41:26 /Users/atlas/go/src/gateway_go/services/user.service.go:24 Error 1054 (42S22): Unknown column 'user_name' in 'where clause'
+[0.305ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:41:26 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[0.917ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('408ed9fb-450d-41fc-be3f-05e7ff50c2c7','admin','$2a$04$KvQk22jTCGRrYUjDche.WOxyiwV/Lgk.LIfl1DlbVxvnVogai0o9q','','2024-04-25 23:41:26.384','2024-04-25 23:41:26.384',0)
+
+2024/04/25 23:41:36 /Users/atlas/go/src/gateway_go/services/user.service.go:24 Error 1054 (42S22): Unknown column 'user_name' in 'where clause'
+[0.767ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:41:36 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[0.747ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('a07e86c4-db55-4aa0-a1bf-918ea83474f2','admin','$2a$04$MGfPnDhltpCowNuNj7dirui7VoA0rI.8KCA2EvzkaSfC.hzzFPL2O','','2024-04-25 23:41:36.64','2024-04-25 23:41:36.64',0)
+
+2024/04/25 23:42:51 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.283ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:42:51 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[0.458ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('aca5bffa-a07c-47d0-bcb4-63b232c53fee','admin','$2a$04$RwEABC9HvdGzQOXgGbOAVuRR0hL9CgifFqT/eSK/tERRwbRLsm2Ie','','2024-04-25 23:42:51.135','2024-04-25 23:42:51.135',0)
+
+2024/04/25 23:42:58 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.506ms] [rows:0] SELECT `id` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:42:58 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[0.793ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('6ba29422-b3db-4ab6-96f0-5a056bd03fdc','admin','$2a$04$kfVODDQZB85fIUZYnuO3.ON6r8sy5S6sFceoaKmp5pLKq4as5pQqm','','2024-04-25 23:42:58.319','2024-04-25 23:42:58.319',0)
+
+2024/04/25 23:45:46 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1054 (42S22): Unknown column 'user_name' in 'where clause'
+[0.596ms] [rows:0] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:45:51 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1054 (42S22): Unknown column 'user_name' in 'where clause'
+[0.432ms] [rows:0] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:45:59 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.597ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:45:59 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[0.476ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('385ff3ca-4b41-41e3-9131-98291fbfbbcd','admin','$2a$04$i0FaEQMlCzlSphXkOAMVUuv4G5wSyPi1Hykzpr0wwzpR2GekK1/.m','','2024-04-25 23:45:59.901','2024-04-25 23:45:59.901',0)
+
+2024/04/25 23:46:32 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.512ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:46:32 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[0.803ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('fa2b248a-12bc-4e6f-a604-6d03da0d0872','admin','$2a$04$gLlI1j9Yj9tVERjDRelHdOSnuqfiRxWDhyJproqfAC14k7xj3JbeW','','2024-04-25 23:46:32.64','2024-04-25 23:46:32.64',0)
+
+2024/04/25 23:46:33 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.989ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:46:33 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'user_name' in 'field list'
+[0.472ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`user_name`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('4bbf0121-f762-4442-9329-fff461e8a9ae','admin','$2a$04$hkpJt9CDOn3neSIO77CdxO4.s/W69xQldFSUjkyJc2pOvhmiwk4M6','','2024-04-25 23:46:33.448','2024-04-25 23:46:33.448',0)
+
+2024/04/25 23:46:39 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.065ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:46:39 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.574ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('605397b3-0530-4a6a-a80e-9ef119aae94b','admin','$2a$04$ugJbq1T8XOCiS4xHbDArhu9mrugZ23Z406NFc2LeA0RNH3PR2O2YW','','2024-04-25 23:46:39.925','2024-04-25 23:46:39.925',0)
+
+2024/04/25 23:48:52 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.647ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:48:52 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.601ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('cfcda334-7423-4701-a074-8f062ef94f52','admin','$2a$04$gcSeeDE0Q0v58lBH3.8pRe2/N5a5.G7xoIZcSNee.RE6cDx4EjDIq','','2024-04-25 23:48:52.816','2024-04-25 23:48:52.816',0)
+
+2024/04/25 23:48:53 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.353ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:48:53 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.397ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('a0c3440f-6fcf-4db6-9250-3e97a88be355','admin','$2a$04$p2.U99sRoa6Q0y0OqCDSeeqzG8ok8NfLHv.GI6oaaQzBSnRs1t6a6','','2024-04-25 23:48:53.559','2024-04-25 23:48:53.559',0)
+
+2024/04/25 23:48:54 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.849ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:48:54 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.337ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('26a3a296-1ec1-4348-a6c7-1e6f04f9c4c0','admin','$2a$04$NhbX2NW87y.yb5OniMRWZurXFA2smG58O6/0IY6q.ulF.yXtPh1YK','','2024-04-25 23:48:54.141','2024-04-25 23:48:54.141',0)
+
+2024/04/25 23:48:54 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.297ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:48:54 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.573ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('8133540e-1d16-4c20-b082-ff48e7a8f681','admin','$2a$04$m2tiEi0HWeFnPagkNiBdS.7dmaAeh0W1iDZ5RMUGlv6/0NS3oNrBS','','2024-04-25 23:48:54.605','2024-04-25 23:48:54.605',0)
+
+2024/04/25 23:49:11 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.913ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:49:11 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.586ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('2fb535aa-e91c-4687-8b37-e36469e681db','admin','$2a$04$HcNVvElxzrlcHnpEwr20ZuvJuL8.iVS.G1SjbKkmyuQw/QjCt3y12','http://baidu.com','2024-04-25 23:49:11.899','2024-04-25 23:49:11.899',0)
+
+2024/04/25 23:49:14 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.983ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:49:14 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.392ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('3d3c5357-cbdd-420a-8300-78a8e6e5a00c','admin','$2a$04$wvFLLPa4c8uN1tFC8dETN.IBnXtc9VlAe2gtMyWyl499hS1l76mUC','http://baidu.com','2024-04-25 23:49:14.534','2024-04-25 23:49:14.534',0)
+
+2024/04/25 23:49:15 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.831ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:49:15 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.349ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('5973379b-6367-4384-b9a8-c6be45d7f57b','admin','$2a$04$VyV7vhI/zHjOAzb.OCkChuhCEUZuS.62bUuoJiqf1weAsvwzpwkTu','http://baidu.com','2024-04-25 23:49:15.08','2024-04-25 23:49:15.08',0)
+
+2024/04/25 23:49:15 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.361ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:49:15 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.849ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('690aa208-a95f-44a4-a645-903513439817','admin','$2a$04$wRH9QH9oElv1XNQycImW2OT6s3fPDN.c5BQO2MlZ908DBL8cjMIJq','http://baidu.com','2024-04-25 23:49:15.817','2024-04-25 23:49:15.817',0)
+
+2024/04/25 23:49:16 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.626ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:49:16 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.435ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('efe848b5-56fd-44b8-983d-28d2e0509d98','admin','$2a$04$ETaFd9eby0opg7rlmdlJHOwacm.yyhR3i.jIUpnrrfJAUL4sqGkC2','http://baidu.com','2024-04-25 23:49:16.214','2024-04-25 23:49:16.214',0)
+
+2024/04/25 23:49:16 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.167ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:49:16 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.485ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('f2f73ce6-affd-45d4-bb24-da0eea2239ea','admin','$2a$04$ySEcD4w3wNMNMfatCTM/OOski9HVlHRxLez.W1ZUBUO.GZf28FMu6','http://baidu.com','2024-04-25 23:49:16.633','2024-04-25 23:49:16.633',0)
+
+2024/04/25 23:49:16 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.762ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:49:16 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.474ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('34315c4a-b52b-4356-972c-79f14c8517d5','admin','$2a$04$bh8tFFd2ZB6srntCW/RuGuLav9W2LOkgjutmgmkWQ8L6NypLrlA5y','http://baidu.com','2024-04-25 23:49:16.951','2024-04-25 23:49:16.951',0)
+
+2024/04/25 23:49:17 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.668ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:49:17 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.754ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('de545fc6-3b58-427c-80e1-f1270b6a3217','admin','$2a$04$PXoc5Pf8kwwK0dKRzD2G.eeHPRi1eM4QeMw2eUz3oUt7v2juqL97O','http://baidu.com','2024-04-25 23:49:17.468','2024-04-25 23:49:17.468',0)
+
+2024/04/25 23:50:05 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[0.966ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:50:05 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.534ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('35a8e18c-32df-416a-9eb1-dcc38510f715','admin','$2a$04$ZKvAhqp60/Rt03ZL1c3/H.NyLEhKxWcB1eZokCUDqnj1OoeSq/Wn6','http://baidu.com','2024-04-25 23:50:05.184','2024-04-25 23:50:05.184',0)
+
+2024/04/25 23:53:43 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[0.640ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:53:43 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'update_at' in 'field list'
+[0.589ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('830316fd-9844-457f-bfbc-499153072e64','admin','$2a$04$sr1mgYcZ5y12i4b4oxF6je3YiFLV4SZ5lcVA2MWCaZhVu9whMGX4u','http://baidu.com','2024-04-25 23:53:43.12','2024-04-25 23:53:43.12',0)
+
+2024/04/25 23:53:43 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[0.960ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:53:43 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'update_at' in 'field list'
+[0.367ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('c7a7c9d4-65a9-423a-9ee9-02960ece0453','admin','$2a$04$ZrohGwjAAvECgpNaOgFi9OUFen2y0l2leBg.nCR6Cejag05I5kXv6','http://baidu.com','2024-04-25 23:53:43.844','2024-04-25 23:53:43.844',0)
+
+2024/04/25 23:53:44 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[0.960ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:53:44 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'update_at' in 'field list'
+[0.670ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('1bd197d4-388d-445b-ba27-77d744c2249f','admin','$2a$04$xstEpHh0e2fEaDnauPXNnOhUZyGaFgRHxc7TVQiZQhyBeb3ER.66a','http://baidu.com','2024-04-25 23:53:44.48','2024-04-25 23:53:44.48',0)
+
+2024/04/25 23:53:52 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[0.617ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:53:52 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'update_at' in 'field list'
+[0.440ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_at`,`create_at`,`is_delete`) VALUES ('64d3d7c9-94b6-4018-b0a8-ad5e6d3c0502','admin','$2a$04$cNb/q6IJVTd7C8.H8cZbm.zmtDSSuk/CTUMUY1K6l.hrGtt2bsJN.','http://baidu.com','2024-04-25 23:53:52.042','2024-04-25 23:53:52.042',0)
+
+2024/04/25 23:56:39 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.258ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:56:39 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'update_time' at row 1
+[1.274ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_time`,`create_time`,`is_delete`) VALUES ('73fe531b-1d59-4644-b85c-20608e5844d4','admin','$2a$04$hsisWi7wisGUBUHusGaxBeXFY5v2GEmeiFUl4VIoSTwPGjf7T7wFO','http://baidu.com','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/25 23:59:06 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.104ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:59:06 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'update_time' at row 1
+[0.692ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_time`,`create_time`,`is_delete`) VALUES ('eb561ae8-985f-4a41-b819-f5c67cf2af90','admin','$2a$04$wtCSSp6poAKPKPtNFfHv..VzT1Qi3Q/zyvnQ1u.qcGhfd7tMERFxi','http://baidu.com','2024-04-25 23:59:06.787','2024-04-25 23:59:06.787',0)
+
+2024/04/25 23:59:14 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.615ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:59:14 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'update_time' at row 1
+[0.913ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_time`,`create_time`,`is_delete`) VALUES ('07cd67b8-26cf-4b75-9882-2354a06c0043','admin','$2a$04$VNYAV1/DDmr4OvB8GS8R.OZshfPoaikCU7G37yBcHGK8utuWlSlT2','http://baidu.com','2024-04-25 23:59:14.36','2024-04-25 23:59:14.36',0)
+
+2024/04/25 23:59:22 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.532ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/25 23:59:22 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'update_time' at row 1
+[1.146ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_time`,`create_time`,`is_delete`) VALUES ('b3883047-16e1-47ff-b996-8bba1de78ed3','admin','$2a$04$mEtTXXpoeANrnRDbKtFhdOQHk.u2SgCU6iQPC0/xMcKWUODs.vreq','http://baidu.com','2024-04-25 23:59:22.821','2024-04-25 23:59:22.821',0)
+
+2024/04/26 00:01:11 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[1.129ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:01:11 /Users/atlas/go/src/gateway_go/services/user.service.go:32 Error 1265 (01000): Data truncated for column 'update_time' at row 1
+[1.524ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_time`,`create_time`,`is_delete`) VALUES ('49af87cd-b5ea-47b8-8c4a-16557ad59f47','admin','$2a$04$B1nf4tLgXScqv4wpqMmJEeJ/ovpBceLjBAzR.wo1PbVUckSK9rWja','http://baidu.com','2024-04-26 00:01:11.033','2024-04-26 00:01:11.033',0)
+
+2024/04/26 00:03:33 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[1.190ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:03:33 /Users/atlas/go/src/gateway_go/services/user.service.go:32 Error 1054 (42S22): Unknown column 'update_time' in 'field list'
+[0.540ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`update_time`,`create_time`,`is_delete`) VALUES ('41c88872-a44b-4751-ade4-b8c72085f742','admin','$2a$04$eRuO8dnP0q05v7YCaUA45enZJ.DpHbNSF6Lxl6jhJ8fEEjc4K3dL2','http://baidu.com','2024-04-26 00:03:33.442','2024-04-26 00:03:33.442',0)
+
+2024/04/26 00:03:46 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[0.969ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:03:46 /Users/atlas/go/src/gateway_go/services/user.service.go:32 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[0.580ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`updated_time`,`created_time`,`is_delete`) VALUES ('831b09b8-169c-4843-bd52-546b894a0e37','admin','$2a$04$5IFO8k2eaYUsVglkQn7Ac.YbNyNapc6Qln/9GrZCcZIW4lf4l9ttq','http://baidu.com','2024-04-26 00:03:46.672','2024-04-26 00:03:46.672',0)
+
+2024/04/26 00:51:08 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[6.139ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:51:08 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[1.807ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`updated_time`,`created_time`,`is_delete`) VALUES ('24e91896-d262-4be3-88e2-5b55849cd581','admin','$2a$04$tv0E6t6SV4y/tB93ZjURxuZIUh.YID4OJrereP.EhngcVOurpNHt2','http://baidu.com','2024-04-26 00:51:08.311','2024-04-26 00:51:08.311',0)
+
+2024/04/26 00:54:00 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.586ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:54:00 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[0.853ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`updated_time`,`created_time`,`is_delete`) VALUES ('3ea243c2-d102-4c9e-b448-304739336617','admin','$2a$04$87CHqgNwKFEvztuko6bpfeodc3ZMFgKXZDDzGXaST7F4sOhH8peHq','http://baidu.com','2024-04-26 00:54:00.952','2024-04-26 00:54:00.952',0)
+
+2024/04/26 00:55:46 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.821ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:55:46 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1364 (HY000): Field 'nickname' doesn't have a default value
+[2.922ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`is_delete`) VALUES ('986ee6f0-724f-49d2-8f55-83af53437d59','admin','$2a$04$3maypLMHshI8lFXNn63Rou5k.qCGSmUFACHAbanNB96KzNkL3RTYO','http://baidu.com',0)
+
+2024/04/26 00:56:51 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.955ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:56:51 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1364 (HY000): Field 'email' doesn't have a default value
+[0.683ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`is_delete`) VALUES ('6a3aee3c-da55-4253-8d2e-ae6306f84318','admin','$2a$04$vg2mR7d3pQq6sA7GIb5VOOnm.0b18KWNMVcKmD7QQ8u0uAmg7p4dG','http://baidu.com','fk',0)
+
+2024/04/26 00:58:03 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.852ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:58:03 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1364 (HY000): Field 'phone' doesn't have a default value
+[1.534ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`is_delete`) VALUES ('3c935435-b060-4d7b-8145-2534ef73ba57','admin','$2a$04$Fpakb1EneiIC7QXDah/Cge84tC3.P2fmWfeHKz26VNzxH9sG5EXPG','http://baidu.com','fk','***@outlook.com',0)
+
+2024/04/26 00:58:04 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.991ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 00:58:04 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1364 (HY000): Field 'phone' doesn't have a default value
+[2.206ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`is_delete`) VALUES ('e36154a5-dc90-4bf2-95c5-91d72c9b7d24','admin','$2a$04$bH0.uPj8UKJEVqVsUwmj5eHLH8P7LnL6NiCXrI63epaohQie9Pttu','http://baidu.com','fk','***@outlook.com',0)
+
+2024/04/26 01:00:19 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.855ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:00:19 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1364 (HY000): Field 'created_time' doesn't have a default value
+[0.579ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`is_delete`) VALUES ('d8cd7c04-42cb-499c-aa29-6590c1e79e90','admin','$2a$04$nbVp23Sf8KoanYPJPt1s2.aK.vPI3var8cln6e0HlTDGUTUMrjhJG','http://baidu.com','fk','***@outlook.com','','admin',0)
+
+2024/04/26 01:01:15 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.944ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:01:15 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[1.311ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('22b504ee-debc-4d1f-bda5-e98f2ededc12','admin','$2a$04$eCEkQM79mQIHNe/GYcnVCOrBfOlvbDUK.YF4FwkpoFES0PPJJ4Uxe','http://baidu.com','fk','***@outlook.com','','admin','2024-04-26 01:01:15.475','2024-04-26 01:01:15.475',0)
+
+2024/04/26 01:01:17 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.781ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:01:17 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[1.619ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('42d109e2-6f51-4971-99f0-e544013492a6','admin','$2a$04$sP.m/SPknuq55B62l6k4L.ZPRxzUbh3mgvWyxtbrPpAqPm4p8Ay1i','http://baidu.com','fk','***@outlook.com','','admin','2024-04-26 01:01:17.956','2024-04-26 01:01:17.956',0)
+
+2024/04/26 01:01:18 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.780ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:01:18 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[0.821ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('ef4ca94f-ccd2-4549-9764-f4898dbe34bd','admin','$2a$04$.J6tL0Tg3D7YgFBYtamTpO.yL.rF.ZSRtPhnJ8XpCFJ/whouTtuBK','http://baidu.com','fk','***@outlook.com','','admin','2024-04-26 01:01:18.142','2024-04-26 01:01:18.142',0)
+
+2024/04/26 01:01:18 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.249ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:01:18 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[2.370ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('30753b71-28dc-4676-8d1a-b3238bff4ec5','admin','$2a$04$KXgAdaFEqqf5/2R36JWfneIfUrIhjd1AH1A.INL2YsxF6AJ0cm3ZK','http://baidu.com','fk','***@outlook.com','','admin','2024-04-26 01:01:18.358','2024-04-26 01:01:18.358',0)
+
+2024/04/26 01:01:18 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.475ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:01:18 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[0.478ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('cad4e5f7-7614-493d-8ed4-23072005b69b','admin','$2a$04$CYbU30nGS3qiHslEMDmCoOCUm5zceOentc/P4fjia3EOKCtlrdPPq','http://baidu.com','fk','***@outlook.com','','admin','2024-04-26 01:01:18.85','2024-04-26 01:01:18.85',0)
+
+2024/04/26 01:02:44 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.787ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:02:44 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[1.063ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('9856c8f0-e191-47d5-9305-8acaa6243836','admin','$2a$04$Q6rCh9lFJrSnKtIr.KAmf.VRHWlIN5wv1VZVhHiMcREqBSsYwn5oS','http://baidu.com','fk','***@outlook.com','','admin','2024-04-26 01:02:44.885','2024-04-26 01:02:44.885',0)
+
+2024/04/26 01:03:00 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.964ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:03:00 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[1.465ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('e8bb083a-6404-4efc-8069-6c51031e5958','admin','$2a$04$0jm3XZJ.ctkpyuUQ1PtAB.NslQ3BZE.KXIZYfmd2Xbtf1.2PPjdgS','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:03:01 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.009ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:03:01 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[0.518ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('ea2f48f6-c2f7-49f4-ad66-d959ecdd5196','admin','$2a$04$ZEn62lJ5QsnlsaawtmvaiuBBZHDuZEdpLboOv11KnckdomXTeN/eq','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:03:01 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.917ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:03:01 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[0.523ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('756d92cf-c93e-4f42-909e-ee5710e67694','admin','$2a$04$wiTv55/2fg.KrvujqFkqPO.Qd7Z4dl7WEa0yfktatf.PMT6bS.eX.','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:03:02 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.978ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:03:02 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[0.820ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('0ad41068-f7ad-4752-b54c-d54f92867762','admin','$2a$04$wKejCX01hFLWiM/bqTFZeur8304qR7rxC31w5xxT8uwB2WWmdf8pq','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:03:02 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.480ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:03:02 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[1.559ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('071c34a9-cdbf-44f5-988a-57a70624ba05','admin','$2a$04$3vv8XZsVNTxPC3fINdOgNO7aZyYy.tbFaBoHOqRk8Gwflw85l2lpa','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:03:12 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.871ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:03:12 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[2.236ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('6370d648-ec88-4091-88f5-9ca1cc44b11f','admin','$2a$04$zXrOBqPTFoQBu6EPR64T7.x5cV.mmGOsfqtL3XAqlXqmr1W6rLtfO','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:05:26 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.691ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:05:26 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[1.211ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('16fe64f1-4e74-4608-aa65-820484f569cf','admin','$2a$04$w5xt8gFhpJhP2pJDn7vPB.2BGvgfjQKP5RXKEDO7IBdDlXPQn0acq','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:07:17 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.932ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:07:17 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[1.282ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('056f1720-f004-4c07-a3cd-c8dd13292a32','admin','$2a$04$KI1NZwZp8eWNTCwXeqnjeOCWdLyd9hVIqrradq8hEkpiDH0rY7sea','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:07:19 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.835ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:07:19 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[0.639ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('50e46960-1d79-43be-8954-214cc56d7147','admin','$2a$04$FxgKEJ.j3tCjJaAHOTsgoeTYCs8JuISNe9aU/SNhdecPwE/.oQ2YG','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:07:19 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.539ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:07:19 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1265 (01000): Data truncated for column 'updated_time' at row 1
+[5.334ms] [rows:0] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('ff9b39bb-5dc0-4c71-a72a-544a3fb5cc35','admin','$2a$04$fyL0fCdg58BSaSo5EQPH3.QmuOtzHWT/E.p26UrJqN/c3ZFmpwB2e','http://baidu.com','fk','***@outlook.com','','admin','0000-00-00 00:00:00','0000-00-00 00:00:00',0)
+
+2024/04/26 01:09:47 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.023ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:09:47 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[3.028ms] [rows:1] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('372806b1-e3f9-4c4d-ae39-dc4d865ada33','admin','$2a$04$wgVNnp3pfKP2Asoc4AZ4/uZeDKTOxxvx0T81gUlRmC68PcK/mLdly','http://baidu.com','fk','***@outlook.com','','admin',0,0,0)
+
+2024/04/26 01:11:38 /Users/atlas/go/src/gateway_go/services/user.service.go:24
+[1.076ms] [rows:1] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:13:00 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.270ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'system' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 01:13:00 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[2.718ms] [rows:1] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('b285c82a-3d09-464a-96b1-ffc68ddf5db0','system','$2a$04$WOHngi/2ubxyNajVvQEtGOR3i3WaQ2opImYEBb1nBo./BImcL/5w6','http://baidu.com','fk','***@outlook.com','','admin',1714065180,1714065180,0)
+
+2024/04/26 11:24:17 /Users/atlas/go/src/gateway_go/services/user.service.go:24
+[14.456ms] [rows:1] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 11:24:54 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.929ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 11:24:54 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[2.150ms] [rows:1] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('338fffd5-3030-455f-9f40-3c79e3dbe5dd','admin','$2a$04$byg6S/o9uzKLdXxZ0YaZw.2D.6df6nh9PkgURt2yvXiI3NYUtCIXO','http://baidu.com','fk','***@outlook.com','','admin',1714101894,1714101894,0)
+
+2024/04/26 11:25:06 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1054 (42S22): Unknown column 'user_name' in 'where clause'
+[0.779ms] [rows:0] SELECT * FROM `gateway_admin` WHERE user_name = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 11:26:24 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.081ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 11:28:26 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.371ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 11:28:57 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[8.884ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 11:42:18 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.889ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 11:43:10 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.222ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 11:43:47 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.301ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 12:31:33 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.611ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 12:35:14 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[3.793ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 12:37:23 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.834ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 13:05:56 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[3.280ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 13:08:38 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.146ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 13:11:05 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[0.782ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 13:12:16 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.389ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 13:15:37 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[4.214ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 16:58:32 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.565ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 17:07:53 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.615ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 21:10:27 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[3.477ms] [rows:0] SELECT `uuid` FROM `gateway_admin` WHERE username = 'sys' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 21:10:27 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[8.935ms] [rows:1] INSERT INTO `gateway_admin` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('717ad95a-224a-4cd3-84d8-17f9e14a8219','sys','$2a$04$WevX8IIwZsgYSig2/PVGz.2i6iL47ztYDJuVacjYEOM53qQHQIII6','http://baidu.com','fk','***@outlook.com','','admin',1714137027,1714137027,0)
+
+2024/04/26 21:10:40 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.039ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'sys' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 21:10:49 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.140ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 21:10:56 /Users/atlas/go/src/gateway_go/services/user.service.go:40 record not found
+[1.026ms] [rows:0] SELECT * FROM `gateway_admin` WHERE username = 'll' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 21:47:15 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[5.130ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 21:58:00 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[0.946ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 21:58:37 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[6.833ms] [rows:1] SELECT * FROM `gateway_admin` WHERE username = 'admin' ORDER BY `gateway_admin`.`id` LIMIT 1
+
+2024/04/26 23:46:53 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[6.407ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:46:55 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.727ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:46:56 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.579ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:46:56 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.360ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:46:57 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.159ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:46:57 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.644ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:46:57 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.182ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:47:05 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.341ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:47:05 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.385ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:47:16 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.212ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:47:17 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[2.102ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:47:40 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.522ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:48:06 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.537ms] [rows:0] SELECT * FROM `users` WHERE username = 'sys' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:51:15 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[2.188ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:53:16 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[6.365ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:53:17 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.307ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:53:17 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.576ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:53:20 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.624ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:54:09 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.926ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:54:09 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.549ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:54:10 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.478ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:54:10 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.598ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:54:10 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.111ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:54:10 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.733ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/26 23:54:10 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.500ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:04 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[5.472ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:05 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.291ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:05 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.049ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:07 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.807ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:08 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.948ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:08 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.588ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:09 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.561ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:09 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.479ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:09 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.810ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:09 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.523ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:09 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.460ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:09 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.376ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:10 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.745ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:14 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.539ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:14 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.421ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:15 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.434ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:15 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[3.516ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:15 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.284ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:15 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.643ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:15 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.405ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:15 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.354ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:16 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.235ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:16 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.469ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:25 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[32.471ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:25 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[2.281ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:25 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.141ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:26 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.852ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:04:26 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.534ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:34 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[11.731ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:35 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.290ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:35 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.542ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:35 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.454ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:36 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.148ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:46 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.488ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:48 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.029ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:48 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.446ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:48 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.737ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:49 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.210ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:49 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.255ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:59 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.490ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:59 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[0.819ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:05:59 /Users/atlas/go/src/gateway_go/services/user.service.go:40 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.190ms] [rows:0] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:06:13 /Users/atlas/go/src/gateway_go/services/user.service.go:24 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[1.405ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:06:13 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1146 (42S02): Table 'gin_gateway.users' doesn't exist
+[2.495ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('25229040-26c4-4a12-9c7d-45b9a0db7d53','admin','$2a$04$GdkYAsI7J5.JL0wR35CMAu/QOkM1SARwH36Y3VkDFRJO1uvLA/Q2q','http://baidu.com','fk','***@outlook.com','','admin',1714147573,1714147573,0)
+
+2024/04/27 00:14:44 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.057ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:14:44 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[1.403ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('c81beace-e319-44c4-a18e-c5d8397c0cef','admin','$2a$04$5m22qAKOxRM6uVvGrIvonueLYTssl5jb825zYAq3/CT1M2R2IZ2wm','http://baidu.com','fk','***@outlook.com','','admin',1714148084,1714148084,0)
+
+2024/04/27 00:14:50 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[0.804ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:14:50 /Users/atlas/go/src/gateway_go/services/user.service.go:31 Error 1054 (42S22): Unknown column 'avator' in 'field list'
+[0.383ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avator`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('98aca3da-3f92-462c-8179-f5b1593f4379','admin','$2a$04$IXDqucIpapAFDCa3TLjpzuXEB5U4WDmf9xdErtW9SwVxlp3O3oFRa','http://baidu.com','fk','***@outlook.com','','admin',1714148090,1714148090,0)
+
+2024/04/27 00:19:40 /Users/atlas/go/src/gateway_go/services/user.service.go:24 record not found
+[1.337ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:19:40 /Users/atlas/go/src/gateway_go/services/user.service.go:31
+[7.605ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('0c7efa1c-4459-43fb-9023-913dc986ff4b','admin','$2a$04$beuY2XeSwILU47Fp1hWoWe8QPw4HuFUAhlDZGN1SBU2sG7D.q7nse','http://baidu.com','fk','***@outlook.com','','admin',1714148380,1714148380,0)
+
+2024/04/27 00:20:03 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[0.617ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:20:12 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.770ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:23:08 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.760ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:25:22 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.985ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:26:32 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.767ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:29:22 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[3.588ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:34:33 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.830ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 00:35:20 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.065ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:16:07 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 Error 1146 (42S02): Table 'gin_gateway.user' doesn't exist
+[2.870ms] [rows:0] SELECT * FROM `user` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND IsDelete = 0 ORDER BY `user`.`id` LIMIT 1
+
+2024/04/27 01:16:19 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 Error 1054 (42S22): Unknown column 'IsDelete' in 'where clause'
+[0.879ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND IsDelete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:16:38 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.265ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:18:23 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[3.599ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:18:35 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.030ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:55 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.984ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:56 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[0.726ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:56 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.294ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:56 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[0.790ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:56 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.522ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:56 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[0.760ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:57 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.674ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:57 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[0.917ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:57 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.502ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:57 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[0.895ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:20:57 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.155ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:21:15 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.334ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 01:21:15 /Users/atlas/go/src/gateway_go/controllers/user.controller.go:160 record not found
+[1.017ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:32:11 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[10.062ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:32:17 /Users/atlas/go/src/gateway_go/services/user.service.go:40 record not found
+[1.089ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:33:09 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[1.128ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:34:27 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[0.971ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:35:37 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[0.697ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:35:53 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[0.578ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:36:20 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[1.019ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:36:38 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[1.146ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:37:44 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[1.075ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:37:45 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[1.119ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:37:45 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[0.905ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:37:45 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[0.642ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:39:32 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[1.855ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:39:32 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[0.954ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:44:55 /Users/atlas/go/src/gateway_go/services/user.service.go:41 record not found
+[0.631ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:49:08 /Users/atlas/go/src/gateway_go/services/user.service.go:25
+[2.738ms] [rows:1] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:49:21 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[0.807ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'root' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:49:21 /Users/atlas/go/src/gateway_go/services/user.service.go:33
+[5.925ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('2a317773-90d4-48d8-9c93-e3a2c3c67ff8','root','$2a$04$No6Evb4AFtAFr/sxJ6I5fO9JPVYIEev2i1yV.4K4xGVt3IH6y5beW','http://baidu.com','fk','***@outlook.com','','admin',1714182561,1714182561,0)
+
+2024/04/27 09:57:09 /Users/atlas/go/src/gateway_go/services/user.service.go:42 record not found
+[1.815ms] [rows:0] SELECT * FROM `users` WHERE uuid = '338fffd5-3030-455f-9f40-3c79e3dbe5dd' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:57:53 /Users/atlas/go/src/gateway_go/services/user.service.go:25 record not found
+[2.805ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:57:53 /Users/atlas/go/src/gateway_go/services/user.service.go:33
+[2.897ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('7e017f37-0d8e-42f6-9f9f-184931b4a19c','administor','$2a$04$LeXgv7otIgfljA4uRC.o4OVvbgYyx7I8LQxIpWrHOwKNWWlKBphwC','http://baidu.com','fk','***@outlook.com','','admin',1714183073,1714183073,0)
+
+2024/04/27 09:58:07 /Users/atlas/go/src/gateway_go/services/user.service.go:53
+[0.758ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:58:55 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.656ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:59:51 /Users/atlas/go/src/gateway_go/services/user.service.go:53
+[5.075ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 09:59:51 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[5.174ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 10:57:14 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[2.431ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 10:58:03 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.959ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 10:58:14 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.067ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 10:58:14 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[2.800ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 11:37:54 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[3.100ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 11:37:54 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.130ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 13:16:11 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[2.354ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:16:11 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.949ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 13:21:21 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[2.344ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:21:21 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[1.592ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 13:23:31 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[3.175ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:24:05 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[1.348ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:25:37 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[1.596ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:26:40 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[1.606ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:26:40 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[0.833ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 13:27:11 /Users/atlas/go/src/gateway_go/services/user.service.go:52
+[2.149ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:27:11 /Users/atlas/go/src/gateway_go/services/user.service.go:42
+[2.188ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 13:29:50 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[3.992ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:29:50 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[2.107ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 13:30:42 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[0.637ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:30:42 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[3.708ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1
+
+2024/04/27 13:38:42 /Users/atlas/go/src/gateway_go/services/user.service.go:50
+[1.246ms] [rows:1] SELECT * FROM `users` WHERE username = 'administor' ORDER BY `users`.`id` LIMIT 1
+
+2024/04/27 13:38:42 /Users/atlas/go/src/gateway_go/services/user.service.go:40
+[1.040ms] [rows:1] SELECT * FROM `users` WHERE uuid = '7e017f37-0d8e-42f6-9f9f-184931b4a19c' AND is_delete = 0 ORDER BY `users`.`uuid` LIMIT 1

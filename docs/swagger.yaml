@@ -1,37 +1,24 @@
 definitions:
-  dao.Tenement:
-    properties:
-      app_id:
-        type: string
-      id:
-        type: integer
-      name:
-        type: string
-      qpd:
-        type: integer
-      qps:
-        type: integer
-      secret:
-        type: string
-      white_ips:
-        type: string
-    type: object
   dto.AdminInfoOutput:
     properties:
       avatar:
         type: string
-      id:
+      created_time:
         type: integer
-      introduction:
+      email:
         type: string
-      login_time:
+      id:
         type: string
-      name:
+      nick_name:
         type: string
       roles:
         items:
           type: string
         type: array
+      update_time:
+        type: integer
+      user_name:
+        type: string
     type: object
   dto.ChangePasswordInput:
     properties:
@@ -48,45 +35,6 @@ definitions:
     - newpassword
     - password
     - username
-    type: object
-  dto.GrpcServiceInput:
-    properties:
-      black_list:
-        type: string
-      clientip_flow_limit:
-        type: integer
-      forbid_list:
-        type: string
-      header_transfor:
-        type: string
-      ip_list:
-        type: string
-      open_auth:
-        type: integer
-      port:
-        maximum: 8999
-        minimum: 8001
-        type: integer
-      round_type:
-        type: integer
-      service_desc:
-        type: string
-      service_flow_limit:
-        type: integer
-      service_name:
-        type: string
-      weight_list:
-        type: string
-      white_host_name:
-        type: string
-      white_list:
-        type: string
-    required:
-    - ip_list
-    - port
-    - service_desc
-    - service_name
-    - weight_list
     type: object
   dto.LoginOutput:
     properties:
@@ -105,49 +53,6 @@ definitions:
     required:
     - password
     - username
-    type: object
-  dto.ServicesListItemOutput:
-    properties:
-      id:
-        type: integer
-      load_type:
-        type: integer
-      qpd:
-        type: integer
-      qps:
-        type: integer
-      service_addr:
-        type: string
-      service_desc:
-        type: string
-      service_name:
-        type: string
-      total_node:
-        type: integer
-    type: object
-  dto.ServicesListOutput:
-    properties:
-      info:
-        example: admin
-        type: string
-      list:
-        items:
-          $ref: '#/definitions/dto.ServicesListItemOutput'
-        type: array
-      total:
-        example: 400
-        type: integer
-    type: object
-  dto.TenementListOutput:
-    properties:
-      info:
-        type: string
-      list:
-        items:
-          $ref: '#/definitions/dao.Tenement'
-        type: array
-      total:
-        type: integer
     type: object
   response.Response:
     properties:
@@ -171,17 +76,11 @@ info:
   version: "1.0"
 paths:
   /admin/admin_info:
-    get:
+    post:
       consumes:
       - application/json
       description: 管理员信息获取
       operationId: /admin/admin_info
-      parameters:
-      - description: token
-        in: query
-        name: token
-        required: true
-        type: string
       produces:
       - application/json
       responses:
@@ -199,13 +98,13 @@ paths:
       summary: 管理员信息获取
       tags:
       - 用户管理
-  /admin/avator:
+  /admin/avatar:
     post:
       consumes:
       - application/json
       - multipart/form-data
       description: 管理员头像更新
-      operationId: /admin/avator
+      operationId: /admin/avatar
       parameters:
       - description: file
         in: formData
@@ -318,69 +217,6 @@ paths:
       summary: 管理员注销
       tags:
       - 用户管理
-  /app/app_delete:
-    get:
-      consumes:
-      - application/json
-      description: 租户删除
-      operationId: /app/app_delete
-      parameters:
-      - description: 租户名ID
-        in: query
-        name: id
-        type: integer
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            $ref: '#/definitions/response.Response'
-      security:
-      - Auth: []
-      summary: 租户删除
-      tags:
-      - 租户管理
-  /app/app_list:
-    get:
-      consumes:
-      - application/json
-      description: 租户查询
-      operationId: /app/app_list
-      parameters:
-      - description: 租户名
-        in: query
-        name: info
-        type: string
-      - default: 1
-        description: 页码
-        in: query
-        name: page_no
-        required: true
-        type: integer
-      - default: 10
-        description: 页数
-        in: query
-        name: page_size
-        required: true
-        type: integer
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            allOf:
-            - $ref: '#/definitions/response.Response'
-            - properties:
-                data:
-                  $ref: '#/definitions/dto.TenementListOutput'
-              type: object
-      security:
-      - Auth: []
-      summary: 租户查询
-      tags:
-      - 租户管理
   /file/upload:
     post:
       consumes:
@@ -446,94 +282,6 @@ paths:
       summary: flutter管理
       tags:
       - flutter管理
-  /service/service_add_grpc:
-    post:
-      consumes:
-      - application/json
-      description: grpc服务新增
-      operationId: /service/service_add_grpc
-      parameters:
-      - description: body
-        in: body
-        name: polygon
-        required: true
-        schema:
-          $ref: '#/definitions/dto.GrpcServiceInput'
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            $ref: '#/definitions/response.Response'
-      security:
-      - Auth: []
-      summary: grpc服务新增
-      tags:
-      - 服务管理
-  /service/service_delete:
-    get:
-      consumes:
-      - application/json
-      description: 服务删除
-      operationId: /service/service_delete
-      parameters:
-      - description: 服务ID
-        in: query
-        name: id
-        type: string
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            $ref: '#/definitions/response.Response'
-      security:
-      - Auth: []
-      summary: 服务删除
-      tags:
-      - 服务管理
-  /service/service_list:
-    get:
-      consumes:
-      - application/json
-      description: 服务查询
-      operationId: /service/service_list
-      parameters:
-      - description: 服务名
-        in: query
-        name: info
-        type: string
-      - default: 1
-        description: 页码
-        in: query
-        name: page_no
-        required: true
-        type: integer
-      - default: 10
-        description: 页数
-        in: query
-        name: page_size
-        required: true
-        type: integer
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            allOf:
-            - $ref: '#/definitions/response.Response'
-            - properties:
-                data:
-                  $ref: '#/definitions/dto.ServicesListOutput'
-              type: object
-      security:
-      - Auth: []
-      summary: 服务查询
-      tags:
-      - 服务管理
 securityDefinitions:
   Auth:
     in: header

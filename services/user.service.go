@@ -6,6 +6,7 @@ import (
 	"gateway_go/dto"
 	"gateway_go/global"
 	"gateway_go/utils"
+	"github.com/google/uuid"
 	"time"
 )
 
@@ -15,17 +16,18 @@ type userService struct {
 var UserService = new(userService)
 
 func (userService *userService) TableName() string {
-	return "gateway_admin"
+	return "users"
 }
 
 // Register
 func (userService *userService) Register(params dto.RegisterInput) (err error, user dao.Admin) {
-	var result = global.App.DB.Table(userService.TableName()).Where("user_name = ?", params.Username).Select("id").First(&dao.Admin{})
+	var result = global.App.DB.Table(userService.TableName()).Where("username = ?", params.Username).Select("uuid").First(&dao.Admin{})
 	if result.RowsAffected != 0 {
 		err = errors.New("账号已存在")
 		return
 	}
-	user = dao.Admin{Username: params.Username, Password: utils.BcryptMake([]byte(params.Password)), IsDelete: 0}
+	uuid := uuid.New()
+	user = dao.Admin{Uuid: uuid.String(), CreatedTime: time.Now().Unix(), UpdatedTime: time.Now().Unix(), Avatar: "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg", Nickname: "ik", Role: "admin", Username: params.Username, Password: utils.BcryptMake([]byte(params.Password)), IsDelete: 0, Email: "***@outlook.com"}
 	err = global.App.DB.Table(userService.TableName()).Create(&user).Error
 	if err != nil {
 		return
@@ -33,9 +35,19 @@ func (userService *userService) Register(params dto.RegisterInput) (err error, u
 	return
 }
 
+// userinfo
+func (userService *userService) UserInfo(userId string) (err error, userInfo dto.AdminInfoOutput) {
+	result := global.App.DB.Table(userService.TableName()).Where("uuid = ? AND is_delete = ?", userId, 0).First(&userInfo)
+	if result.Error != nil {
+		err = result.Error
+		return
+	}
+	return
+}
+
 // Login
 func (userService *userService) Login(params dto.RegisterInput) (err error, user *dao.Admin) {
-	err = global.App.DB.Table(userService.TableName()).Where("user_name = ?", params.Username).First(&user).Error
+	err = global.App.DB.Table(userService.TableName()).Where("username = ?", params.Username).First(&user).Error
 	if err != nil {
 		err = errors.New("该用户不存在")
 		return
@@ -61,7 +73,7 @@ func (userService *userService) ModifyPassword(params dto.ChangePasswordInput) (
 	return nil
 }
 
-func (userService *userService) ModifyAvator(username string, params dto.AdminInfoAvator) (err error) {
+func (userService *userService) ModifyAvator(username string, params dto.AdminInfoAvatar) (err error) {
 
 	//err = global.App.DB.Table(userService.TableName()).Where("username = ?", username).Updates(map[string]interface{}{"avator": hashPassword, "update_at": time.Now()}).Error
 	//if err != nil {

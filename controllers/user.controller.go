@@ -72,10 +72,11 @@ func (admin *adminController) AdminLogin(c *gin.Context) {
 		//	return
 		//}
 		if joinUnixStr != "" {
-			response.Success(c, &services.TokenOutPut{Token: joinUnixStr})
+			response.Success(c, &services.TokenOutPut{Token: common.TokenType + " " + joinUnixStr})
 			return
 		}
 		// 生成token
+		fmt.Println("user login", user)
 		tokenData, err, _ := services.JwtService.CreateToken(common.AppGuardName, user)
 		if err != nil {
 			response.BusinessFail(c, err.Error())
@@ -140,36 +141,30 @@ func (admin *adminController) AdminChangePassword(c *gin.Context) {
 // @Accept  json
 // @Produce  json
 // @Security Auth
-// @Param token query string true "token"
 // @Success 200 {object} response.Response{data=dto.AdminInfoOutput} "success"
-// @Router /admin/admin_info [get]
+// @Router /admin/admin_info [post]
 func (admin *adminController) AdminInfo(c *gin.Context) {
-	token := c.Query("token")
-	if token == "" {
-		response.BusinessFail(c, "token username参数不能为空")
-		return
-	}
-	// 解密token
-	err, customClaims := services.JwtService.DecryptToken(token)
-	if err != nil {
-		response.BusinessFail(c, "用户信息不存在")
+	userId, idIsExist := c.Get("userId")
+	username, nameIsExist := c.Get("userName")
+	if idIsExist == false || nameIsExist == false {
+		response.BusinessFail(c, "用户不存在")
 		return
 	}
 
-	tokenStr, err := global.App.Redis.Get(context.Background(), customClaims.UserName).Result()
+	tokenStr, err := global.App.Redis.Get(context.Background(), username.(string)).Result()
 	fmt.Println("token 不能删除用于打印token", tokenStr)
 	if err != nil {
 		response.BusinessFail(c, "用户信息不存在")
 		return
 	}
-	out := &dto.AdminInfoOutput{
-		Name:      customClaims.UserName,
-		Id:        1,
-		Avatar:    "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg",
-		LoginTime: "2023-10-26",
-		Roles:     []string{"admin"},
+	//
+	err, data := services.UserService.UserInfo(userId.(string))
+	if err != nil {
+		response.BusinessFail(c, err.Error())
+		return
 	}
-	response.Success(c, out)
+	response.Success(c, data)
+	return
 }
 
 // ListPage godoc
@@ -202,15 +197,15 @@ func (admin *adminController) AdminLogout(c *gin.Context) {
 // @Summary 管理员头像更新
 // @Description 管理员头像更新
 // @Tags 用户管理
-// @ID /admin/avator
+// @ID /admin/avatar
 // @Accept  json
 // @Produce  json
 // @Security Auth
 // @Accept multipart/form-data
 // @Param file formData file true "file"
 // @Success 200 {object} response.Response{} "success"
-// @Router /admin/avator [post]
-func (admin *adminController) AdminInfoAvator(c *gin.Context) {
+// @Router /admin/avatar [post]
+func (admin *adminController) AdminInfoAvatar(c *gin.Context) {
 	token := c.Request.Header.Get("Authorization")
 	// 解密token
 	err, _ := services.JwtService.DecryptToken(token[len(common.TokenType)+1:])
@@ -246,5 +241,5 @@ func (admin *adminController) AdminInfoAvator(c *gin.Context) {
 	data["url"] = url
 	response.Success(c, data)
 	return
-	// services.UserService.ModifyAvator(username, imgdata)
+	// services.UserService.ModifyAvatar(username, imgdata)
 }

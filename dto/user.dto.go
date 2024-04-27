@@ -42,20 +42,23 @@ func (changePassword ChangePasswordInput) GetMessages() request.ValidatorMessage
 }
 
 type AdminInfoOutput struct {
-	Avatar       string   `json:"avatar"`
-	Id           int64    `json:"id"`
-	Introduction string   `json:"introduction"`
-	LoginTime    string   `json:"login_time"`
-	Name         string   `json:"name"`
-	Roles        []string `json:"roles"`
+	Uuid        string `json:"id" gorm:"uuid" description:"用户ID"`
+	Username    string `json:"username" gorm:"column:username" description:"用户名称"`
+	Avatar      string `json:"avatar" gorm:"column:avatar" description:"头像"`
+	Nickname    string `json:"nickname" gorm:"column:nickname" description:"昵称"`
+	Email       string `json:"email" gorm:"column:email" description:"邮箱"`
+	Phone       string `json:"phone" gorm:"column:phone" description:"电话"`
+	Role        string `json:"role" gorm:"column:role" description:"角色"`
+	UpdatedTime int64  `json:"updated_time" gorm:"column:updated_time" description:"更新时间"`
+	CreatedTime int64  `json:"created_time" gorm:"column:created_time" description:"创建时间"`
 }
 
-type AdminInfoAvator struct {
-	Avator []byte `json:"avator"  gorm:"column:avator" binding:"required"`
+type AdminInfoAvatar struct {
+	Avatar []byte `json:"avatar"  gorm:"column:avatar" binding:"required"`
 }
 
-func (adminInfoAvator AdminInfoAvator) GetMessages() request.ValidatorMessages {
+func (adminInfoAvator AdminInfoAvatar) GetMessages() request.ValidatorMessages {
 	return request.ValidatorMessages{
-		"avator.required": "文件不能为空",
+		"avatar.required": "文件不能为空",
 	}
 }

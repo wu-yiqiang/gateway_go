@@ -40,17 +40,17 @@ func SetupRouter() *gin.Engine {
 	{
 		SetAdminGroupRoutes(adminGroup)
 	}
-	// services
-	servicesGroup := router.Group("/service")
-	{
-		SetServicesGroupRoutes(servicesGroup)
-	}
-
-	// 租户管理
-	tenementGroup := router.Group("/app")
-	{
-		SetTenementGroupRoutes(tenementGroup)
-	}
+	//// services
+	//servicesGroup := router.Group("/service")
+	//{
+	//	SetServicesGroupRoutes(servicesGroup)
+	//}
+	//
+	//// 租户管理
+	//tenementGroup := router.Group("/app")
+	//{
+	//	SetTenementGroupRoutes(tenementGroup)
+	//}
 	// flutter接口
 	fletGroup := router.Group("/flet")
 	{
@@ -60,6 +60,11 @@ func SetupRouter() *gin.Engine {
 	fileGroup := router.Group("/file")
 	{
 		SetFileGroupRoutes(fileGroup)
+	}
+	// p2p ws
+	wsGroup := router.Group("/ws")
+	{
+		SetWsGroupRoutes(wsGroup)
 	}
 	return router
 }

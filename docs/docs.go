@@ -21,7 +21,7 @@ const docTemplate = `{
     "basePath": "{{.BasePath}}",
     "paths": {
         "/admin/admin_info": {
-            "get": {
+            "post": {
                 "security": [
                     {
                         "Auth": []
@@ -39,15 +39,6 @@ const docTemplate = `{
                 ],
                 "summary": "管理员信息获取",
                 "operationId": "/admin/admin_info",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "token",
-                        "name": "token",
-                        "in": "query",
-                        "required": true
-                    }
-                ],
                 "responses": {
                     "200": {
                         "description": "success",
@@ -70,7 +61,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/admin/avator": {
+        "/admin/avatar": {
             "post": {
                 "security": [
                     {
@@ -89,7 +80,7 @@ const docTemplate = `{
                     "用户管理"
                 ],
                 "summary": "管理员头像更新",
-                "operationId": "/admin/avator",
+                "operationId": "/admin/avatar",
                 "parameters": [
                     {
                         "type": "file",
@@ -260,108 +251,6 @@ const docTemplate = `{
                 }
             }
         },
-        "/app/app_delete": {
-            "get": {
-                "security": [
-                    {
-                        "Auth": []
-                    }
-                ],
-                "description": "租户删除",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "租户管理"
-                ],
-                "summary": "租户删除",
-                "operationId": "/app/app_delete",
-                "parameters": [
-                    {
-                        "type": "integer",
-                        "description": "租户名ID",
-                        "name": "id",
-                        "in": "query"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "success",
-                        "schema": {
-                            "$ref": "#/definitions/response.Response"
-                        }
-                    }
-                }
-            }
-        },
-        "/app/app_list": {
-            "get": {
-                "security": [
-                    {
-                        "Auth": []
-                    }
-                ],
-                "description": "租户查询",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "租户管理"
-                ],
-                "summary": "租户查询",
-                "operationId": "/app/app_list",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "租户名",
-                        "name": "info",
-                        "in": "query"
-                    },
-                    {
-                        "type": "integer",
-                        "default": 1,
-                        "description": "页码",
-                        "name": "page_no",
-                        "in": "query",
-                        "required": true
-                    },
-                    {
-                        "type": "integer",
-                        "default": 10,
-                        "description": "页数",
-                        "name": "page_size",
-                        "in": "query",
-                        "required": true
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "success",
-                        "schema": {
-                            "allOf": [
-                                {
-                                    "$ref": "#/definitions/response.Response"
-                                },
-                                {
-                                    "type": "object",
-                                    "properties": {
-                                        "data": {
-                                            "$ref": "#/definitions/dto.TenementListOutput"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                }
-            }
-        },
         "/file/upload": {
             "post": {
                 "security": [
@@ -462,193 +351,25 @@ const docTemplate = `{
                 ],
                 "responses": {}
             }
-        },
-        "/service/service_add_grpc": {
-            "post": {
-                "security": [
-                    {
-                        "Auth": []
-                    }
-                ],
-                "description": "grpc服务新增",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "服务管理"
-                ],
-                "summary": "grpc服务新增",
-                "operationId": "/service/service_add_grpc",
-                "parameters": [
-                    {
-                        "description": "body",
-                        "name": "polygon",
-                        "in": "body",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/dto.GrpcServiceInput"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "success",
-                        "schema": {
-                            "$ref": "#/definitions/response.Response"
-                        }
-                    }
-                }
-            }
-        },
-        "/service/service_delete": {
-            "get": {
-                "security": [
-                    {
-                        "Auth": []
-                    }
-                ],
-                "description": "服务删除",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "服务管理"
-                ],
-                "summary": "服务删除",
-                "operationId": "/service/service_delete",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "服务ID",
-                        "name": "id",
-                        "in": "query"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "success",
-                        "schema": {
-                            "$ref": "#/definitions/response.Response"
-                        }
-                    }
-                }
-            }
-        },
-        "/service/service_list": {
-            "get": {
-                "security": [
-                    {
-                        "Auth": []
-                    }
-                ],
-                "description": "服务查询",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "服务管理"
-                ],
-                "summary": "服务查询",
-                "operationId": "/service/service_list",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "服务名",
-                        "name": "info",
-                        "in": "query"
-                    },
-                    {
-                        "type": "integer",
-                        "default": 1,
-                        "description": "页码",
-                        "name": "page_no",
-                        "in": "query",
-                        "required": true
-                    },
-                    {
-                        "type": "integer",
-                        "default": 10,
-                        "description": "页数",
-                        "name": "page_size",
-                        "in": "query",
-                        "required": true
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "success",
-                        "schema": {
-                            "allOf": [
-                                {
-                                    "$ref": "#/definitions/response.Response"
-                                },
-                                {
-                                    "type": "object",
-                                    "properties": {
-                                        "data": {
-                                            "$ref": "#/definitions/dto.ServicesListOutput"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                }
-            }
         }
     },
     "definitions": {
-        "dao.Tenement": {
-            "type": "object",
-            "properties": {
-                "app_id": {
-                    "type": "string"
-                },
-                "id": {
-                    "type": "integer"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "qpd": {
-                    "type": "integer"
-                },
-                "qps": {
-                    "type": "integer"
-                },
-                "secret": {
-                    "type": "string"
-                },
-                "white_ips": {
-                    "type": "string"
-                }
-            }
-        },
         "dto.AdminInfoOutput": {
             "type": "object",
             "properties": {
                 "avatar": {
                     "type": "string"
                 },
-                "id": {
+                "created_time": {
                     "type": "integer"
                 },
-                "introduction": {
+                "email": {
                     "type": "string"
                 },
-                "login_time": {
+                "id": {
                     "type": "string"
                 },
-                "name": {
+                "nick_name": {
                     "type": "string"
                 },
                 "roles": {
@@ -656,6 +377,12 @@ const docTemplate = `{
                     "items": {
                         "type": "string"
                     }
+                },
+                "update_time": {
+                    "type": "integer"
+                },
+                "user_name": {
+                    "type": "string"
                 }
             }
         },
@@ -678,62 +405,6 @@ const docTemplate = `{
                 "username": {
                     "type": "string",
                     "example": "admin"
-                }
-            }
-        },
-        "dto.GrpcServiceInput": {
-            "type": "object",
-            "required": [
-                "ip_list",
-                "port",
-                "service_desc",
-                "service_name",
-                "weight_list"
-            ],
-            "properties": {
-                "black_list": {
-                    "type": "string"
-                },
-                "clientip_flow_limit": {
-                    "type": "integer"
-                },
-                "forbid_list": {
-                    "type": "string"
-                },
-                "header_transfor": {
-                    "type": "string"
-                },
-                "ip_list": {
-                    "type": "string"
-                },
-                "open_auth": {
-                    "type": "integer"
-                },
-                "port": {
-                    "type": "integer",
-                    "maximum": 8999,
-                    "minimum": 8001
-                },
-                "round_type": {
-                    "type": "integer"
-                },
-                "service_desc": {
-                    "type": "string"
-                },
-                "service_flow_limit": {
-                    "type": "integer"
-                },
-                "service_name": {
-                    "type": "string"
-                },
-                "weight_list": {
-                    "type": "string"
-                },
-                "white_host_name": {
-                    "type": "string"
-                },
-                "white_list": {
-                    "type": "string"
                 }
             }
         },
@@ -760,71 +431,6 @@ const docTemplate = `{
                 "username": {
                     "type": "string",
                     "example": "admin"
-                }
-            }
-        },
-        "dto.ServicesListItemOutput": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "integer"
-                },
-                "load_type": {
-                    "type": "integer"
-                },
-                "qpd": {
-                    "type": "integer"
-                },
-                "qps": {
-                    "type": "integer"
-                },
-                "service_addr": {
-                    "type": "string"
-                },
-                "service_desc": {
-                    "type": "string"
-                },
-                "service_name": {
-                    "type": "string"
-                },
-                "total_node": {
-                    "type": "integer"
-                }
-            }
-        },
-        "dto.ServicesListOutput": {
-            "type": "object",
-            "properties": {
-                "info": {
-                    "type": "string",
-                    "example": "admin"
-                },
-                "list": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/dto.ServicesListItemOutput"
-                    }
-                },
-                "total": {
-                    "type": "integer",
-                    "example": 400
-                }
-            }
-        },
-        "dto.TenementListOutput": {
-            "type": "object",
-            "properties": {
-                "info": {
-                    "type": "string"
-                },
-                "list": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/dao.Tenement"
-                    }
-                },
-                "total": {
-                    "type": "integer"
                 }
             }
         },

@@ -1,22 +1,27 @@
-drop database wserver;
-create database if not exists wserver;
-use wserver;
+drop database gin_gateway;
+create database if not exists gin_gateway;
+use gin_gateway;
 create table IF NOT EXISTS `users` (
   `id` int not null auto_increment,
+  `uuid` varchar(40) not null,
   `username` varchar(40) not null,
   `password` varchar(400) not null,
   `nickname` varchar(40) not null,
   `email` varchar(40) not null,
   `phone` varchar(11) not null,
   `role` varchar(400),
-  `create_time` bigint not null,
-  `update_time` bigint not null,
+  `avatar` varchar(400) not null,
+  `created_time` bigint not null,
+  `updated_time` bigint not null,
   `is_delete` bool not null default false,
-  PRIMARY KEY ( `id` )
+  PRIMARY KEY ( `id` ),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `idx_uuid` (`uuid`),
+  UNIQUE KEY `username_2` (`username`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO users ( username, password, nickname, email, phone, role, create_time, update_time ) VALUES ( 'sutter', 'password123', 'sutter', 'wu_yiqiang@outlook.com', '15770870823', 'admin, sys_admin', 123456799, 123456799);
-INSERT INTO users ( username, password, nickname, email, phone, role, create_time, update_time ) VALUES ( 'altas', 'passwd123', 'atals', 'wu_yiqiang@aliyun.com', '15770870825', 'admin', 123456789, 123456789);
+INSERT INTO users ( username, password, uuid, avatar,nickname, email, phone, role, created_time, updated_time ) VALUES ( 'sutter', 'password123', '1', 'https;//','sutter', 'wu_yiqiang@outlook.com', '15770870823', 'admin, sys_admin', 123456799, 123456799);
+INSERT INTO users ( username, password, uuid,avatar,nickname, email, phone, role, created_time, updated_time ) VALUES ( 'altas', 'passwd123', '2','http://','atals', 'wu_yiqiang@aliyun.com', '15770870825', 'admin', 123456789, 123456789);
 
 create table IF NOT EXISTS `routers` (
     `id` int not null auto_increment,

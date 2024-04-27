@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"fmt"
 	"gateway_go/common"
 	"gateway_go/global"
 	"gateway_go/response"
@@ -20,7 +21,6 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			return
 		}
 		tokenStr = tokenStr[len(common.TokenType)+1:]
-
 		// Token 解析校验
 		token, err := jwt.ParseWithClaims(tokenStr, &services.CustomClaims{}, func(token *jwt.Token) (interface{}, error) {
 			return []byte(global.App.Config.Jwt.Secret), nil
@@ -30,7 +30,6 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			c.Abort()
 			return
 		}
-
 		claims := token.Claims.(*services.CustomClaims)
 		// Token 发布者校验
 		if claims.Issuer != GuardName {
@@ -39,6 +38,8 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			return
 		}
 		c.Set("token", token)
-		c.Set("id", claims.UserName)
+		fmt.Println("uuid", claims.Uuid, claims.Username)
+		c.Set("userId", claims.Uuid)
+		c.Set("userName", claims.Username)
 	}
 }
