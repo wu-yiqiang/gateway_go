@@ -1,7 +1,6 @@
 package middleware
 
 import (
-	"fmt"
 	"gateway_go/common"
 	"gateway_go/global"
 	"gateway_go/response"
@@ -38,7 +37,6 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			return
 		}
 		c.Set("token", token)
-		fmt.Println("uuid", claims.Uuid, claims.Username)
 		c.Set("userId", claims.Uuid)
 		c.Set("userName", claims.Username)
 	}

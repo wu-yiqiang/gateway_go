@@ -258,6 +258,29 @@ paths:
       summary: 通讯模块
       tags:
       - 通讯模块
+  /contact/queryUserFriends:
+    post:
+      consumes:
+      - application/json
+      description: 查询好友
+      operationId: /contact/queryUserFriends
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/dto.AdminInfoOutput'
+              type: object
+      security:
+      - Auth: []
+      summary: 通讯模块
+      tags:
+      - 通讯模块
   /file/upload:
     post:
       consumes:
@@ -266,11 +289,46 @@ paths:
       description: 文件上传
       operationId: /file/upload
       parameters:
+      - description: 文件
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
+      summary: 文件上传
+      tags:
+      - 文件管理
+  /file/uploadFile:
+    post:
+      consumes:
+      - application/json
+      - multipart/form-data
+      description: 文件上传(无分片上传功能)
+      operationId: /file/uploadFile
+      parameters:
       - description: file
         in: formData
         name: file
         required: true
         type: file
+      - description: 文件名
+        in: formData
+        name: filename
+        required: true
+        type: string
+      - description: 文件类型
+        in: formData
+        name: filetype
+        required: true
+        type: string
       produces:
       - application/json
       responses:

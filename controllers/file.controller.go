@@ -28,7 +28,7 @@ var FileController = new(fileController)
 // @Produce  json
 // @Security Auth
 // @Accept multipart/form-data
-// @Param file formData file true "file"
+// @Param file formData file true "文件"
 // @Success 200 {object} response.Response{} "success"
 // @Router /file/upload [post]
 func (f *fileController) Upload(c *gin.Context) {
@@ -140,6 +140,78 @@ func (f *fileController) MergeChunks(c *gin.Context) {
 		fmt.Println("error", error, filenameDir)
 	}
 	response.Success(c, "合并成功")
+	return
+}
+
+// ListPage godoc
+// @Summary 文件上传
+// @Description 文件上传(无分片上传功能)
+// @Tags 文件管理
+// @ID /file/uploadFile
+// @Accept  json
+// @Produce  json
+// @Security Auth
+// @Accept multipart/form-data
+// @Param file formData file true "file"
+// @Param filename formData string true "文件名"
+// @Param filetype formData string true "文件类型"
+// @Success 200 {object} response.Response{} "success"
+// @Router /file/uploadFile [post]
+func (f *fileController) UploadFile(c *gin.Context) {
+	file, _, err := c.Request.FormFile("file")
+	filename, fileNameErr := c.GetPostForm("filename")
+	filetype, fileTypeErr := c.GetPostForm("filetype")
+	if err != nil {
+		response.BusinessFail(c, "文件不能为空")
+		return
+	}
+	if fileNameErr == false {
+		response.BusinessFail(c, "文件名不能为空")
+		return
+	}
+	if fileTypeErr == false {
+		response.BusinessFail(c, "文件类型不能为空")
+		return
+	}
+	var saveDir string
+	var url string
+	addr, err := netAddr()
+	if filetype == "2" {
+		saveDir = global.App.Config.Storage.Disks.LocalStorage.RootImageDir
+		url = "http://" + addr + ":" + global.App.Config.App.Port + "/assets/" + filename
+	}
+	if filetype == "3" {
+		saveDir = global.App.Config.Storage.Disks.LocalStorage.RootVideoDir + "upload/"
+		url = "http://" + addr + ":" + global.App.Config.App.StaticPort + "/upload/" + filename
+	}
+	if filetype == "5" {
+		saveDir = global.App.Config.Storage.Disks.LocalStorage.RootFileDir
+		url = "http://" + addr + "/file/" + filename
+	}
+	path := make(map[string]string)
+	//写入文件
+	out, err := os.Create(saveDir + filename)
+	if err != nil {
+		response.BusinessFail(c, "文件写入失败")
+		return
+	}
+	defer out.Close()
+	_, err = io.Copy(out, file)
+	if err != nil {
+		response.BusinessFail(c, "上传失败")
+		return
+	}
+	if filetype == "3" {
+		imgUrl, err := GetSnapshot(global.App.Config.Storage.Disks.LocalStorage.RootVideoDir+"upload/"+filename, global.App.Config.Storage.Disks.LocalStorage.RootImageDir+filepath.Base(filename), filename, 1)
+		fmt.Println("sdsd", imgUrl)
+		if err != nil {
+			response.BusinessFail(c, "获取视频封面失败")
+			return
+		}
+		path["poster"] = imgUrl
+	}
+	path["path"] = url
+	response.Success(c, path)
 	return
 }
 

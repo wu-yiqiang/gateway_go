@@ -41,7 +41,7 @@ func SetupRouter() *gin.Engine {
 		SetAdminGroupRoutes(adminGroup)
 	}
 	// 即时通讯模块
-	contactGroup := router.Group("/contact")
+	contactGroup := router.Group("")
 	{
 		SetContactGroupRoutes(contactGroup)
 	}

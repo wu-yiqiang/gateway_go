@@ -29,3 +29,17 @@ func (fileMergeInput FileMergeInput) GetMessages() request.ValidatorMessages {
 		"size.required":     "文件大小不能为空",
 	}
 }
+
+type UploadFileInput struct {
+	File     []byte `json:"file" form:"file" gorm:"file" comment:"文件" binding:"required"`
+	FileType string `json:"filetype" form:"filetype" gorm:"filetype" comment:"文件类型" default:"1" binding:"required"`
+	FileName string `json:"filename" form:"filename" gorm:"filename" comment:"文件名" default:"文件名" binding:"required"`
+}
+
+func (uploadFileInput UploadFileInput) GetMessages() request.ValidatorMessages {
+	return request.ValidatorMessages{
+		"filename.required": "文件名不能为空",
+		"filetype.required": "文件类型不能为空",
+		"file.required":     "文件不能为空",
+	}
+}

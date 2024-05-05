@@ -209,7 +209,7 @@ func (admin *adminController) AdminLogout(c *gin.Context) {
 		response.BusinessFail(c, "用户信息不存在")
 		return
 	}
-	error := global.App.Redis.Del(context.Background(), customClaims.UserName).Err()
+	error := global.App.Redis.Del(context.Background(), customClaims.Username).Err()
 	if error != nil {
 		response.BusinessFail(c, "用户注销失败")
 		return

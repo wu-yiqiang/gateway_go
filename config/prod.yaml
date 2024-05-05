@@ -15,6 +15,11 @@ log:
   max_age: 28 # 旧文件的最大保留天数
   compress: true # 是否压缩
 
+kafka:
+  channel_type: Kafka #
+  host: kafka:9092 # 域名
+  topic: go-chat-message
+
 mysql:
   driver: mysql # 数据库驱动
   host: 127.0.0.1 # 域名

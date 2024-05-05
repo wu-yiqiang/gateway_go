@@ -1388,3 +1388,354 @@
 [2024-04-28 00:07:54.948]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
 [2024-04-28 00:10:10.594]	dev.info	gateway_go/main.go:28	log init success!
 [2024-04-28 00:10:10.596]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 18:24:52.295]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 18:24:52.302]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 21:14:10.519]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 21:14:10.522]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 21:14:45.308]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 21:14:45.312]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 21:17:43.246]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 21:17:43.249]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:20:00.034]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:20:00.049]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:22:22.838]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:22:22.841]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:33:53.697]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:33:53.700]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:34:49.812]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:34:49.816]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:35:15.690]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:35:15.692]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:36:43.607]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:36:43.609]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:54:08.098]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:54:08.101]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:59:09.728]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:59:09.731]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 22:59:32.477]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 22:59:32.480]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 23:07:07.441]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 23:07:07.444]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 23:07:36.144]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 23:07:36.149]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 23:08:39.957]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 23:08:39.962]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 23:14:45.666]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 23:14:45.669]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 23:55:28.855]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 23:55:28.859]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-28 23:57:42.140]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-28 23:57:42.143]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-29 13:55:57.353]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-29 13:55:57.363]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-29 13:57:31.873]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-29 13:57:31.876]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-29 16:34:05.678]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-29 16:34:05.680]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-29 16:35:36.788]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-29 16:35:36.790]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-29 16:42:09.442]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-29 16:42:09.444]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-29 16:57:48.770]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-29 16:57:48.773]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-29 16:59:34.416]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-29 16:59:34.419]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-29 17:00:03.714]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-29 17:00:03.728]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 00:02:49.741]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 00:02:49.753]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 10:43:07.844]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 10:43:07.845]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-04-30 10:43:07.846]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 10:43:25.890]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 10:43:25.905]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 10:47:01.277]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 10:47:01.279]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:07:09.171]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:07:09.178]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:07:09.461]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:07:09.464]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:07:24.488]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:07:24.490]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:07:26.725]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:07:26.727]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:07:47.116]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:07:47.118]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:07:47.400]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:07:47.402]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:07:56.715]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:07:56.717]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:07:57.131]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:07:57.133]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 11:08:01.388]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 11:08:01.390]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 15:28:58.139]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 15:28:58.143]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 15:30:36.282]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 15:30:36.285]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 15:38:26.560]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 15:38:26.563]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 15:39:34.921]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 15:39:34.924]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 15:40:32.942]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 15:40:32.944]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:48:27.292]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:48:27.319]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:48:47.422]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:48:47.424]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:48:53.951]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:48:53.953]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:50:07.017]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:50:07.019]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:50:23.007]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:50:23.009]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:51:04.272]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:51:04.274]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:51:04.648]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:51:04.653]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:53:30.969]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:53:30.969]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:53:30.972]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:53:30.972]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 16:54:01.002]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 16:54:01.004]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:47:48.870]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:47:48.872]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:48:18.026]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:48:18.027]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:48:19.768]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:48:19.771]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:48:30.787]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:48:30.788]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:48:48.696]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:48:48.699]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:49:10.612]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:49:10.614]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:49:20.886]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:49:20.888]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:49:46.862]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:49:46.865]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:50:08.508]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:50:08.510]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:50:14.969]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:50:14.971]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:50:29.911]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:50:29.913]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:50:46.777]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:50:46.779]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:50:55.893]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:50:55.895]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:51:05.027]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:51:05.030]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:52:48.786]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:52:48.791]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:54:01.479]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:54:01.481]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:54:14.211]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:54:14.213]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:55:00.299]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:55:00.301]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 21:56:20.493]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 21:56:20.496]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 22:11:33.442]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 22:11:33.444]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 22:13:50.326]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 22:13:50.330]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 22:13:59.343]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 22:13:59.346]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:23:37.786]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:23:37.791]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:25:28.289]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:25:28.291]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:26:06.340]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:26:06.343]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:28:03.331]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:28:03.333]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:28:46.500]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:28:46.503]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:31:47.061]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:31:47.063]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:31:49.878]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:31:49.880]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:32:25.487]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:32:25.490]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:33:55.200]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:33:55.204]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:35:56.094]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:35:56.098]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:41:00.235]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:41:00.238]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:41:59.049]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:41:59.053]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:42:48.256]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:42:48.258]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:45:02.829]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:45:02.839]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:51:46.936]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:51:46.943]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-04-30 23:54:51.647]	dev.info	gateway_go/main.go:28	log init success!
+[2024-04-30 23:54:51.650]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 09:59:48.300]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 09:59:48.318]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 13:29:52.461]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 13:29:52.466]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 13:30:10.877]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 13:30:10.880]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 13:35:24.628]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 13:35:24.630]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 13:42:23.886]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 13:42:23.889]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 13:44:35.430]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 13:44:35.433]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 13:45:08.300]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 13:45:08.302]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 13:47:32.859]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 13:47:32.861]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 14:19:24.858]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 14:19:24.861]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 14:20:01.762]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 14:20:01.764]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 14:20:47.327]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 14:20:47.329]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 14:21:44.386]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 14:21:44.390]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 14:22:08.278]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 14:22:08.281]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 16:29:48.084]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 16:29:48.088]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 16:29:48.221]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 16:29:48.224]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 17:19:45.540]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 17:19:45.544]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 17:34:41.224]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 17:34:41.227]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 18:43:50.287]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 18:43:50.290]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 18:45:42.219]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 18:45:42.222]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-01 21:05:19.549]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-01 21:05:19.554]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-04 21:54:11.765]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-04 21:54:11.766]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-04 21:54:11.834]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-04 21:54:11.834]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 11:56:29.539]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 11:56:29.540]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 11:56:29.608]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 11:56:29.608]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 11:58:19.533]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 11:58:19.533]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 11:58:19.602]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 11:58:19.602]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:15:35.883]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:15:35.884]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:15:35.951]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:15:35.951]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:16:40.050]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:16:40.051]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:16:40.119]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:16:40.119]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:17:22.406]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:17:22.407]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:17:22.475]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:17:22.475]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:17:26.534]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:17:26.534]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:17:26.603]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:17:26.603]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:17:42.855]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:17:42.855]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:17:42.924]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:17:42.924]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:36:50.778]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:36:50.779]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:36:50.847]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:36:50.848]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:38:29.571]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:38:29.572]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:38:29.639]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:38:29.640]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:40:22.576]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:40:22.577]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:40:22.648]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:40:22.648]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:46:01.343]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:46:01.344]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:46:01.412]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:46:01.412]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:50:49.542]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:50:49.543]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:50:49.611]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:50:49.611]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 12:54:00.324]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 12:54:00.324]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 12:54:00.392]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 12:54:00.392]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 13:06:45.658]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 13:06:45.659]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 13:06:45.727]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 13:06:45.727]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 15:12:47.034]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 15:12:47.035]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 15:12:47.103]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 15:12:47.103]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 15:19:01.255]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 15:19:01.256]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 15:19:01.324]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 15:19:01.324]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 15:19:45.333]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 15:19:45.334]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 15:19:45.402]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 15:19:45.402]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 16:19:11.931]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 16:19:11.932]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 16:19:12.000]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 16:19:12.000]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 16:23:59.668]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 16:23:59.669]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 16:23:59.737]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 16:23:59.737]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 16:23:59.963]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 16:23:59.964]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 16:24:00.031]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 16:24:00.031]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 16:24:07.331]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 16:24:07.331]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 16:24:07.399]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 16:24:07.399]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 16:35:42.870]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 16:35:42.871]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 16:35:42.939]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 16:35:42.939]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 18:08:48.326]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 18:08:48.327]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 18:08:48.395]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 18:08:48.395]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 18:11:22.448]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 18:11:22.449]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 18:11:22.516]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 18:11:22.516]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 18:12:19.940]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 18:12:19.941]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 18:12:20.008]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 18:12:20.008]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 18:13:39.631]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 18:13:39.632]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 18:13:39.700]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 18:13:39.700]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 18:14:26.972]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 18:14:26.973]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 18:14:27.041]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 18:14:27.041]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 18:16:15.683]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 18:16:15.684]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 18:16:15.752]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 18:16:15.752]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 20:58:08.293]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 20:58:08.293]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 20:58:08.361]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 20:58:08.361]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-05 20:58:39.508]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-05 20:58:39.509]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-05 20:58:39.576]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-05 20:58:39.576]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax

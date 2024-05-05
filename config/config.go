@@ -9,6 +9,7 @@ type Configuration struct {
 	Storage Storage `mapstructure:"storage" json:"storage" yaml:"storage"`
 	Swagger Swagger `mapstructure:"swagger" json:"swagger" yaml:"swagger"`
 	Cluster Cluster `mapstructure:"cluster" json:"cluster" yaml:"cluster"`
+	Kafka   Kafka   `mapstructure:"kafka" json:"kafka" yaml:"kafka"`
 }
 
 type App struct {
@@ -46,6 +47,11 @@ type Database struct {
 	LogFilename         string `mapstructure:"log_filename" json:"log_filename" yaml:"log_filename"`
 }
 
+type Kafka struct {
+	Topic       string `mapstructure:"topic" json:"topic" yaml:"topic"`
+	Host        string `mapstructure:"host" json:"host" yaml:"host"`
+	ChannelType string `mapstructure:"channel_type" json:"channel_type" yaml:"channel_type"`
+}
 type Mysql struct {
 	Driver              string `mapstructure:"driver" json:"driver" yaml:"driver"`
 	Host                string `mapstructure:"host" json:"host" yaml:"host"`
