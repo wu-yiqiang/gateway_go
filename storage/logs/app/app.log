@@ -1739,3 +1739,57 @@
 [2024-05-05 20:58:39.509]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
 [2024-05-05 20:58:39.576]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
 [2024-05-05 20:58:39.576]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-18 18:39:08.859]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-18 18:39:08.940]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-18 18:39:08.941]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-18 18:47:09.670]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-18 18:47:09.741]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-18 18:47:09.741]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-18 21:09:55.052]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-18 21:09:55.121]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-18 21:09:55.122]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-18 21:14:03.152]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-18 21:14:03.222]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-18 21:14:03.222]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-19 00:43:14.806]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-19 00:43:14.883]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-19 00:43:14.883]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-19 10:40:55.129]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-19 10:40:55.200]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-19 10:40:55.200]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-19 21:58:04.109]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-19 21:58:04.111]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-19 21:58:04.179]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-19 21:58:04.179]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-20 21:40:03.394]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-20 21:40:03.477]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-20 21:40:03.477]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-20 21:53:37.266]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-20 21:53:37.364]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-20 21:53:37.364]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-21 22:06:27.254]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-21 22:06:27.350]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-21 22:06:27.350]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-22 22:28:50.427]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-22 22:28:50.516]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-22 22:28:50.516]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-25 12:09:06.117]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-25 12:09:06.118]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-25 12:09:06.187]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-25 12:09:06.187]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-25 13:12:52.072]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-25 13:12:52.075]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-25 13:12:52.144]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-25 13:12:52.144]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-25 14:08:52.259]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-25 14:08:52.260]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-25 14:08:52.327]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-25 14:08:52.327]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-26 11:47:38.011]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-26 11:47:38.014]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-26 11:47:38.082]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-26 11:47:38.082]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-05-26 13:13:25.730]	dev.info	gateway_go/main.go:28	log init success!
+[2024-05-26 13:13:25.731]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+[2024-05-26 13:13:25.799]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+[2024-05-26 13:13:25.799]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
