@@ -8626,3 +8626,15 @@
 
 2024/05/26 14:41:29 /Users/atlas/go/src/gateway_go/initialize/db.go:45
 [error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/05/26 18:52:57 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/05/26 21:05:47 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/06/09 19:34:55 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+
+2024/06/10 10:10:38 /Users/atlas/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
