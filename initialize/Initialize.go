@@ -23,6 +23,7 @@ func InitializeConfig() *viper.Viper {
 	modeName := *mode
 	var config string
 	config = "config/" + modeName + ".yaml"
+	fmt.Println("sada", config)
 	// 生产环境可以通过设置环境变量来改变配置文件路径
 	if configEnv := os.Getenv("VIPER_CONFIG"); configEnv != "" {
 		config = configEnv

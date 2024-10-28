@@ -1830,3 +1830,15 @@
 [2024-06-17 02:23:47.211]	dev.info	gateway_go/main.go:28	log init success!
 [2024-06-17 02:23:47.284]	dev.error	initialize/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp 127.0.0.1:6379: connect: connection refused"}
 [2024-06-17 02:23:47.284]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-10-28 20:53:39.759]	dev.info	gateway_go/main.go:28	log init success!
+[2024-10-28 20:53:39.768]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-10-28 20:53:39.793]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-10-28 20:57:28.201]	dev.info	gateway_go/main.go:28	log init success!
+[2024-10-28 20:57:28.207]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-10-28 20:57:28.208]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-10-28 21:03:56.442]	dev.info	gateway_go/main.go:28	log init success!
+[2024-10-28 21:03:56.456]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-10-28 21:03:56.456]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-10-28 21:12:49.376]	dev.info	gateway_go/main.go:28	log init success!
+[2024-10-28 21:12:49.382]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-10-28 21:12:49.382]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
