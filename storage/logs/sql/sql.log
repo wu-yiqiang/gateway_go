@@ -8653,3 +8653,6 @@
 
 2024/10/29 10:32:08 c:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
 [error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/10/29 12:39:18 c:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
