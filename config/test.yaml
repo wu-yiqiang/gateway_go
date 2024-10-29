@@ -45,8 +45,8 @@ cluster:
   cluster_ssl_port: "8880"
 
 swagger:
-  title: "gateway_go swagger API"
-  desc: "This is a sample server celler server."
+  title: "ehse-go project swagger API"
+  desc: "ehse-go API管理"
   host: "127.0.0.1:8880"
   base_path: "/"
 
