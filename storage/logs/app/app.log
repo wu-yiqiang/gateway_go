@@ -1848,3 +1848,6 @@
 [2024-10-29 12:39:18.075]	dev.info	gateway_go/main.go:28	log init success!
 [2024-10-29 12:39:18.086]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
 [2024-10-29 12:39:18.087]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-10-29 14:56:39.120]	dev.info	gateway_go/main.go:28	log init success!
+[2024-10-29 14:56:39.125]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-10-29 14:56:39.126]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
