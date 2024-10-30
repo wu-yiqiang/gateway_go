@@ -8683,3 +8683,6 @@
 
 2024/10/30 22:19:18 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
 [error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/10/30 22:19:36 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
