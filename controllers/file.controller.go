@@ -10,6 +10,7 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"gateway_go/utils"
 	"path/filepath"
 	"strings"
 )
@@ -175,7 +176,7 @@ func (f *fileController) UploadFile(c *gin.Context) {
 	}
 	var saveDir string
 	var url string
-	addr, err := netAddr()
+	addr, err := utils.NetAddr()
 	if filetype == "2" {
 		saveDir = global.App.Config.Storage.Disks.LocalStorage.RootImageDir
 		url = "http://" + addr + ":" + global.App.Config.App.Port + "/assets/" + filename

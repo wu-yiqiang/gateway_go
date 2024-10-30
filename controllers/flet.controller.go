@@ -3,7 +3,6 @@ package controllers
 import (
 	"bytes"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"gateway_go/dao"
 	"gateway_go/dto"
@@ -17,7 +16,6 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"net"
 	"net/http"
 	"net/url"
 	"os"
@@ -222,7 +220,7 @@ func taverFile(path string, list *[]dao.Video) {
 				if err != nil {
 					log.Fatal("获取封面失败")
 				}
-				addr, _ := netAddr()
+				addr, _ := utils.NetAddr()
 				videoUrl := "http://" + addr + "/videos/play/" + file.Name()
 				item := &dao.Video{
 					Name:     file.Name(),
@@ -302,7 +300,7 @@ func GetSnapshot(videoPath, snapshotPath string, filename string, frameNum int) 
 		}
 	}
 	// 本地网络
-	addr, err := netAddr()
+	addr, err := utils.NetAddr()
 	if err != nil {
 		return "", err
 	}
@@ -310,19 +308,7 @@ func GetSnapshot(videoPath, snapshotPath string, filename string, frameNum int) 
 	return url, nil
 }
 
-func netAddr() (string, error) {
-	// 思路来自于Python版本的内网IP获取，其他版本不准确
-	conn, err := net.Dial("udp", "8.8.8.8:80")
-	if err != nil {
-		return "", errors.New("internal IP fetch failed, detail:" + err.Error())
-	}
-	defer conn.Close()
-	// udp 面向无连接，所以这些东西只在你本地捣鼓
-	res := conn.LocalAddr().String()
-	res = strings.Split(res, ":")[0]
-	return res, nil
 
-}
 
 func (f *fletController) PlayVideo(c *gin.Context) {
 	//通过动态路由方式获取文件名，以实现下载不同文件的功能
@@ -337,7 +323,7 @@ func (f *fletController) PlayVideo(c *gin.Context) {
 		return
 	}
 	//拼接路径,如果没有这一步，则默认在当前路径下寻找
-	addr, err := netAddr()
+	addr, err := utils.NetAddr()
 	if err != nil {
 		response.ValidateFail(c, err.Error())
 		return
@@ -352,7 +338,7 @@ func (f *fletController) PlayVideo(c *gin.Context) {
 
 func (f *fletController) GetBanner(c *gin.Context) {
 	lists := make([]string, 0)
-	addr, err := netAddr()
+	addr, err := utils.NetAddr()
 	if err != nil {
 		response.BusinessFail(c, err.Error())
 		return

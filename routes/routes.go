@@ -43,11 +43,6 @@ func SetupRouter() *gin.Engine {
 	{
 		SetContactGroupRoutes(contactGroup)
 	}
-	// flutter接口
-	fletGroup := router.Group("/flet")
-	{
-		SetFletGroupRoutes(fletGroup)
-	}
 	// 文件管理
 	fileGroup := router.Group("/file")
 	{
