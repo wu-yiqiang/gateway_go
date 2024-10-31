@@ -75,171 +75,6 @@ info:
   title: go-api 框架
   version: "1.0"
 paths:
-  /admin/admin_info:
-    post:
-      consumes:
-      - application/json
-      description: 管理员信息获取
-      operationId: /admin/admin_info
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            allOf:
-            - $ref: '#/definitions/response.Response'
-            - properties:
-                data:
-                  $ref: '#/definitions/dto.AdminInfoOutput'
-              type: object
-      security:
-      - Auth: []
-      summary: 管理员信息获取
-      tags:
-      - 用户管理
-  /admin/avatar:
-    post:
-      consumes:
-      - application/json
-      - multipart/form-data
-      description: 管理员头像更新
-      operationId: /admin/avatar
-      parameters:
-      - description: file
-        in: formData
-        name: file
-        required: true
-        type: file
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            $ref: '#/definitions/response.Response'
-      security:
-      - Auth: []
-      summary: 管理员头像更新
-      tags:
-      - 用户管理
-  /admin/changePassword:
-    post:
-      consumes:
-      - application/json
-      description: 修改密码
-      operationId: /admin/changePassword
-      parameters:
-      - description: body
-        in: body
-        name: polygon
-        required: true
-        schema:
-          $ref: '#/definitions/dto.ChangePasswordInput'
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            $ref: '#/definitions/response.Response'
-      security:
-      - Auth: []
-      summary: 修改密码
-      tags:
-      - 用户管理
-  /admin/login:
-    post:
-      consumes:
-      - application/json
-      description: 用户登录
-      operationId: /admin/login
-      parameters:
-      - description: body
-        in: body
-        name: polygon
-        required: true
-        schema:
-          $ref: '#/definitions/dto.RegisterInput'
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            allOf:
-            - $ref: '#/definitions/response.Response'
-            - properties:
-                data:
-                  $ref: '#/definitions/dto.LoginOutput'
-              type: object
-      summary: 用户登录
-      tags:
-      - 用户管理
-  /admin/queryUser:
-    post:
-      consumes:
-      - application/json
-      description: 用户信息获取
-      operationId: /admin/queryUser
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            allOf:
-            - $ref: '#/definitions/response.Response'
-            - properties:
-                data:
-                  $ref: '#/definitions/dto.AdminInfoOutput'
-              type: object
-      security:
-      - Auth: []
-      summary: 管理员信息获取
-      tags:
-      - 用户管理
-  /admin/register:
-    post:
-      consumes:
-      - application/json
-      description: 用户注册
-      operationId: /admin/register
-      parameters:
-      - description: body
-        in: body
-        name: polygon
-        required: true
-        schema:
-          $ref: '#/definitions/dto.RegisterInput'
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            $ref: '#/definitions/response.Response'
-      summary: 用户注册
-      tags:
-      - 用户管理
-  /admin_login/logout:
-    get:
-      consumes:
-      - application/json
-      description: 管理员注销
-      operationId: /admin_login/logout
-      produces:
-      - application/json
-      responses:
-        "200":
-          description: success
-          schema:
-            $ref: '#/definitions/response.Response'
-      security:
-      - Auth: []
-      summary: 管理员注销
-      tags:
-      - 用户管理
   /contact/add:
     post:
       consumes:
@@ -341,46 +176,148 @@ paths:
       summary: 文件上传
       tags:
       - 文件管理
-  /flet/newsList:
+  /user/avatar:
     post:
       consumes:
       - application/json
-      description: 查询资讯
-      operationId: /flet/newsList
+      - multipart/form-data
+      description: 管理员头像更新
+      operationId: /user/avatar
       parameters:
-      - description: token
-        in: query
-        name: token
+      - description: file
+        in: formData
+        name: file
         required: true
-        type: string
+        type: file
       produces:
       - application/json
-      responses: {}
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
       security:
       - Auth: []
-      summary: flutter管理
+      summary: 管理员头像更新
       tags:
-      - flutter管理
-  /flet/weather:
+      - 用户管理
+  /user/login:
     post:
       consumes:
       - application/json
-      description: 查询天气信息
-      operationId: /flet/weather
+      description: 用户登录
+      operationId: /user/login
       parameters:
-      - description: token
-        in: query
-        name: token
+      - description: body
+        in: body
+        name: polygon
         required: true
-        type: string
+        schema:
+          $ref: '#/definitions/dto.RegisterInput'
       produces:
       - application/json
-      responses: {}
+      responses:
+        "200":
+          description: success
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/dto.LoginOutput'
+              type: object
+      summary: 用户登录
+      tags:
+      - 用户管理
+  /user/logout:
+    get:
+      consumes:
+      - application/json
+      description: 用户注销
+      operationId: /user/logout
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
       security:
       - Auth: []
-      summary: flutter管理
+      summary: 用户注销
       tags:
-      - flutter管理
+      - 用户管理
+  /user/queryUser:
+    post:
+      consumes:
+      - application/json
+      description: 用户信息获取
+      operationId: /user/queryUser
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/dto.AdminInfoOutput'
+              type: object
+      security:
+      - Auth: []
+      summary: 用户信息获取
+      tags:
+      - 用户管理
+  /user/register:
+    post:
+      consumes:
+      - application/json
+      description: 用户注册
+      operationId: /user/register
+      parameters:
+      - description: body
+        in: body
+        name: polygon
+        required: true
+        schema:
+          $ref: '#/definitions/dto.RegisterInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 用户注册
+      tags:
+      - 用户管理
+  /user/updatePassword:
+    post:
+      consumes:
+      - application/json
+      description: 修改密码
+      operationId: /user/updatePassword
+      parameters:
+      - description: body
+        in: body
+        name: polygon
+        required: true
+        schema:
+          $ref: '#/definitions/dto.ChangePasswordInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            $ref: '#/definitions/response.Response'
+      security:
+      - Auth: []
+      summary: 修改密码
+      tags:
+      - 用户管理
 securityDefinitions:
   Auth:
     in: header

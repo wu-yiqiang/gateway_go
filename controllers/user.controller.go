@@ -11,28 +11,28 @@ import (
 	"gateway_go/services"
 	"gateway_go/utils"
 	"github.com/gin-gonic/gin"
+	"gateway_go/error"
 	"io"
 	"log"
 	"os"
 	"time"
 )
 
-type adminController struct {
-}
+type userController struct {}
 
-var AdminController = new(adminController)
+var UserController = new(userController)
 
 // ListPage godoc
 // @Summary 用户注册
 // @Description 用户注册
 // @Tags 用户管理
-// @ID /admin/register
+// @ID /user/register
 // @Accept  json
 // @Produce  json
 // @Param polygon body dto.RegisterInput true "body"
 // @Success 200 {object} response.Response{} "success"
-// @Router /admin/register [post]
-func (admin *adminController) AdminRegister(c *gin.Context) {
+// @Router /user/register [post]
+func (admin *userController) UserRegister(c *gin.Context) {
 	var form dto.RegisterInput
 	if err := c.ShouldBindJSON(&form); err != nil {
 		response.ValidateFail(c, request.GetErrorMsg(form, err))
@@ -49,13 +49,13 @@ func (admin *adminController) AdminRegister(c *gin.Context) {
 // @Summary 用户登录
 // @Description 用户登录
 // @Tags 用户管理
-// @ID /admin/login
+// @ID /user/login
 // @Accept  json
 // @Produce  json
 // @Param polygon body dto.RegisterInput true "body"
 // @Success 200 {object} response.Response{data=dto.LoginOutput} "success"
-// @Router /admin/login [post]
-func (admin *adminController) AdminLogin(c *gin.Context) {
+// @Router /user/login [post]
+func (admin *userController) UserLogin(c *gin.Context) {
 	var form dto.RegisterInput
 	if err := c.ShouldBindJSON(&form); err != nil {
 		response.ValidateFail(c, request.GetErrorMsg(form, err))
@@ -99,14 +99,14 @@ func (admin *adminController) AdminLogin(c *gin.Context) {
 // @Summary 修改密码
 // @Description 修改密码
 // @Tags 用户管理
-// @ID /admin/changePassword
+// @ID /user/updatePassword
 // @Accept  json
 // @Produce  json
 // @Security Auth
 // @Param polygon body dto.ChangePasswordInput true "body"
 // @Success 200 {object} response.Response{} "success"
-// @Router /admin/changePassword [post]
-func (admin *adminController) AdminChangePassword(c *gin.Context) {
+// @Router /user/updatePassword [post]
+func (admin *userController) UserUpdatePassword(c *gin.Context) {
 	var form dto.ChangePasswordInput
 	if err := c.ShouldBindJSON(&form); err != nil {
 		response.ValidateFail(c, request.GetErrorMsg(form, err))
@@ -133,49 +133,18 @@ func (admin *adminController) AdminChangePassword(c *gin.Context) {
 	return
 }
 
-// ListPage godoc
-// @Summary 管理员信息获取
-// @Description 管理员信息获取
-// @Tags 用户管理
-// @ID /admin/admin_info
-// @Accept  json
-// @Produce  json
-// @Security Auth
-// @Success 200 {object} response.Response{data=dto.AdminInfoOutput} "success"
-// @Router /admin/admin_info [post]
-func (admin *adminController) AdminInfo(c *gin.Context) {
-	userId, idIsExist := c.Get("userId")
-	username, nameIsExist := c.Get("userName")
-	if idIsExist == false || nameIsExist == false {
-		response.BusinessFail(c, "用户不存在")
-		return
-	}
-	tokenStr, err := global.App.Redis.Get(context.Background(), username.(string)).Result()
-	fmt.Println("token 不能删除用于打印token", tokenStr)
-	if err != nil {
-		response.BusinessFail(c, "用户信息不存在")
-		return
-	}
-	err, data := services.UserService.UserInfo(userId.(string))
-	if err != nil {
-		response.BusinessFail(c, err.Error())
-		return
-	}
-	response.Success(c, data)
-	return
-}
 
 // ListPage godoc
-// @Summary 管理员信息获取
+// @Summary 用户信息获取
 // @Description 用户信息获取
 // @Tags 用户管理
-// @ID /admin/queryUser
+// @ID /user/queryUser
 // @Accept  json
 // @Produce  json
 // @Security Auth
 // @Success 200 {object} response.Response{data=dto.AdminInfoOutput} "success"
-// @Router /admin/queryUser [post]
-func (admin *adminController) QueryUserInfo(c *gin.Context) {
+// @Router /user/queryUser [post]
+func (admin *userController) QueryUserInfo(c *gin.Context) {
 	// 查询用户名
 	var form dto.QueryUser
 	if err := c.ShouldBindJSON(&form); err != nil {
@@ -192,21 +161,21 @@ func (admin *adminController) QueryUserInfo(c *gin.Context) {
 }
 
 // ListPage godoc
-// @Summary 管理员注销
-// @Description 管理员注销
+// @Summary 用户注销
+// @Description 用户注销
 // @Tags 用户管理
-// @ID /admin_login/logout
+// @ID /user/logout
 // @Accept  json
 // @Produce  json
 // @Security Auth
 // @Success 200 {object} response.Response{} "success"
-// @Router /admin_login/logout [get]
-func (admin *adminController) AdminLogout(c *gin.Context) {
+// @Router /user/logout [get]
+func (admin *userController) UserLogout(c *gin.Context) {
 	token := c.Request.Header.Get("Authorization")
 	// 解密token
 	err, customClaims := services.JwtService.DecryptToken(token)
 	if err != nil {
-		response.BusinessFail(c, "用户信息不存在")
+		response.ServiceFail(c, error.UserInfoNotExist)
 		return
 	}
 	error := global.App.Redis.Del(context.Background(), customClaims.Username).Err()
@@ -221,20 +190,20 @@ func (admin *adminController) AdminLogout(c *gin.Context) {
 // @Summary 管理员头像更新
 // @Description 管理员头像更新
 // @Tags 用户管理
-// @ID /admin/avatar
+// @ID /user/avatar
 // @Accept  json
 // @Produce  json
 // @Security Auth
 // @Accept multipart/form-data
 // @Param file formData file true "file"
 // @Success 200 {object} response.Response{} "success"
-// @Router /admin/avatar [post]
-func (admin *adminController) AdminInfoAvatar(c *gin.Context) {
+// @Router /user/avatar [post]
+func (admin *userController) UserInfoAvatar(c *gin.Context) {
 	token := c.Request.Header.Get("Authorization")
 	// 解密token
 	err, _ := services.JwtService.DecryptToken(token[len(common.TokenType)+1:])
 	if err != nil {
-		response.BusinessFail(c, "用户信息不存在")
+		response.ServiceFail(c, error.UserInfoNotExist)
 		return
 	}
 	// username := customClaims.UserName

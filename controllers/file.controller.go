@@ -202,15 +202,15 @@ func (f *fileController) UploadFile(c *gin.Context) {
 		response.BusinessFail(c, "上传失败")
 		return
 	}
-	if filetype == "3" {
-		imgUrl, err := GetSnapshot(global.App.Config.Storage.Disks.LocalStorage.RootVideoDir+"upload/"+filename, global.App.Config.Storage.Disks.LocalStorage.RootImageDir+filepath.Base(filename), filename, 1)
-		fmt.Println("sdsd", imgUrl)
-		if err != nil {
-			response.BusinessFail(c, "获取视频封面失败")
-			return
-		}
-		path["poster"] = imgUrl
-	}
+	// if filetype == "3" {
+	// 	imgUrl, err := GetSnapshot(global.App.Config.Storage.Disks.LocalStorage.RootVideoDir+"upload/"+filename, global.App.Config.Storage.Disks.LocalStorage.RootImageDir+filepath.Base(filename), filename, 1)
+	// 	fmt.Println("sdsd", imgUrl)
+	// 	if err != nil {
+	// 		response.BusinessFail(c, "获取视频封面失败")
+	// 		return
+	// 	}
+	// 	path["poster"] = imgUrl
+	// }
 	path["path"] = url
 	response.Success(c, path)
 	return

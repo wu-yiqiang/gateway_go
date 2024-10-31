@@ -28,15 +28,10 @@ func SetupRouter() *gin.Engine {
 	// swagger
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	router.Use(middleware.RateLimitMiddleware(time.Second, 100, 100)) //初始100，每秒放出100
-	// user路由
-	userGroup := router.Group("/admin")
+	// user模块
+	userGroup := router.Group("/user")
 	{
 		SetUserGroupRoutes(userGroup)
-	}
-
-	adminGroup := router.Group("/admin_login")
-	{
-		SetAdminGroupRoutes(adminGroup)
 	}
 	// 即时通讯模块
 	contactGroup := router.Group("")

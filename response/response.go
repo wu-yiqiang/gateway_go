@@ -4,6 +4,7 @@ import (
 	"gateway_go/global"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"gateway_go/types"
 )
 
 // 响应结构体
@@ -44,6 +45,11 @@ func ValidateFail(c *gin.Context, msg string) {
 // BusinessFail 业务逻辑失败
 func BusinessFail(c *gin.Context, msg string) {
 	Fail(c, global.Errors.BusinessError.ErrorCode, msg)
+}
+
+// BusinessFail 业务逻辑失败
+func ServiceFail(c *gin.Context, err types.ServiceError) {
+	Fail(c, err.ErrorCode, err.ErrorMsg)
 }
 
 // 鉴权失败

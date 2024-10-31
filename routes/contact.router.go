@@ -22,8 +22,9 @@ func SetContactGroupRoutes(router *gin.RouterGroup) {
 		router.GET("/user", v1.GetUserList)
 		router.GET("/user/:uuid", v1.GetUserDetails)
 		router.GET("/user/name", v1.GetUserOrGroupByName)
-		router.POST("/user/register", v1.Register)
-		router.POST("/user/login", v1.Login)
+		// 地址冲突先注释
+		// router.POST("/user/register", v1.Register)
+		// router.POST("/user/login", v1.Login)
 		router.PUT("/user", v1.ModifyUserInfo)
 		router.POST("/friend", v1.AddFriend)
 		router.GET("/message", v1.GetMessage)
