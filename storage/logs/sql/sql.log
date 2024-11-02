@@ -9631,3 +9631,21 @@
 
 2024/11/02 18:11:13 /Users/atlas/go/src/gateway_go/services/user.service.go:25
 [0.983ms] [rows:1] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 20:26:46 /Users/atlas/go/src/gateway_go/services/user.service.go:25
+[0.845ms] [rows:1] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 20:27:37 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.790ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 20:30:00 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[1.625ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 20:31:15 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.817ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 20:31:25 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.882ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 20:31:31 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.986ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1

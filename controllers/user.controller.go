@@ -63,7 +63,7 @@ func (admin *userController) UserLogin(c *gin.Context) {
 		return
 	}
 	if err, user := services.UserService.Login(form); err != nil {
-		response.BusinessFail(c, err.Error())
+		response.ServiceFail(c, serviceErrors.UserPasswordError)
 		return
 	} else {
 		// 查询redis中token

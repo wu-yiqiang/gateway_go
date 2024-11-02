@@ -60,11 +60,11 @@ func (userService *userService) QueryUserinfoByUsername(username string) (err er
 func (userService *userService) Login(params dto.RegisterInput) (err error, user *dao.Admin) {
 	err = global.App.DB.Table(userService.TableName()).Where("username = ?", params.Username).First(&user).Error
 	if err != nil {
-		err = errors.New("该用户不存在")
+		err = errors.New(serviceErrors.UserIsExist.ErrorMsg)
 		return
 	}
 	if !utils.BcryptMakeCheck([]byte(params.Password), user.Password) {
-		err = errors.New("密码错误")
+		err = errors.New(serviceErrors.UserPasswordError.ErrorMsg)
 		return
 	}
 	return
