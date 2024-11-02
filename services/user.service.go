@@ -8,6 +8,7 @@ import (
 	"gateway_go/utils"
 	"github.com/google/uuid"
 	"time"
+	"gateway_go/serviceErrors"
 )
 
 type userService struct {
@@ -23,7 +24,7 @@ func (userService *userService) TableName() string {
 func (userService *userService) Register(params dto.RegisterInput) (err error, user dao.Admin) {
 	var result = global.App.DB.Table(userService.TableName()).Where("username = ?", params.Username).Select("uuid").First(&dao.Admin{})
 	if result.RowsAffected != 0 {
-		err = errors.New("账号已存在")
+		err = errors.New(serviceErrors.UserIsExist.ErrorMsg)
 		return
 	}
 	uuid := uuid.New()

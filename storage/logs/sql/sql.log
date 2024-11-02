@@ -9619,3 +9619,15 @@
 
 2024/11/01 10:08:16 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
 [error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/11/02 17:57:11 /Users/atlas/go/src/gateway_go/services/user.service.go:24
+[3.390ms] [rows:1] SELECT `uuid` FROM `users` WHERE username = 'sutter' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 17:58:21 /Users/atlas/go/src/gateway_go/services/user.service.go:24
+[0.677ms] [rows:1] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 18:08:01 /Users/atlas/go/src/gateway_go/services/user.service.go:25
+[1.400ms] [rows:1] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/11/02 18:11:13 /Users/atlas/go/src/gateway_go/services/user.service.go:25
+[0.983ms] [rows:1] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1

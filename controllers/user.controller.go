@@ -11,7 +11,7 @@ import (
 	"gateway_go/services"
 	"gateway_go/utils"
 	"github.com/gin-gonic/gin"
-	"gateway_go/error"
+	"gateway_go/serviceErrors"
 	"io"
 	"log"
 	"os"
@@ -39,7 +39,8 @@ func (admin *userController) UserRegister(c *gin.Context) {
 		return
 	}
 	if err, _ := services.UserService.Register(form); err != nil {
-		response.BusinessFail(c, err.Error())
+		// response.BusinessFail(c, err.Error())
+		response.ServiceFail(c, serviceErrors.UserIsExist)
 	} else {
 		response.Success(c, "新用户注册成功")
 	}
@@ -175,7 +176,7 @@ func (admin *userController) UserLogout(c *gin.Context) {
 	// 解密token
 	err, customClaims := services.JwtService.DecryptToken(token)
 	if err != nil {
-		response.ServiceFail(c, error.UserInfoNotExist)
+		response.ServiceFail(c, serviceErrors.UserInfoNotExist)
 		return
 	}
 	error := global.App.Redis.Del(context.Background(), customClaims.Username).Err()
@@ -203,7 +204,7 @@ func (admin *userController) UserInfoAvatar(c *gin.Context) {
 	// 解密token
 	err, _ := services.JwtService.DecryptToken(token[len(common.TokenType)+1:])
 	if err != nil {
-		response.ServiceFail(c, error.UserInfoNotExist)
+		response.ServiceFail(c, serviceErrors.UserInfoNotExist)
 		return
 	}
 	// username := customClaims.UserName
