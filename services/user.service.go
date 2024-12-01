@@ -2,13 +2,15 @@ package services
 
 import (
 	"errors"
+	"fmt"
 	"gateway_go/dao"
 	"gateway_go/dto"
 	"gateway_go/global"
-	"gateway_go/utils"
-	"github.com/google/uuid"
-	"time"
 	"gateway_go/serviceErrors"
+	"gateway_go/utils"
+	"time"
+
+	"github.com/google/uuid"
 )
 
 type userService struct {
@@ -28,9 +30,10 @@ func (userService *userService) Register(params dto.RegisterInput) (err error, u
 		return
 	}
 	uuid := uuid.New()
-	user = dao.Admin{Uuid: uuid.String(), CreatedTime: time.Now().Unix(), UpdatedTime: time.Now().Unix(), Avatar: "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg", Nickname: "ik", Role: "admin", Username: params.Username, Password: utils.BcryptMake([]byte(params.Password)), IsDelete: 0, Email: "***@outlook.com"}
+	user = dao.Admin{Uuid: uuid.String(), CreatedTime: time.Now().Unix(), UpdatedTime: time.Now().Unix(), Avatar: "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg", Nickname: "ik", Role: "admin", Username: params.Username, Password: utils.BcryptMake([]byte(params.Password)), IsDelete: 0, Email: "***@outlook.com", Phone: "15770870823"}
 	err = global.App.DB.Table(userService.TableName()).Create(&user).Error
 	if err != nil {
+		fmt.Println("阿大", err)
 		return
 	}
 	return

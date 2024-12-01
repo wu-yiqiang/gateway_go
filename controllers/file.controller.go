@@ -54,7 +54,7 @@ func (f *fileController) Upload(c *gin.Context) {
 		response.BusinessFail(c, "hash不能为空")
 		return
 	}
-	index := strings.Split(hash, "-")[1]
+	index := strings.Split(hash, "_")[1]
 	saveDir := global.App.Config.Storage.Disks.LocalStorage.RootFileDir
 	filenameDir := filename + ".dir"
 	if index == "0" {

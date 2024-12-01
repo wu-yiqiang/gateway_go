@@ -9649,3 +9649,186 @@
 
 2024/11/02 20:31:31 /Users/atlas/go/src/gateway_go/services/user.service.go:61
 [0.986ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:26:07 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[10.995ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:26:20 /Users/atlas/go/src/gateway_go/services/user.service.go:25
+[1.891ms] [rows:1] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:26:37 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.781ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:28:42 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.699ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:28:57 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.610ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:28:58 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.922ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:29:45 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.758ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:30:12 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[1.031ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:31:36 /Users/atlas/go/src/gateway_go/services/user.service.go:61
+[0.801ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:31:57 /Users/atlas/go/src/gateway_go/services/user.service.go:63
+[1.225ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:32:39 /Users/atlas/go/src/gateway_go/services/user.service.go:63
+[1.675ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:34:06 /Users/atlas/go/src/gateway_go/services/user.service.go:63
+[1.257ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:35:38 /Users/atlas/go/src/gateway_go/services/user.service.go:63
+[1.104ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:37:31 /Users/atlas/go/src/gateway_go/services/user.service.go:62
+[0.979ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:39:56 /Users/atlas/go/src/gateway_go/services/user.service.go:26 record not found
+[0.826ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:39:56 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[1.257ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('242f2a57-a36e-4c05-813c-1a4a3795bd6d','admin','$2a$04$uOA6DYVI1gN3XDS0H9JVeuW2Q2rU1K0gR/seEjhhBvb6IkAqS28/K','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733074796,1733074796,0)
+
+2024/12/02 01:40:09 /Users/atlas/go/src/gateway_go/services/user.service.go:26 record not found
+[0.514ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:40:09 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.768ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('b7c51247-3879-4ae3-9f80-ee3a58a0ab44','admin','$2a$04$SMK/2pcW0BMGfzYPkFmjPeMDvXGFF2nNqiAG4wchJuMNVAhEBgaa2','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733074809,1733074809,0)
+
+2024/12/02 01:40:58 /Users/atlas/go/src/gateway_go/services/user.service.go:26 record not found
+[1.126ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:40:58 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.795ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('15aac15d-c77b-4089-8fbf-d3eb6c2ba91c','admin','$2a$04$awD7R6oG/UFfFehW1EaN4.rloBbkw10lXcTPkljpdsuMo55cZLqiW','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733074858,1733074858,0)
+
+2024/12/02 01:43:58 /Users/atlas/go/src/gateway_go/services/user.service.go:26 record not found
+[0.588ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:43:58 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.600ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('6aad54c7-9004-4fea-bf48-e03f94d4a8cb','admin','$2a$04$E5HWTHli9VSjzT/.Hs5bIeHNmp1LiJCT7RSwY/rwmdMzOaGuld6o.','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075038,1733075038,0)
+
+2024/12/02 01:45:55 /Users/atlas/go/src/gateway_go/services/user.service.go:26 record not found
+[0.916ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:45:55 /Users/atlas/go/src/gateway_go/services/user.service.go:33 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.635ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('f3f88c1c-7db3-4054-805d-499d9984306e','admin','$2a$04$OOVscnbwehYfoE/rQ1v1FejE8Zr7YPIxTJq1ElfUXcagxpmpPyMKi','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075155,1733075155,0)
+
+2024/12/02 01:46:46 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.875ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:46:46 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.664ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('9d1230aa-8ea0-4d32-ad9e-66953c9f05b9','admin','$2a$04$2v8z8VGUR4Aq6GM8xi7U5.gmZLkd.654763g4Qv/D/HlyX8vclfoO','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075206,1733075206,0)
+
+2024/12/02 01:46:50 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.767ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:46:50 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.724ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('656f7a17-4dad-4471-b3a4-e382a7c0d6cf','admin','$2a$04$3GYk6oNX09wY/UeFYa41YeZBhd2/u0oSJJ3KyKKsbU.8wyO1Fk4pq','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075210,1733075210,0)
+
+2024/12/02 01:47:07 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.521ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:47:07 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.449ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('8e5ae323-3a81-4b05-9988-3b9dda1bcd50','admin','$2a$04$6rDflf8rxdSCqxeCN3WX8eAnewZXM/H8pgIAw0pd52R3ZyI4hPhnK','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075227,1733075227,0)
+
+2024/12/02 01:47:07 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.543ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:47:07 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.585ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('7d39590f-dff7-4ae4-9368-8d5c8958adcc','admin','$2a$04$V2xjkh80sX3w98ZULwb/f.eDJmkLNRZdj2OKUtH8wEb/92t5fntau','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075227,1733075227,0)
+
+2024/12/02 01:47:07 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.763ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:47:07 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.896ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('70475ff6-1b53-44a5-86e6-6081f3a8a8b0','admin','$2a$04$ae9Arl2NTU3nZoWO7pi86.AK31GzBuBEk/5INbfVVkBQQ8eVzwc3u','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075227,1733075227,0)
+
+2024/12/02 01:47:07 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.565ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:47:07 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.363ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('4a1a3735-b5d2-4436-91be-927886f26189','admin','$2a$04$kmtf0dg718Uw6uNrvivouuMfR9c.ytfawKiXARF/bY9gJGY44BMeC','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075227,1733075227,0)
+
+2024/12/02 01:47:17 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.549ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:47:17 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.806ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('03aabd47-80ba-4090-848b-02611a9448e1','admin','$2a$04$Dk6D5NrqmjdhxNKLSpEGauBMyX0hynnluosiXU9Z0PPTF4LO5l1Aq','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075237,1733075237,0)
+
+2024/12/02 01:47:44 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.886ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:47:44 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.575ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('dfa06b98-dac1-48e8-be99-62d24d075013','admin','$2a$04$EzdwJLpjG.9Vxx/43GPQr.StH9slAzx558U8GW39tcBNybI.7RS8q','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075264,1733075264,0)
+
+2024/12/02 01:48:34 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[1.167ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:48:34 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[1.042ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('0d34505a-bdee-40b3-be1f-189d7133b6a0','admin','$2a$04$2/MtLm13ShB6EkR..cyxoeZYMXVrNhsoSrtCS53KNMJagAusvqnpy','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075314,1733075314,0)
+
+2024/12/02 01:49:06 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[1.066ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:49:06 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.494ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('f9a9a779-ecb2-43d6-8317-d5b942be3df7','admin','$2a$04$tFM2B0uQEpgz.UpZ7269WOzBxYcDUXE2opnoisSury2ZxDo4nzeau','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075346,1733075346,0)
+
+2024/12/02 01:49:14 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.952ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:49:14 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[1.523ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('5a2e2a7f-9f44-404f-9e0b-449622e4ce0e','admin','$2a$04$KV7TAf2MvzsSAYX3RZW8zucJgUhybeW44qWvwLleb3NoRKS7T8MRC','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075354,1733075354,0)
+
+2024/12/02 01:49:14 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.740ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:49:14 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.824ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('8e040923-ac14-4ab1-8db1-0489d66c856d','admin','$2a$04$vb/r2qXpzfmPiEdVIUjjZ.U7Dp5EUMJCCA7VTpGbmYSlVHdxYbKB.','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075354,1733075354,0)
+
+2024/12/02 01:49:46 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.908ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:49:46 /Users/atlas/go/src/gateway_go/services/user.service.go:35 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[1.028ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('7bffec85-2652-4058-a3a2-3bceccd32409','admin','$2a$04$kjdA7kBah57HpW0HTMDQ/.O/hr6TaY5jRKWFyKok/zE/dVK.bVeg2','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075386,1733075386,0)
+
+2024/12/02 01:51:19 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.937ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:51:19 /Users/atlas/go/src/gateway_go/services/user.service.go:34 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.627ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('928f2586-7701-43e1-ab33-488960e9b894','admin','$2a$04$NvDgG0avEndbFi9MQBz/suKeU1qF.GjZ3VBZ5fIub2DT52O6845j.','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','','admin',1733075479,1733075479,0)
+
+2024/12/02 01:54:27 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.805ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:54:27 /Users/atlas/go/src/gateway_go/services/user.service.go:34 Error 1054 (42S22): Unknown column 'phone' in 'field list'
+[0.585ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('26a88fba-f5c9-46c0-99fc-cf072b081b76','admin','$2a$04$hz6VO9ev94m4NKjrihpFxuNRMoPy.pNp1Ppz8BSMylcuIV7Wiv9xm','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','15770870823','admin',1733075667,1733075667,0)
+
+2024/12/02 01:55:28 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[0.908ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:55:28 /Users/atlas/go/src/gateway_go/services/user.service.go:34 Error 1054 (42S22): Unknown column 'role' in 'field list'
+[0.695ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('cb51b995-a1ae-4f72-91fc-72b12f5223b7','admin','$2a$04$AchYvzDCBtDWq4ngF1zBYOEucoAWGC0rTIGLWNsoNYkL6.IREoS/K','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','15770870823','admin',1733075728,1733075728,0)
+
+2024/12/02 01:57:19 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[1.029ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:57:19 /Users/atlas/go/src/gateway_go/services/user.service.go:34 Error 1406 (22001): Data too long for column 'phone' at row 1
+[1.032ms] [rows:0] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('710444be-bef4-489e-a025-335752c7731a','admin','$2a$04$JFz7TnvDH/wfKfpzt0m5EeqUSj.oiyw1CBH54JO0PPeOAlbdDTho2','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','15770870823','admin',1733075839,1733075839,0)
+
+2024/12/02 01:58:30 /Users/atlas/go/src/gateway_go/services/user.service.go:27 record not found
+[1.871ms] [rows:0] SELECT `uuid` FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 01:58:30 /Users/atlas/go/src/gateway_go/services/user.service.go:34
+[2.493ms] [rows:1] INSERT INTO `users` (`uuid`,`username`,`password`,`avatar`,`nickname`,`email`,`phone`,`role`,`updated_time`,`created_time`,`is_delete`) VALUES ('dbf981a7-c791-4673-8eb8-bcb45a3bcad5','admin','$2a$04$y.pkPHehgRmhoatw/9r8/O9SHI6hSWDVyhxj2/OQXXu.pv45t2Sky','http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg','ik','***@outlook.com','15770870823','admin',1733075910,1733075910,0)
+
+2024/12/02 01:58:45 /Users/atlas/go/src/gateway_go/services/user.service.go:64
+[0.788ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
