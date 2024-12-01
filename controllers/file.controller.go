@@ -21,8 +21,8 @@ type fileController struct {
 var FileController = new(fileController)
 
 // ListPage godoc
-// @Summary 文件上传
-// @Description 文件上传
+// @Summary 文件分片上传
+// @Description 文件分片上传
 // @Tags 文件管理
 // @ID /file/upload
 // @Accept  json
@@ -43,13 +43,7 @@ func (f *fileController) Upload(c *gin.Context) {
 		response.BusinessFail(c, "filename不能为空")
 		return
 	}
-	filehash := c.Request.FormValue("file_hash")
-	fmt.Println("filehash", filehash)
-	if err != nil {
-		response.BusinessFail(c, "filehash不能为空")
-		return
-	}
-	hash := c.Request.FormValue("hash")
+	hash := c.Request.FormValue("chunk_hash")
 	if err != nil {
 		response.BusinessFail(c, "hash不能为空")
 		return

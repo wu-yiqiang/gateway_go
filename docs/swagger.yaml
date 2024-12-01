@@ -121,7 +121,7 @@ paths:
       consumes:
       - application/json
       - multipart/form-data
-      description: 文件上传
+      description: 文件分片上传
       operationId: /file/upload
       parameters:
       - description: 文件
@@ -138,7 +138,7 @@ paths:
             $ref: '#/definitions/response.Response'
       security:
       - Auth: []
-      summary: 文件上传
+      summary: 文件分片上传
       tags:
       - 文件管理
   /file/uploadFile:

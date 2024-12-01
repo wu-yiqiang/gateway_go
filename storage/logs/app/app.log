@@ -2980,3 +2980,5 @@
 [2024-12-02 01:58:26.425]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
 [2024-12-02 01:59:44.248]	dev.info	gateway_go/main.go:28	log init success!
 [2024-12-02 01:59:44.250]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 02:13:01.716]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 02:13:01.718]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax

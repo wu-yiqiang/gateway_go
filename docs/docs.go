@@ -97,7 +97,7 @@ const docTemplate = `{
                         "Auth": []
                     }
                 ],
-                "description": "文件上传",
+                "description": "文件分片上传",
                 "consumes": [
                     "application/json",
                     "multipart/form-data"
@@ -108,7 +108,7 @@ const docTemplate = `{
                 "tags": [
                     "文件管理"
                 ],
-                "summary": "文件上传",
+                "summary": "文件分片上传",
                 "operationId": "/file/upload",
                 "parameters": [
                     {
