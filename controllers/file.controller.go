@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"gateway_go/dto"
 	"gateway_go/global"
 	"gateway_go/request"
@@ -8,7 +9,6 @@ import (
 	"gateway_go/serviceErrors"
 	"gateway_go/utils"
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -90,6 +90,7 @@ func (f *fileController) Upload(c *gin.Context) {
 func (f *fileController) MergeChunks(c *gin.Context) {
 	var form dto.FileMergeInput
 	if err := c.ShouldBindJSON(&form); err != nil {
+		fmt.Println("哈哈哈哈111", err)
 		response.ValidateFail(c, request.GetErrorMsg(form, err))
 		return
 	}
@@ -99,18 +100,21 @@ func (f *fileController) MergeChunks(c *gin.Context) {
 	_, err := os.Create(saveDir + filename)
 
 	if err != nil {
+		fmt.Println("哈哈哈哈2222", err)
 		response.ServiceFail(c, serviceErrors.FileCreateFail)
 		return
 	}
 	file, err := os.OpenFile(saveDir+filename, os.O_CREATE|os.O_WRONLY|os.O_APPEND, os.ModePerm)
 	defer file.Close()
 	if err != nil {
+		fmt.Println("哈哈哈哈333", err)
 		response.ServiceFail(c, serviceErrors.FileChunkIsNotExists)
 		return
 	}
 	filenameDir := filename + ".dir"
 	part_list, err := filepath.Glob(saveDir + filenameDir + "/*")
 	if err != nil {
+		fmt.Println("哈哈哈哈444", err)
 		response.ServiceFail(c, serviceErrors.FoldOpenFailed)
 		return
 	}
@@ -121,7 +125,8 @@ func (f *fileController) MergeChunks(c *gin.Context) {
 			response.ServiceFail(c, serviceErrors.FileOpenFail)
 			return
 		}
-		b, err := ioutil.ReadAll(f)
+		b, err := io.ReadAll(f)
+
 		if err != nil {
 			response.ServiceFail(c, serviceErrors.FileContentsReadFailed)
 			return

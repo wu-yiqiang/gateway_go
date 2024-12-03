@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}",
+      "env": {
+        "GOPATH": "/Users/atlas/go",
+        "GOROOT": "/usr/local/go" 
+      },
+      "args": []
+    }
+  ]
+}
