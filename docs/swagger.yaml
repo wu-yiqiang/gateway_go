@@ -54,6 +54,20 @@ definitions:
     - password
     - username
     type: object
+  dto.UploadFileInput:
+    properties:
+      chunkhash:
+        type: string
+      file:
+        type: string
+      filename:
+        default: filename
+        type: string
+    required:
+    - chunkhash
+    - file
+    - filename
+    type: object
   response.Response:
     properties:
       code:
@@ -124,11 +138,12 @@ paths:
       description: 文件分片上传
       operationId: /file/upload
       parameters:
-      - description: 文件
-        in: formData
-        name: file
+      - description: body
+        in: body
+        name: polygon
         required: true
-        type: file
+        schema:
+          $ref: '#/definitions/dto.UploadFileInput'
       produces:
       - application/json
       responses:

@@ -1,18 +1,19 @@
 package controllers
 
 import (
-	"fmt"
 	"gateway_go/dto"
 	"gateway_go/global"
 	"gateway_go/request"
 	"gateway_go/response"
-	"github.com/gin-gonic/gin"
+	"gateway_go/serviceErrors"
+	"gateway_go/utils"
 	"io"
 	"io/ioutil"
 	"os"
-	"gateway_go/utils"
 	"path/filepath"
 	"strings"
+
+	"github.com/gin-gonic/gin"
 )
 
 type fileController struct {
@@ -29,28 +30,34 @@ var FileController = new(fileController)
 // @Produce  json
 // @Security Auth
 // @Accept multipart/form-data
-// @Param file formData file true "文件"
+// @Param polygon body dto.UploadFileInput true "body"
 // @Success 200 {object} response.Response{} "success"
 // @Router /file/upload [post]
 func (f *fileController) Upload(c *gin.Context) {
 	file, _, err := c.Request.FormFile("file")
 	if err != nil {
-		response.BusinessFail(c, "文件不能为空")
+		response.ServiceFail(c, serviceErrors.FileIsNotEmpty)
 		return
 	}
 	filename := c.Request.FormValue("file_name")
 	if err != nil {
-		response.BusinessFail(c, "filename不能为空")
+		response.ServiceFail(c, serviceErrors.FileNameIsNotEmpty)
 		return
 	}
 	hash := c.Request.FormValue("chunk_hash")
 	if err != nil {
-		response.BusinessFail(c, "hash不能为空")
+		response.ServiceFail(c, serviceErrors.FileHashIsNotEmpty)
 		return
 	}
 	index := strings.Split(hash, "_")[1]
 	saveDir := global.App.Config.Storage.Disks.LocalStorage.RootFileDir
 	filenameDir := filename + ".dir"
+	exist := isExist(saveDir + filenameDir + "/" + hash)
+	if exist == true {
+		response.Success(c, "文件已存在, 上传成功")
+		// response.ServiceFail(c, serviceErrors.FileIsNotEmpty)
+		return
+	}
 	if index == "0" {
 		isexist := isExist(saveDir + filenameDir)
 		if isexist == false {
@@ -62,25 +69,20 @@ func (f *fileController) Upload(c *gin.Context) {
 			}
 		}
 	}
-
-	exist := isExist(saveDir + filenameDir + "/" + hash)
-	if exist == true {
-		response.Success(c, "文件已存在, 上传成功")
-		return
-	}
 	go func() {
 		//写入文件
 		out, err := os.Create(saveDir + filenameDir + "/" + hash)
+		defer out.Close()
 		if err != nil {
 			response.BusinessFail(c, "服务错误")
 			return
 		}
-		defer out.Close()
 		_, err = io.Copy(out, file)
 		if err != nil {
 			response.BusinessFail(c, "上传失败")
 			return
 		}
+		return
 	}()
 	response.Success(c, "上传成功")
 }
@@ -97,32 +99,31 @@ func (f *fileController) MergeChunks(c *gin.Context) {
 	_, err := os.Create(saveDir + filename)
 
 	if err != nil {
-		fmt.Println("创建文件失败", saveDir+filename, err)
-		response.BusinessFail(c, "创建文件失败")
+		response.ServiceFail(c, serviceErrors.FileCreateFail)
 		return
 	}
 	file, err := os.OpenFile(saveDir+filename, os.O_CREATE|os.O_WRONLY|os.O_APPEND, os.ModePerm)
 	defer file.Close()
 	if err != nil {
-		response.BusinessFail(c, "打开之前上传文件不存在")
+		response.ServiceFail(c, serviceErrors.FileChunkIsNotExists)
 		return
 	}
 	filenameDir := filename + ".dir"
 	part_list, err := filepath.Glob(saveDir + filenameDir + "/*")
 	if err != nil {
-		response.BusinessFail(c, "需要合并的文件夹出现错误")
+		response.ServiceFail(c, serviceErrors.FoldOpenFailed)
 		return
 	}
 	i := 0
 	for _, v := range part_list {
 		f, err := os.OpenFile(v, os.O_RDONLY, os.ModePerm)
 		if err != nil {
-			fmt.Println(err)
+			response.ServiceFail(c, serviceErrors.FileOpenFail)
 			return
 		}
 		b, err := ioutil.ReadAll(f)
 		if err != nil {
-			fmt.Println(err)
+			response.ServiceFail(c, serviceErrors.FileContentsReadFailed)
 			return
 		}
 		file.Write(b)
@@ -131,11 +132,11 @@ func (f *fileController) MergeChunks(c *gin.Context) {
 	}
 	// 删除文件夹
 	error := os.RemoveAll(saveDir + filenameDir)
-	if err != nil {
-		fmt.Println("error", error, filenameDir)
+	if error != nil {
+		response.ServiceFail(c, serviceErrors.FileIsNotEmpty)
+		return
 	}
 	response.Success(c, "合并成功")
-	return
 }
 
 // ListPage godoc

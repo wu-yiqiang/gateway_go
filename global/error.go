@@ -18,5 +18,5 @@ var Errors = CustomErrors{
 	ValidateError: CustomError{422, "请求参数错误"},
 	TokenError:    CustomError{401, "登录授权失效"},
 	ServiceError:  CustomError{500, "服务出错"},
-	GatewayError:  CustomError{50200, "网关错误"},
+	GatewayError:  CustomError{502, "网关错误"},
 }

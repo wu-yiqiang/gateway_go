@@ -1,6 +1,9 @@
 package dto
 
-import "gateway_go/request"
+import (
+	"gateway_go/request"
+	"gateway_go/serviceErrors"
+)
 
 type FileUploadInput struct {
 	File     []byte `json:"file" form:"file" gorm:"file" comment:"文件" binding:"required"`
@@ -19,27 +22,27 @@ func (fileUploadInput FileUploadInput) GetMessages() request.ValidatorMessages {
 }
 
 type FileMergeInput struct {
-	FileName string `json:"filename" form:"filename" gorm:"filename" comment:"文件名" default:"文件名" binding:"required"`
+	FileName string `json:"file_name" form:"file_name" gorm:"file_name" comment:"文件名" default:"文件名" binding:"required"`
 	Size     int64  `json:"size" form:"size" gorm:"size" comment:"文件大小" default:"1234" binding:"required"`
 }
 
 func (fileMergeInput FileMergeInput) GetMessages() request.ValidatorMessages {
 	return request.ValidatorMessages{
-		"filename.required": "文件名不能为空",
+		"file_name.required": "文件名不能为空",
 		"size.required":     "文件大小不能为空",
 	}
 }
 
 type UploadFileInput struct {
-	File     []byte `json:"file" form:"file" gorm:"file" comment:"文件" binding:"required"`
-	FileType string `json:"filetype" form:"filetype" gorm:"filetype" comment:"文件类型" default:"1" binding:"required"`
-	FileName string `json:"filename" form:"filename" gorm:"filename" comment:"文件名" default:"文件名" binding:"required"`
+	File     string `json:"file" form:"file" gorm:"file" comment:"文件" binding:"required"`
+	ChunkHash string `json:"chunkhash" form:"chunkhash" gorm:"chunkhash" comment:"chunk哈希" binding:"required"`
+	FileName string `json:"filename" form:"filename" gorm:"filename" comment:"文件名" default:"filename" binding:"required"`
 }
 
 func (uploadFileInput UploadFileInput) GetMessages() request.ValidatorMessages {
 	return request.ValidatorMessages{
-		"filename.required": "文件名不能为空",
-		"filetype.required": "文件类型不能为空",
-		"file.required":     "文件不能为空",
+		"filename.required": serviceErrors.FileNameIsNotEmpty.ErrorMsg,
+		"filetype.chunkhash": serviceErrors.FileHashIsNotEmpty.ErrorMsg,
+		"file.required":     serviceErrors.FileNameIsNotEmpty.ErrorMsg,
 	}
 }

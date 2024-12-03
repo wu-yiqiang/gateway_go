@@ -7,7 +7,7 @@ import (
 // 文件部分以1030000开头
 var (
 	FileNotFound = types.ServiceError{1030000, "文件不存在"}
-	FileCreateFail = types.ServiceError{1030001, "创建文件失"}
+	FileCreateFail = types.ServiceError{1030001, "文件创建失败"}
 	FileOpenFail = types.ServiceError{1030002, "文件打开失败"}
 	FileWriteFail = types.ServiceError{1030003, "文件写入失败"}
 	FileUploadFail = types.ServiceError{1030004, "文件上传失败"}
@@ -17,4 +17,7 @@ var (
 	FileTypeIsNotEmpty = types.ServiceError{1030008, "文件类型不能为空"}
 	FileAlreadyExists = types.ServiceError{1030009, "文件已存在"}
 	FileHashIsNotEmpty = types.ServiceError{1030010, "文件Hash不能为空"}
+	FileChunkIsNotExists = types.ServiceError{1030011, "文件Chunk不存在"}
+	FoldOpenFailed = types.ServiceError{1030012, "文件夹打开失败"}
+	FileContentsReadFailed = types.ServiceError{1030013, "文件内容读取失败"}
 )

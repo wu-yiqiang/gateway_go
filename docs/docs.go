@@ -112,11 +112,13 @@ const docTemplate = `{
                 "operationId": "/file/upload",
                 "parameters": [
                     {
-                        "type": "file",
-                        "description": "文件",
-                        "name": "file",
-                        "in": "formData",
-                        "required": true
+                        "description": "body",
+                        "name": "polygon",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/dto.UploadFileInput"
+                        }
                     }
                 ],
                 "responses": {
@@ -492,6 +494,26 @@ const docTemplate = `{
                 "username": {
                     "type": "string",
                     "example": "admin"
+                }
+            }
+        },
+        "dto.UploadFileInput": {
+            "type": "object",
+            "required": [
+                "chunkhash",
+                "file",
+                "filename"
+            ],
+            "properties": {
+                "chunkhash": {
+                    "type": "string"
+                },
+                "file": {
+                    "type": "string"
+                },
+                "filename": {
+                    "type": "string",
+                    "default": "filename"
                 }
             }
         },
