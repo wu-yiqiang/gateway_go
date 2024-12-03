@@ -2982,3 +2982,210 @@
 [2024-12-02 01:59:44.250]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
 [2024-12-02 02:13:01.716]	dev.info	gateway_go/main.go:28	log init success!
 [2024-12-02 02:13:01.718]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 11:05:39.916]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 11:05:39.927]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 11:05:39.927]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 12:30:47.807]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 12:30:47.820]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 12:30:47.820]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 12:39:03.917]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 12:39:03.923]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 12:39:03.923]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 12:42:25.610]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 12:42:25.616]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 12:42:25.616]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 12:51:08.671]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 12:51:08.677]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 12:51:08.678]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 12:55:09.208]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 12:55:09.214]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 12:55:09.215]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 12:55:50.655]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 12:55:50.662]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 12:55:50.662]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 12:59:42.721]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 12:59:42.727]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 12:59:42.727]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 12:59:56.730]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 12:59:56.736]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 12:59:56.737]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 13:00:50.556]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 13:00:50.561]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 13:00:50.562]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 14:23:00.049]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 14:23:00.055]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 14:23:00.056]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 14:30:05.534]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 14:30:05.540]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 14:30:05.540]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 14:31:55.247]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 14:31:55.253]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 14:31:55.253]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 14:36:55.150]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 14:36:55.156]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 14:36:55.156]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 14:39:11.065]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 14:39:11.070]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 14:39:11.070]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 14:54:52.765]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 14:54:52.772]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 14:54:52.772]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 15:04:24.397]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 15:04:24.403]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 15:04:24.403]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 15:10:04.928]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 15:10:04.934]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 15:10:04.935]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 15:11:38.222]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 15:11:38.228]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 15:11:38.229]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 15:17:09.713]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 15:17:09.721]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 15:17:09.722]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 15:26:54.779]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 15:26:54.785]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 15:26:54.786]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 15:28:29.119]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 15:28:29.126]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 15:28:29.126]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 17:17:00.733]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 17:17:00.740]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'gin_gateway'"}
+[2024-12-02 17:17:00.740]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 19:01:10.212]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 19:01:10.218]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-02 19:01:10.218]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 19:03:19.031]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 19:03:19.036]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-02 19:03:19.036]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 21:13:06.913]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 21:13:06.918]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-02 21:13:06.919]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 21:17:45.911]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 21:17:45.919]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-02 21:17:45.919]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 21:19:34.655]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 21:19:34.661]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-02 21:19:34.661]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-02 21:28:49.587]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-02 21:28:49.592]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-02 21:28:49.593]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 12:13:33.017]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 12:13:33.023]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 12:13:33.024]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 12:19:59.729]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 12:19:59.734]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 12:19:59.735]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 14:16:19.293]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 14:16:19.298]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 14:16:19.298]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 14:59:11.216]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 14:59:11.221]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 14:59:11.222]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:10:42.696]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:10:42.701]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:10:42.702]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:16:16.051]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:16:16.056]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:16:16.056]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:18:38.515]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:18:38.521]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:18:38.521]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:18:59.813]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:18:59.818]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:18:59.818]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:23:03.427]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:23:03.432]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:23:03.433]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:23:10.864]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:23:10.869]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:23:10.869]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:23:19.982]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:23:19.987]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:23:19.988]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:26:27.241]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:26:27.251]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:26:27.251]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:26:28.047]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:26:28.053]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:26:28.054]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:27:04.769]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:27:04.774]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:27:04.775]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:27:43.843]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:27:43.848]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:27:43.848]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:28:07.455]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:28:07.460]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:28:07.461]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:28:18.542]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:28:18.559]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:28:18.560]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:28:19.262]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:28:19.267]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:28:19.268]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:28:23.562]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:28:23.571]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:28:23.573]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 15:33:39.816]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 15:33:39.820]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 15:33:39.821]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:21.840]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:21.849]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:21.850]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:22.610]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:22.618]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:22.619]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:23.612]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:23.620]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:23.621]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:24.568]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:24.575]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:24.576]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:25.574]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:25.582]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:25.583]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:26.561]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:26.571]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:26.572]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:27.501]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:27.525]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:27.526]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:28.561]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:28.575]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:28.575]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:29.560]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:29.569]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:29.570]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:30.517]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:30.526]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:30.526]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:31.506]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:31.515]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:31.515]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:32.496]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:32.504]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:32.504]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:33.501]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:33.512]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:33.513]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:34.499]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:34.508]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:34.509]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:35.487]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:35.495]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:35.495]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:36.498]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:36.506]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:36.506]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:03:41.621]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:03:41.626]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:03:41.626]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:05:15.200]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:05:15.218]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:05:15.220]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:08:49.575]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:08:49.591]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:08:49.592]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax
+[2024-12-03 21:08:51.495]	dev.info	gateway_go/main.go:28	log init success!
+[2024-12-03 21:08:51.501]	dev.error	initialize/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+[2024-12-03 21:08:51.501]	dev.info	initialize/cron.go:19	Failed to parse int from *: strconv.Atoi: parsing "*": invalid syntax

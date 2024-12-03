@@ -9832,3 +9832,210 @@
 
 2024/12/02 01:58:45 /Users/atlas/go/src/gateway_go/services/user.service.go:64
 [0.788ms] [rows:1] SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+
+2024/12/02 11:05:39 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 12:30:47 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 12:39:03 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 12:42:25 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 12:51:08 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 12:55:09 c:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 12:55:50 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 12:59:42 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 12:59:56 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 13:00:50 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 14:23:00 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 14:30:05 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 14:31:55 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 14:36:55 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 14:39:11 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 14:54:52 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 15:04:24 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 15:10:04 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 15:11:38 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 15:17:09 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 15:26:54 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 15:28:29 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 17:17:00 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error Error 1049 (42000): Unknown database 'gin_gateway'
+
+2024/12/02 19:01:10 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/02 19:03:19 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/02 21:13:06 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/02 21:17:45 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/02 21:19:34 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/02 21:28:49 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 12:13:33 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 12:19:59 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 14:16:19 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 14:59:11 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:10:42 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:16:16 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:18:38 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:18:59 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:23:03 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:23:10 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:23:19 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:26:27 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:26:28 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:27:04 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:27:43 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:28:07 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:28:18 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:28:19 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:28:23 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 15:33:39 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:21 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:22 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:23 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:24 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:25 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:26 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:27 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:28 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:29 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:30 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:31 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:32 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:33 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:34 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:35 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:36 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:03:41 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:05:15 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:08:49 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/12/03 21:08:51 C:/Users/ITForce05/go/src/gateway_go/initialize/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
