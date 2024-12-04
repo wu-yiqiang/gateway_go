@@ -20,4 +20,5 @@ var (
 	FileChunkIsNotExists = types.ServiceError{1030011, "文件Chunk不存在"}
 	FoldOpenFailed = types.ServiceError{1030012, "文件夹打开失败"}
 	FileContentsReadFailed = types.ServiceError{1030013, "文件内容读取失败"}
+	FoldReadFailed = types.ServiceError{1030014, "文件夹读取失败"}
 )

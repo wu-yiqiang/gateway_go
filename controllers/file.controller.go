@@ -10,9 +10,7 @@ import (
 	"gateway_go/utils"
 	"io"
 	"os"
-	"path/filepath"
 	"strings"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -112,20 +110,27 @@ func (f *fileController) MergeChunks(c *gin.Context) {
 		return
 	}
 	filenameDir := filename + ".dir"
-	part_list, err := filepath.Glob(saveDir + filenameDir + "/*")
+	// part_list, err := os.ReadDir(saveDir + filenameDir + "/")
+	files, err := os.Open(saveDir + filenameDir)
 	if err != nil {
-		fmt.Println("哈哈哈哈444", err)
+			fmt.Println("哈哈哈哈555",err)
 		response.ServiceFail(c, serviceErrors.FoldOpenFailed)
+		return
+	}
+	part_list, err := files.Readdir(-1)
+	if err != nil {
+		response.ServiceFail(c, serviceErrors.FoldReadFailed)
 		return
 	}
 	i := 0
 	for _, v := range part_list {
-		f, err := os.OpenFile(v, os.O_RDONLY, os.ModePerm)
+		f, err := os.OpenFile(v.Name(), os.O_RDONLY, os.ModePerm)
 		if err != nil {
 			response.ServiceFail(c, serviceErrors.FileOpenFail)
 			return
 		}
 		b, err := io.ReadAll(f)
+		fmt.Println("哈哈哈哈666", b)
 
 		if err != nil {
 			response.ServiceFail(c, serviceErrors.FileContentsReadFailed)
